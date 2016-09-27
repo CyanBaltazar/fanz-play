@@ -1,0 +1,288 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 1025px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+$primary-color: #121212; // dark grey
+$secondary-color: #BADA55; // light green
+$third-color: #343434; //light grey
+$body-color: #E7E7E7;
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  background-color: $third-color !important;
+  color: $color-white !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+form {
+  margin-top: 50px;
+}
+
+
+
+
+.reg-teamname-text {
+  margin-left: 55px;
+}
+
+.reg-type-text {
+  margin-left: 55px;
+  margin-bottom: 15px;
+}
+
+.reg-completename-text {
+  margin-left: 55px;
+}
+
+button.reg-next-button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+  height: 50px;
+  background-color: $secondary-color;
+  border: 1px solid $color-black;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  @include respond-to(xs) {
+
+  }
+}
+
+ul.form-road-map {
+  font-size: 18px;
+  list-style: none;
+  display: inline-flex;
+}
+
+
+
+input.team-name {
+  margin: auto;
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+select.type {
+  width: 80%;
+  border: none;
+  padding: 0px 0px;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  margin-left: 55px;
+  font-size: 20px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-completename {
+  margin: auto;
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-email {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-hqaddress {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-mobilenumber {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: darken($color-white, 50%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $color-white;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}

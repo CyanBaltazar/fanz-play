@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+form {
+  margin-top: 50px; }
+
+.reg-teamname-text {
+  margin-left: 55px; }
+
+.reg-type-text {
+  margin-left: 55px;
+  margin-bottom: 15px; }
+
+.reg-completename-text {
+  margin-left: 55px; }
+
+button.reg-next-button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold; }
+
+ul.form-road-map {
+  font-size: 18px;
+  list-style: none;
+  display: inline-flex; }
+
+input.team-name {
+  margin: auto;
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.team-name:focus, input.team-name:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.team-name:focus::-webkit-input-placeholder, input.team-name:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.team-name {
+      font-size: 20px; } }
+
+select.type {
+  width: 80%;
+  border: none;
+  padding: 0px 0px;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  margin-left: 55px;
+  font-size: 20px;
+  color: gray; }
+  select.type:focus, select.type:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    select.type:focus::-webkit-input-placeholder, select.type:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    select.type {
+      font-size: 20px; } }
+
+input.input-reg-completename {
+  margin: auto;
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.input-reg-completename:focus, input.input-reg-completename:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.input-reg-completename:focus::-webkit-input-placeholder, input.input-reg-completename:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-completename {
+      font-size: 20px; } }
+
+input.input-reg-email {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.input-reg-email:focus, input.input-reg-email:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.input-reg-email:focus::-webkit-input-placeholder, input.input-reg-email:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-email {
+      font-size: 20px; } }
+
+input.input-reg-hqaddress {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.input-reg-hqaddress:focus, input.input-reg-hqaddress:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.input-reg-hqaddress:focus::-webkit-input-placeholder, input.input-reg-hqaddress:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-hqaddress {
+      font-size: 20px; } }
+
+input.input-reg-mobilenumber {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.input-reg-mobilenumber:focus, input.input-reg-mobilenumber:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.input-reg-mobilenumber:focus::-webkit-input-placeholder, input.input-reg-mobilenumber:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-mobilenumber {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=register-account.css.map */
