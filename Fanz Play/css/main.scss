@@ -109,7 +109,7 @@ li a
   color: $secondary-color !important;
 }
 
-a:hover
+li a:hover
 {
   background-color: $primary-color !important;
   color: $color-white !important;
@@ -619,9 +619,7 @@ input.input-password {
   }
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+footer {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;

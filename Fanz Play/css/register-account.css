@@ -22,10 +22,18 @@ div.form-group-parent {
 .team-bio-txt {
   font-size: 20px;
   margin-left: -375px; }
+  @media screen and (max-width: 767px) {
+    .team-bio-txt {
+      font-size: 16px;
+      margin-left: -260px; } }
 
 .team-awards-txt {
   font-size: 20px;
   margin-left: -390px; }
+  @media screen and (max-width: 767px) {
+    .team-awards-txt {
+      font-size: 16px;
+      margin-left: -270px; } }
 
 .reg-teamname-text {
   margin-left: 55px; }
@@ -37,18 +45,11 @@ div.form-group-parent {
 .reg-completename-text {
   margin-left: 55px; }
 
-button.reg-next-button {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  width: 50%;
-  height: 50px;
-  background-color: #BADA55;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold; }
+@media screen and (max-width: 767px) {
+  .registeraccount-text {
+    font-size: 30px; } }
 
-button.reg-finish-button {
+button.reg-button {
   margin-top: 60px;
   margin-bottom: 40px;
   width: 50%;
@@ -58,6 +59,21 @@ button.reg-finish-button {
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold; }
+  @media screen and (max-width: 767px) {
+    button.reg-button {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+
+button.reg-button:hover {
+  background-color: #ffffff !important;
+  color: #BADA55 !important; }
+
+button.reg-button a {
+  color: #ffffff !important;
+  text-decoration: none; }
+
+form.form-horizontal {
+  margin-top: -5px; }
 
 ul.form-road-map {
   font-size: 18px;
@@ -72,10 +88,20 @@ div.camera-circle {
   background-color: #959f16;
   border-radius: 50%;
   margin-bottom: 30px; }
+  @media screen and (max-width: 767px) {
+    div.camera-circle {
+      height: 150px;
+      width: 150px;
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 
 .reg-camera-icon {
   font-size: 50px !important;
   margin-top: 100px; }
+  @media screen and (max-width: 767px) {
+    .reg-camera-icon {
+      font-size: 40px !important;
+      margin-top: 60px; } }
 
 .upload-teamlogo-txt {
   font-size: 20px;

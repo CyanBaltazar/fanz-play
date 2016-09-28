@@ -78,11 +78,19 @@ div.form-group-parent {
 .team-bio-txt {
   font-size: 20px;
   margin-left: -375px;
+  @include respond-to(xs) {
+    font-size: 16px;
+    margin-left: -260px;
+  }
 }
 
 .team-awards-txt {
   font-size: 20px;
   margin-left: -390px;
+  @include respond-to(xs) {
+    font-size: 16px;
+    margin-left: -270px;
+  }
 }
 
 .reg-teamname-text {
@@ -98,7 +106,19 @@ div.form-group-parent {
   margin-left: 55px;
 }
 
-button.reg-next-button {
+.registeraccount-text {
+  @include respond-to(xs) {
+    font-size: 30px;
+  }
+
+}
+
+
+
+
+
+
+button.reg-button {
   margin-top: 60px;
   margin-bottom: 40px;
   width: 50%;
@@ -109,23 +129,23 @@ button.reg-next-button {
   font-size: 18px;
   font-weight: bold;
   @include respond-to(xs) {
-
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
-button.reg-finish-button {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  width: 50%;
-  height: 50px;
-  background-color: $secondary-color;
-  border: 1px solid $color-black;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  @include respond-to(xs) {
+button.reg-button:hover {
+  background-color: $color-white !important;
+  color: $secondary-color !important;
+}
 
-  }
+button.reg-button a {
+  color: $color-white !important;
+  text-decoration: none;
+}
+
+form.form-horizontal {
+  margin-top: -5px;
 }
 
 ul.form-road-map {
@@ -142,11 +162,23 @@ div.camera-circle {
   background-color: #959f16;
   border-radius: 50%;
   margin-bottom: 30px;
+  @include respond-to(xs) {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 }
 
 .reg-camera-icon {
   font-size: 50px !important;
   margin-top: 100px;
+  @include respond-to(xs) {
+    font-size: 40px !important;
+    margin-top: 60px;
+  }
+
 }
 
 .upload-teamlogo-txt {

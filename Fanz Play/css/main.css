@@ -27,7 +27,7 @@ nav {
 li a {
   color: #BADA55 !important; }
 
-a:hover {
+li a:hover {
   background-color: #121212 !important;
   color: #ffffff !important; }
 
@@ -348,9 +348,7 @@ input.input-password {
     .login-txt-username {
       font-size: 14px; } }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+footer {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
@@ -359,11 +357,11 @@ input.input-password {
   /* iphone6 landscape */
   /* iphone6 plus(+) landscape */ }
   @media screen and (max-width: 767px) {
-    .footer {
+    footer {
       position: absolute;
       bottom: 0; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .footer {
+    footer {
       height: 50px; } }
 
 .container {
