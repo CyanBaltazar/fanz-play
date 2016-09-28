@@ -353,7 +353,7 @@ input.input-password {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 50px;
   background-color: #121212 !important;
   /* iphone6 portrait */
   /* iphone6 landscape */
@@ -376,7 +376,7 @@ input.input-password {
   overflow: auto; }
 
 .text-muted {
-  margin: 20px !important;
+  margin: 15px !important;
   text-align: center !important;
   color: #ffffff !important; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {

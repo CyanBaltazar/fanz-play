@@ -624,7 +624,7 @@ input.input-password {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 50px;
   background-color: $primary-color !important;
   @include respond-to(xs) {
     position: absolute;
@@ -676,7 +676,7 @@ input.input-password {
 }
 
 .text-muted {
-  margin: 20px !important;
+  margin: 15px !important;
   text-align: center !important;
   color: $color-white !important;
   @include respond-to(xs) {
