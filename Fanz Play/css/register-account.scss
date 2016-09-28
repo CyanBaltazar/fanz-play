@@ -71,8 +71,19 @@ form {
   margin-top: 50px;
 }
 
+div.form-group-parent {
+  margin-top: 50px;
+}
 
+.team-bio-txt {
+  font-size: 20px;
+  margin-left: -375px;
+}
 
+.team-awards-txt {
+  font-size: 20px;
+  margin-left: -390px;
+}
 
 .reg-teamname-text {
   margin-left: 55px;
@@ -102,10 +113,69 @@ button.reg-next-button {
   }
 }
 
+button.reg-finish-button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+  height: 50px;
+  background-color: $secondary-color;
+  border: 1px solid $color-black;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  @include respond-to(xs) {
+
+  }
+}
+
 ul.form-road-map {
   font-size: 18px;
   list-style: none;
+  border: none;
   display: inline-flex;
+}
+
+div.camera-circle {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  background-color: #959f16;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.reg-camera-icon {
+  font-size: 50px !important;
+  margin-top: 100px;
+}
+
+.upload-teamlogo-txt {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.form-roadmap-1 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px 0px !important;
+	color: #ffffff !important;
+}
+
+.form-roadmap-1:hover {
+  background-color: transparent !important;
+}
+
+
+.form-roadmap-2 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px 0px !important;
+  color: #ffffff !important;
+}
+
+.form-roadmap-2:hover {
+  background-color: transparent !important;
 }
 
 
@@ -121,7 +191,6 @@ input.team-name {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   font-size: 25px;
   color: darken($color-white, 50%);
   &:focus, &:valid {
@@ -150,7 +219,6 @@ select.type {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   margin-left: 55px;
   font-size: 20px;
   color: darken($color-white, 50%);
@@ -181,7 +249,6 @@ input.input-reg-completename {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   font-size: 25px;
   color: darken($color-white, 50%);
   &:focus, &:valid {
@@ -210,26 +277,53 @@ input.input-reg-email {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 25px;
+  font-size: 24px;
+  font-style: italic;
   color: darken($color-white, 50%);
-  &:focus, &:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0;
-    &::-webkit-input-placeholder {
-      color: $color-white;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important;
-    }
-  }
   @include respond-to(xs) {
     font-size: 20px;
   }
 }
 
 input.input-reg-hqaddress {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  font-style: italic;
+  color: darken($color-white, 50%);
+
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-mobilenumber {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $color-white;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  font-style: italic;
+  color: darken($color-white, 50%);
+
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+input.input-reg-teambio {
+  margin: auto;
   width: 80%;
   border: none;
   padding: 10px 0;
@@ -258,7 +352,8 @@ input.input-reg-hqaddress {
   }
 }
 
-input.input-reg-mobilenumber {
+input.input-reg-teamawards {
+  margin: auto;
   width: 80%;
   border: none;
   padding: 10px 0;

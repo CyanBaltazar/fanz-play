@@ -16,6 +16,17 @@ html, body {
 form {
   margin-top: 50px; }
 
+div.form-group-parent {
+  margin-top: 50px; }
+
+.team-bio-txt {
+  font-size: 20px;
+  margin-left: -375px; }
+
+.team-awards-txt {
+  font-size: 20px;
+  margin-left: -390px; }
+
 .reg-teamname-text {
   margin-left: 55px; }
 
@@ -37,10 +48,56 @@ button.reg-next-button {
   font-size: 18px;
   font-weight: bold; }
 
+button.reg-finish-button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold; }
+
 ul.form-road-map {
   font-size: 18px;
   list-style: none;
+  border: none;
   display: inline-flex; }
+
+div.camera-circle {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  background-color: #959f16;
+  border-radius: 50%;
+  margin-bottom: 30px; }
+
+.reg-camera-icon {
+  font-size: 50px !important;
+  margin-top: 100px; }
+
+.upload-teamlogo-txt {
+  font-size: 20px;
+  font-weight: normal; }
+
+.form-roadmap-1 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px 0px !important;
+  color: #ffffff !important; }
+
+.form-roadmap-1:hover {
+  background-color: transparent !important; }
+
+.form-roadmap-2 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px 0px !important;
+  color: #ffffff !important; }
+
+.form-roadmap-2:hover {
+  background-color: transparent !important; }
 
 input.team-name {
   margin: auto;
@@ -53,7 +110,6 @@ input.team-name {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   font-size: 25px;
   color: gray; }
   input.team-name:focus, input.team-name:valid {
@@ -79,7 +135,6 @@ select.type {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   margin-left: 55px;
   font-size: 20px;
   color: gray; }
@@ -107,7 +162,6 @@ input.input-reg-completename {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
   font-size: 25px;
   color: gray; }
   input.input-reg-completename:focus, input.input-reg-completename:valid {
@@ -133,18 +187,9 @@ input.input-reg-email {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 25px;
+  font-size: 24px;
+  font-style: italic;
   color: gray; }
-  input.input-reg-email:focus, input.input-reg-email:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0; }
-    input.input-reg-email:focus::-webkit-input-placeholder, input.input-reg-email:valid::-webkit-input-placeholder {
-      color: #ffffff;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.input-reg-email {
       font-size: 20px; } }
@@ -159,23 +204,31 @@ input.input-reg-hqaddress {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 25px;
+  font-size: 24px;
+  font-style: italic;
   color: gray; }
-  input.input-reg-hqaddress:focus, input.input-reg-hqaddress:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0; }
-    input.input-reg-hqaddress:focus::-webkit-input-placeholder, input.input-reg-hqaddress:valid::-webkit-input-placeholder {
-      color: #ffffff;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.input-reg-hqaddress {
       font-size: 20px; } }
 
 input.input-reg-mobilenumber {
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  font-style: italic;
+  color: gray; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-mobilenumber {
+      font-size: 20px; } }
+
+input.input-reg-teambio {
+  margin: auto;
   width: 80%;
   border: none;
   padding: 10px 0;
@@ -188,17 +241,44 @@ input.input-reg-mobilenumber {
   margin-top: -10px;
   font-size: 25px;
   color: gray; }
-  input.input-reg-mobilenumber:focus, input.input-reg-mobilenumber:valid {
+  input.input-reg-teambio:focus, input.input-reg-teambio:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0; }
-    input.input-reg-mobilenumber:focus::-webkit-input-placeholder, input.input-reg-mobilenumber:valid::-webkit-input-placeholder {
+    input.input-reg-teambio:focus::-webkit-input-placeholder, input.input-reg-teambio:valid::-webkit-input-placeholder {
       color: #ffffff;
       font-size: 11px;
       transform: translateY(-20px);
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
-    input.input-reg-mobilenumber {
+    input.input-reg-teambio {
+      font-size: 20px; } }
+
+input.input-reg-teamawards {
+  margin: auto;
+  width: 80%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #ffffff;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffffff 4%);
+  background-position: -200px 0;
+  background-size: 0px 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  font-size: 25px;
+  color: gray; }
+  input.input-reg-teamawards:focus, input.input-reg-teamawards:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    input.input-reg-teamawards:focus::-webkit-input-placeholder, input.input-reg-teamawards:valid::-webkit-input-placeholder {
+      color: #ffffff;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important; }
+  @media screen and (max-width: 767px) {
+    input.input-reg-teamawards {
       font-size: 20px; } }
 
 /*# sourceMappingURL=register-account.css.map */
