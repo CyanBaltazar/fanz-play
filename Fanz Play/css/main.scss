@@ -622,7 +622,7 @@ input.input-password {
 footer {
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
+  height: 60px;
   background-color: $primary-color !important;
   @include respond-to(xs) {
     position: absolute;
@@ -678,7 +678,7 @@ footer {
   text-align: center !important;
   color: $color-white !important;
   @include respond-to(xs) {
-
+    font-size: 12px;
   }
   // iphone5 landscape
   @media only screen
@@ -688,6 +688,7 @@ footer {
   and (orientation: landscape) {
     margin: 15px !important;
   }
+
 
 }
 
@@ -706,11 +707,91 @@ footer {
   font-size: 60px;
   padding-bottom: 30px;
   margin-top: 170px;
+  @include respond-to(xs) {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+  /* Landscape */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    font-size: 28px;
+  }
 }
 
 .thank-you-msg {
   font-size: 20px;
   padding-bottom: 50px;
+  @include respond-to(xs) {
+    padding-bottom: 1px;
+  }
+  /* iphone5 Landscape */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+  }
+  /* iphone5 portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
+  }
+}
+
+div.thank-div {
+  @include respond-to(xs) {
+    margin-top: 70px;
+  }
+  /* iphone6 Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-top: 100px;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-top: 20px;
+  }
+  /* iphone5 Landscape */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-top: 15px;
+  }
+  /* iphone6 plus(+) Portrait */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    margin-top: 150px;
+  }
+  /* iphone6 plus(+) Landscape */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    margin-top: 30px;
+  }
 }
 
 .return-home-btn {
@@ -721,6 +802,9 @@ footer {
   border-radius: 5px;
   font-size: 18px;
   margin: 10px;
+  @include respond-to(xs) {
+    height: 40px;
+  }
 }
 
 

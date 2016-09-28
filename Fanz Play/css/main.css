@@ -351,7 +351,7 @@ input.input-password {
 footer {
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
+  height: 60px;
   background-color: #121212 !important;
   /* iphone6 portrait */
   /* iphone6 landscape */
@@ -377,6 +377,9 @@ footer {
   margin: 15px !important;
   text-align: center !important;
   color: #ffffff !important; }
+  @media screen and (max-width: 767px) {
+    .text-muted {
+      font-size: 12px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .text-muted {
       margin: 15px !important; } }
@@ -393,11 +396,58 @@ footer {
 .thank-you-text {
   font-size: 60px;
   padding-bottom: 30px;
-  margin-top: 170px; }
+  margin-top: 170px;
+  /* Landscape */ }
+  @media screen and (max-width: 767px) {
+    .thank-you-text {
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-size: 30px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .thank-you-text {
+      font-size: 28px; } }
 
 .thank-you-msg {
   font-size: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  /* iphone5 Landscape */
+  /* iphone5 portrait */ }
+  @media screen and (max-width: 767px) {
+    .thank-you-msg {
+      padding-bottom: 1px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .thank-you-msg {
+      font-size: 16px;
+      margin-top: -20px;
+      margin-bottom: 0px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .thank-you-msg {
+      font-size: 16px; } }
+
+div.thank-div {
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone5 Landscape */
+  /* iphone6 plus(+) Portrait */
+  /* iphone6 plus(+) Landscape */ }
+  @media screen and (max-width: 767px) {
+    div.thank-div {
+      margin-top: 70px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    div.thank-div {
+      margin-top: 100px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    div.thank-div {
+      margin-top: 20px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    div.thank-div {
+      margin-top: 15px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    div.thank-div {
+      margin-top: 150px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    div.thank-div {
+      margin-top: 30px; } }
 
 .return-home-btn {
   height: 60px;
@@ -407,6 +457,9 @@ footer {
   border-radius: 5px;
   font-size: 18px;
   margin: 10px; }
+  @media screen and (max-width: 767px) {
+    .return-home-btn {
+      height: 40px; } }
 
 .login-box {
   background-color: #121212;

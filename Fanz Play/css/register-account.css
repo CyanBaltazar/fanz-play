@@ -17,37 +17,126 @@ form {
   margin-top: 50px; }
 
 div.form-group-parent {
-  margin-top: 50px; }
+  margin-top: 70px;
+  /* iphone5 Portrait */ }
+  @media screen and (max-width: 767px) {
+    div.form-group-parent {
+      margin-top: 20px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    div.form-group-parent {
+      margin-top: 10px; } }
+
+div.second-form {
+  margin-top: 40px; }
+  @media screen and (max-width: 767px) {
+    div.second-form {
+      margin-top: 10px; } }
 
 .team-bio-txt {
   font-size: 20px;
-  margin-left: -375px; }
+  margin-left: -375px;
+  /* iphone6 Portrait */
+  /* iphone6 plus(+) Portrait */
+  /* iphone5 Portrait */
+  /* ipad Portrait */ }
   @media screen and (max-width: 767px) {
     .team-bio-txt {
       font-size: 16px;
-      margin-left: -260px; } }
+      margin-left: -190px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .team-bio-txt {
+      margin-left: -230px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .team-bio-txt {
+      margin-left: -250px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .team-bio-txt {
+      font-size: 12px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .team-bio-txt {
+      margin-left: -210px; } }
 
 .team-awards-txt {
   font-size: 20px;
-  margin-left: -390px; }
+  margin-left: -390px;
+  /* iphone6 Portrait */
+  /* iphone6 plus(+) Portrait */
+  /* iphone5 Portrait */
+  /* ipad Portrait */ }
   @media screen and (max-width: 767px) {
     .team-awards-txt {
       font-size: 16px;
-      margin-left: -270px; } }
+      margin-left: -200px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .team-awards-txt {
+      margin-left: -240px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .team-awards-txt {
+      margin-left: -260px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .team-awards-txt {
+      font-size: 12px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .team-awards-txt {
+      margin-left: -220px; } }
 
 .reg-teamname-text {
-  margin-left: 55px; }
+  margin-left: 55px;
+  /* Portrait */
+  /* iphone5 Portrait */
+  /* ipad Portrait */ }
+  @media screen and (max-width: 767px) {
+    .reg-teamname-text {
+      margin-left: 45px; } }
+  @media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+    .reg-teamname-text {
+      margin-left: 60px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .reg-teamname-text {
+      font-size: 12px;
+      margin-bottom: 0px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .reg-teamname-text {
+      margin-left: 40px; } }
 
 .reg-type-text {
   margin-left: 55px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  /* ipad Portrait */
+  /* iphone5 Portrait */ }
+  @media screen and (max-width: 767px) {
+    .reg-type-text {
+      margin-left: 45px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .reg-type-text {
+      margin-left: 40px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .reg-type-text {
+      font-size: 12px;
+      margin-bottom: 0px; } }
 
 .reg-completename-text {
-  margin-left: 55px; }
+  margin-left: 55px;
+  /* ipad Portrait */ }
+  @media screen and (max-width: 767px) {
+    .reg-completename-text {
+      margin-left: 45px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .reg-completename-text {
+      margin-left: 40px; } }
 
-@media screen and (max-width: 767px) {
-  .registeraccount-text {
-    font-size: 30px; } }
+.registeraccount-text {
+  /* iphone6 Portrait */
+  /* iphone5 Portrait */ }
+  @media screen and (max-width: 767px) {
+    .registeraccount-text {
+      font-size: 30px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .registeraccount-text {
+      font-size: 28px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .registeraccount-text {
+      font-size: 22px; } }
 
 button.reg-button {
   margin-top: 60px;
@@ -58,11 +147,17 @@ button.reg-button {
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  /* Portrait */ }
   @media screen and (max-width: 767px) {
     button.reg-button {
-      margin-top: 20px;
-      margin-bottom: 20px; } }
+      height: 30px;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: -10px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    button.reg-button {
+      margin-bottom: 0px; } }
 
 button.reg-button:hover {
   background-color: #ffffff !important;
@@ -72,14 +167,42 @@ button.reg-button a {
   color: #ffffff !important;
   text-decoration: none; }
 
+div.setup {
+  /* Portrait */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    div.setup {
+      margin-top: -15px; } }
+
 form.form-horizontal {
-  margin-top: -5px; }
+  margin-top: 40px;
+  /* ipad Portrait */
+  /* iphone5 Portrait */
+  /* iphone6 Portrait */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    form.form-horizontal {
+      margin-top: -30px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    form.form-horizontal {
+      margin-top: 50px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    form.form-horizontal {
+      margin-top: -30px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    form.form-horizontal {
+      margin-top: 50px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    form.form-horizontal {
+      margin-top: 60px; } }
 
 ul.form-road-map {
   font-size: 18px;
   list-style: none;
   border: none;
   display: inline-flex; }
+  @media screen and (max-width: 767px) {
+    ul.form-road-map {
+      font-size: 15px; } }
 
 div.camera-circle {
   margin: auto;
@@ -87,21 +210,39 @@ div.camera-circle {
   width: 250px;
   background-color: #959f16;
   border-radius: 50%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  /* iphone5 Portrait */
+  /* ipad Portrait */ }
   @media screen and (max-width: 767px) {
     div.camera-circle {
       height: 150px;
       width: 150px;
       margin-top: 20px;
       margin-bottom: 20px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    div.camera-circle {
+      height: 130px;
+      width: 130px;
+      margin-top: 5px;
+      margin-bottom: 10px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    div.camera-circle {
+      height: 200px;
+      width: 200px;
+      margin-top: 50px;
+      margin-bottom: 40px; } }
 
 .reg-camera-icon {
   font-size: 50px !important;
-  margin-top: 100px; }
+  margin-top: 100px;
+  /* ipad Portrait */ }
   @media screen and (max-width: 767px) {
     .reg-camera-icon {
       font-size: 40px !important;
-      margin-top: 60px; } }
+      margin-top: 50px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .reg-camera-icon {
+      margin-top: 80px; } }
 
 .upload-teamlogo-txt {
   font-size: 20px;
@@ -149,9 +290,10 @@ input.team-name {
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.team-name {
-      font-size: 20px; } }
+      font-size: 18px; } }
 
 select.type {
+  margin: auto;
   width: 80%;
   border: none;
   padding: 0px 0px;
@@ -161,7 +303,6 @@ select.type {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-left: 55px;
   font-size: 20px;
   color: gray; }
   select.type:focus, select.type:valid {
@@ -175,7 +316,7 @@ select.type {
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
     select.type {
-      font-size: 20px; } }
+      font-size: 18px; } }
 
 input.input-reg-completename {
   margin: auto;
@@ -201,7 +342,7 @@ input.input-reg-completename {
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.input-reg-completename {
-      font-size: 20px; } }
+      font-size: 18px; } }
 
 input.input-reg-email {
   width: 80%;
@@ -215,10 +356,15 @@ input.input-reg-email {
   background-repeat: no-repeat;
   font-size: 24px;
   font-style: italic;
-  color: gray; }
+  color: gray;
+  /* iphone5 Portrait */ }
   @media screen and (max-width: 767px) {
     input.input-reg-email {
-      font-size: 20px; } }
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-reg-email {
+      font-size: 16px;
+      margin-bottom: -10px; } }
 
 input.input-reg-hqaddress {
   width: 80%;
@@ -232,10 +378,15 @@ input.input-reg-hqaddress {
   background-repeat: no-repeat;
   font-size: 24px;
   font-style: italic;
-  color: gray; }
+  color: gray;
+  /* iphone5 Portrait */ }
   @media screen and (max-width: 767px) {
     input.input-reg-hqaddress {
-      font-size: 20px; } }
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-reg-hqaddress {
+      font-size: 16px;
+      margin-bottom: -10px; } }
 
 input.input-reg-mobilenumber {
   width: 80%;
@@ -248,10 +399,15 @@ input.input-reg-mobilenumber {
   background-repeat: no-repeat;
   font-size: 24px;
   font-style: italic;
-  color: gray; }
+  color: gray;
+  /* iphone5 Portrait */ }
   @media screen and (max-width: 767px) {
     input.input-reg-mobilenumber {
-      font-size: 20px; } }
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-reg-mobilenumber {
+      font-size: 16px;
+      margin-bottom: -10px; } }
 
 input.input-reg-teambio {
   margin: auto;
@@ -266,7 +422,8 @@ input.input-reg-teambio {
   background-repeat: no-repeat;
   margin-top: -10px;
   font-size: 25px;
-  color: gray; }
+  color: gray;
+  /* iphone5 Portrait */ }
   input.input-reg-teambio:focus, input.input-reg-teambio:valid {
     box-shadow: none;
     outline: none;
@@ -278,7 +435,10 @@ input.input-reg-teambio {
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.input-reg-teambio {
-      font-size: 20px; } }
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-reg-teambio {
+      font-size: 16px; } }
 
 input.input-reg-teamawards {
   margin: auto;
@@ -293,7 +453,8 @@ input.input-reg-teamawards {
   background-repeat: no-repeat;
   margin-top: -10px;
   font-size: 25px;
-  color: gray; }
+  color: gray;
+  /* iphone5 Portrait */ }
   input.input-reg-teamawards:focus, input.input-reg-teamawards:valid {
     box-shadow: none;
     outline: none;
@@ -305,6 +466,9 @@ input.input-reg-teamawards {
       visibility: visible !important; }
   @media screen and (max-width: 767px) {
     input.input-reg-teamawards {
-      font-size: 20px; } }
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-reg-teamawards {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=register-account.css.map */

@@ -72,7 +72,25 @@ form {
 }
 
 div.form-group-parent {
-  margin-top: 50px;
+  margin-top: 70px;
+  @include respond-to(xs) {
+    margin-top: 20px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-top: 10px;
+  }
+}
+
+div.second-form {
+  margin-top: 40px;
+  @include respond-to(xs) {
+    margin-top: 10px;
+  }
 }
 
 .team-bio-txt {
@@ -80,7 +98,39 @@ div.form-group-parent {
   margin-left: -375px;
   @include respond-to(xs) {
     font-size: 16px;
-    margin-left: -260px;
+    margin-left: -190px;
+  }
+  /* iphone6 Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-left: -230px;
+  }
+  /* iphone6 plus(+) Portrait */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    margin-left: -250px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 12px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: -210px;
   }
 }
 
@@ -89,26 +139,135 @@ div.form-group-parent {
   margin-left: -390px;
   @include respond-to(xs) {
     font-size: 16px;
-    margin-left: -270px;
+    margin-left: -200px;
+  }
+  /* iphone6 Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-left: -240px;
+  }
+  /* iphone6 plus(+) Portrait */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    margin-left: -260px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 12px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: -220px;
   }
 }
 
 .reg-teamname-text {
   margin-left: 55px;
+  @include respond-to(xs) {
+    margin-left: 45px;
+  }
+  /* Portrait */
+  @media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (orientation: portrait) {
+    margin-left: 60px !important;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: 40px;
+  }
 }
 
 .reg-type-text {
   margin-left: 55px;
   margin-bottom: 15px;
+  @include respond-to(xs) {
+    margin-left: 45px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: 40px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .reg-completename-text {
   margin-left: 55px;
+  @include respond-to(xs) {
+    margin-left: 45px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: 40px;
+  }
+
 }
 
 .registeraccount-text {
   @include respond-to(xs) {
     font-size: 30px;
+  }
+  /* iphone6 Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 28px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 22px;
   }
 
 }
@@ -129,8 +288,18 @@ button.reg-button {
   font-size: 18px;
   font-weight: bold;
   @include respond-to(xs) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+  /* Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-bottom: 0px;
   }
 }
 
@@ -144,8 +313,56 @@ button.reg-button a {
   text-decoration: none;
 }
 
+div.setup {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-top: -15px;
+  }
+}
+
 form.form-horizontal {
-  margin-top: -5px;
+  margin-top: 40px;
+  @include respond-to(xs) {
+    margin-top: -30px;
+  }
+
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-top: 50px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-top: -30px;
+  }
+  /* iphone6 Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    margin-top: 50px;
+  }
+  /* iphone6 plus(+) Portrait */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    margin-top: 60px;
+  }
 }
 
 ul.form-road-map {
@@ -153,6 +370,9 @@ ul.form-road-map {
   list-style: none;
   border: none;
   display: inline-flex;
+  @include respond-to(xs) {
+    font-size: 15px;
+  }
 }
 
 div.camera-circle {
@@ -168,6 +388,31 @@ div.camera-circle {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    height: 130px;
+    width: 130px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+
+
 
 }
 
@@ -176,9 +421,16 @@ div.camera-circle {
   margin-top: 100px;
   @include respond-to(xs) {
     font-size: 40px !important;
-    margin-top: 60px;
+    margin-top: 50px;
   }
-
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-top: 80px;
+  }
 }
 
 .upload-teamlogo-txt {
@@ -237,11 +489,13 @@ input.team-name {
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
   }
+
 }
 
 select.type {
+  margin: auto;
   width: 80%;
   border: none;
   padding: 0px 0px;
@@ -251,7 +505,6 @@ select.type {
   background-position: -200px 0;
   background-size: 0px 100%;
   background-repeat: no-repeat;
-  margin-left: 55px;
   font-size: 20px;
   color: darken($color-white, 50%);
   &:focus, &:valid {
@@ -266,7 +519,7 @@ select.type {
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -295,7 +548,7 @@ input.input-reg-completename {
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -313,7 +566,16 @@ input.input-reg-email {
   font-style: italic;
   color: darken($color-white, 50%);
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
+    margin-bottom: -10px;
   }
 }
 
@@ -332,7 +594,16 @@ input.input-reg-hqaddress {
   color: darken($color-white, 50%);
 
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
+    margin-bottom: -10px;
   }
 }
 
@@ -350,7 +621,16 @@ input.input-reg-mobilenumber {
   color: darken($color-white, 50%);
 
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
+    margin-bottom: -10px;
   }
 }
 
@@ -380,7 +660,15 @@ input.input-reg-teambio {
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
   }
 }
 
@@ -410,6 +698,14 @@ input.input-reg-teamawards {
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  /* iphone5 Portrait */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 16px;
   }
 }
