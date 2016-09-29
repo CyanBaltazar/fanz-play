@@ -71,6 +71,10 @@ nav.connect-sidebar {
   margin: 0 !important;
 }
 
+.form-control:focus {
+    box-shadow: none !important;
+}
+
 div.sidebar-menu {
   height: 863px;
   background-color: #121212;
@@ -92,6 +96,59 @@ div.menu-items ul li select.select-team {
   color: $color-white;
   background-color: transparent;
   border: none;
+}
+
+div.row-add-trivia {
+  color: #959f16;
+  align-items: center;
+  font-size: 22px;
+}
+
+div.row-add-prizes {
+  color: #959f16;
+  align-items: center;
+  font-size: 22px;
+}
+
+select.select-trivia {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  width: 25%;
+}
+
+select.select-sponsor {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+}
+
+select.select-prize {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+}
+
+select.select-prizelevel {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
 }
 
 div.menu-items ul li h1 img.img-lakers {
@@ -356,6 +413,24 @@ button.event-next {
   border-radius: 50%;
   font-size: 18px;
   font-weight: bold;
+}
+
+button.event-next:hover {
+  border-color: $secondary-color;
+}
+
+button.event-next:hover a {
+  color: $secondary-color;
+}
+
+button.event-next a {
+  color: $color-white;
+}
+
+button.event-next a:hover {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  text-decoration: none;
 }
 
 ul.event-road-map {

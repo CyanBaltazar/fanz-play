@@ -16,6 +16,9 @@ html, body {
 nav.connect-sidebar {
   margin: 0 !important; }
 
+.form-control:focus {
+  box-shadow: none !important; }
+
 div.sidebar-menu {
   height: 863px;
   background-color: #121212;
@@ -34,6 +37,53 @@ div.menu-items ul li select.select-team {
   color: #ffffff;
   background-color: transparent;
   border: none; }
+
+div.row-add-trivia {
+  color: #959f16;
+  align-items: center;
+  font-size: 22px; }
+
+div.row-add-prizes {
+  color: #959f16;
+  align-items: center;
+  font-size: 22px; }
+
+select.select-trivia {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  width: 25%; }
+
+select.select-sponsor {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px; }
+
+select.select-prize {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px; }
+
+select.select-prizelevel {
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: -10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px; }
 
 div.menu-items ul li h1 img.img-lakers {
   height: 35px; }
@@ -264,6 +314,20 @@ button.event-next {
   border-radius: 50%;
   font-size: 18px;
   font-weight: bold; }
+
+button.event-next:hover {
+  border-color: #BADA55; }
+
+button.event-next:hover a {
+  color: #BADA55; }
+
+button.event-next a {
+  color: #ffffff; }
+
+button.event-next a:hover {
+  color: #BADA55;
+  border-color: #BADA55;
+  text-decoration: none; }
 
 ul.event-road-map {
   display: inline-flex;
