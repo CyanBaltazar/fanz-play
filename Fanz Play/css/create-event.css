@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+nav.connect-sidebar {
+  margin: 0 !important; }
+
+div.sidebar-menu {
+  height: 863px;
+  background-color: #121212;
+  border: none; }
+
+div.menu-items ul {
+  list-style: none; }
+
+div.menu-items ul li.menu-team {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 30px; }
+
+div.menu-items ul li select.select-team {
+  width: 40px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none; }
+
+div.menu-items ul li h1 img.img-lakers {
+  height: 35px; }
+
+div.menu-items ul li h3 {
+  margin-left: 100px;
+  margin-bottom: 40px; }
+
+div.menu-items ul li h4 {
+  margin-left: 125px; }
+
+div.container-event {
+  margin-left: 50px; }
+
+div.row-create-event {
+  margin-top: 30px; }
+
+div.row-event-name {
+  margin-bottom: 20px; }
+
+div.row-home-away {
+  margin-bottom: 20px; }
+
+div.row-event-time {
+  margin-bottom: 20px; }
+
+input.input-nba {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-nba-home {
+  display: flex;
+  align-items: flex-start;
+  margin-left: -15px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-nba-away {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-name {
+  display: flex;
+  width: 503px;
+  align-items: flex-start;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-time {
+  display: flex;
+  align-items: flex-start;
+  margin-left: -15px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-date {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-sponsor {
+  display: flex;
+  align-items: flex-start;
+  margin-left: -15px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-prize {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+input.input-event-prizelevel {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 35px;
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+
+label.text-home {
+  margin-left: -15px; }
+
+label.text-away {
+  margin-left: 10px; }
+
+label.text-event-time {
+  margin-left: -15px; }
+
+label.text-event-date {
+  margin-left: 10px; }
+
+label.text-event-sponsor {
+  margin-left: -15px; }
+
+label.text-event-prize {
+  margin-left: 10px; }
+
+label.text-event-prizelevel {
+  margin-left: 35px; }
+
+span.icon-pencil-league {
+  float: right;
+  margin-right: 455px;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-eventname {
+  float: right;
+  margin-right: 196px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-home {
+  float: right;
+  margin-right: -25nhGpx;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-away {
+  float: right;
+  margin-right: -50px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-sponsor {
+  float: right;
+  margin-right: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-prize {
+  float: right;
+  margin-right: -50px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+span.icon-pencil-prizelevel {
+  float: right;
+  margin-right: -75px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55; }
+
+button.event-confirm {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold; }
+
+button.event-next {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold; }
+
+ul.event-road-map {
+  display: inline-flex;
+  list-style: none;
+  font-size: 18px; }
+
+div ul li a.event-roadmap-3 {
+  color: #ffffff !important; }
+
+/*# sourceMappingURL=create-event.css.map */

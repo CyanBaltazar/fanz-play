@@ -76,3 +76,24 @@ div.sidebar-menu {
   background-color: #121212;
   border: none;
 }
+
+div.avail-dropdown {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+select.avail-select {
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: $color-white;
+}
+
+div.status {
+  height: 15px;
+  width: 15px;
+  background-color: #959f16;
+  border-radius: 50%;
+  margin-right: 5px;
+}

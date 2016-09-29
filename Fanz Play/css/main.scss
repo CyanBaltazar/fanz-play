@@ -1072,6 +1072,10 @@ div.thank-div {
       display: inline-flex !important;
   }
 
+  .node-flex {
+    display: flex !important;
+  }
+
 // End Display
 
 
@@ -1150,7 +1154,7 @@ div.thank-div {
 
 // Start Margin Bottom in px
 @for $i from 1 through 100 {
-        .margin-bottom-#{$i} {
+        .margin-bottom-#{$i}px {
             margin-bottom: #{$i}px !important;
       }
    }

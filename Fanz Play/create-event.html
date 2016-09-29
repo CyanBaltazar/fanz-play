@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FanZPlay | Create Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/create-event.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-static-top connect-sidebar">
+        <div class="container padding-5px">
+            <div class="navbar-header">
+                <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="row content">
+        <div class="col-md-4 sidebar-menu text-center">
+          <div class="menu-items">
+            <ul>
+              <li class="menu-team">
+                <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                <select class="form-control select-team">
+                  <option></option>
+                </select>
+              </li>
+              <li><h3 class="text-justify">Calendar</h3></li>
+              <li><h3 class="text-justify">Invitations</h3></li>
+              <li><h3 class="text-justify">Events</h3></li>
+                <li><h4 class="text-justify">Create Events</h4></li>
+                <li><h4 class="text-justify">Pending Events</h4></li>
+                <li><h4 class="text-justify">Upcoming Events</h4></li>
+                <li><h4 class="text-justify margin-bottom-40px">Past Events</h4></li>
+              <li><h3 class="text-justify">Trivia</h3></li>
+              <li><h3 class="text-justify">Sponsors</h3></li>
+              <li><h3 class="text-justify">Statistics</h3></li>
+              <li><h3 class="text-justify">Help</h3></li>
+              <li><h3 class="text-justify">Logout</h3></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-8 text-center">
+          <div class="container-fluid container-event">
+            <form>
+              <div class="event-tab-content">
+
+                <div class="row row-create-event">
+                  <h1 class="text-justify">Create an event</h1>
+                </div>
+
+
+                <div id="event-form-2" class="tab-pane active">
+
+                  <div class="row row-event-trivia">
+                    <h2 class="text-justify">Trivia</h2>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="button">
+                  </div>
+
+
+
+
+                  <div class="form-group">
+                    <button class="event-next" type="button"><a class="next" href="#event-form-3">Next</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div id="event-form-3" class="tab-pane">
+                  <div class="row row-event-summary">
+                    <h2 class="text-justify">Event creation summary</h2>
+                  </div>
+                  <div class="row">
+                    <input class="input-nba" type="text" name="name" value="" placeholder="NBA"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
+                  </div>
+                  <div class="row row-event-name">
+                    <label class="node-flex">Event Name</label>
+                    <input class="input-event-name" type="text" name="name" value="" placeholder="Lakers vs Clippers"><span class="fa fa-pencil icon-pencil-eventname" aria-hidden="true"></span>
+                  </div>
+                  <div class="row row-home-away">
+                    <div class="col-md-4">
+                      <label class="node-flex text-home">Home</label>
+                      <input class="input-nba-home" type="text" name="name" value="" placeholder="Lakers"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="node-flex text-away">Away</label>
+                      <input class="input-nba-away" type="text" name="name" value="" placeholder="Clippers"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="row row-event-time">
+                    <div class="col-md-4">
+                      <label class="node-flex text-event-time">Event Time</label>
+                      <input class="input-event-time" type="text" name="name" value="" placeholder="1500"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="node-flex text-event-date">Event Date</label>
+                      <input class="input-event-date" type="text" name="name" value="" placeholder="Sep-25-2016"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="row row-event-trivia">
+                    <h2 class="text-justify">Trivia</h2>
+                  </div>
+                  <div class="row">
+                    <input class="input-nba" type="text" name="name" value="" placeholder="Trivia Set A"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
+                  </div>
+                  <div class="row row-event-sponsors">
+                    <h2 class="text-justify">Sponsors and Prizes</h2>
+                  </div>
+                  <div class="row row-sponsors-prizes">
+                    <div class="col-md-4">
+                      <label class="node-flex text-event-sponsor">Sponsor</label>
+                      <input class="input-event-sponsor" type="text" name="name" value="" placeholder="Wendy's"><span class="fa fa-pencil icon-pencil-sponsor" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="node-flex text-event-prize">Prize</label>
+                      <input class="input-event-prize" type="text" name="name" value="" placeholder="10% off all items"><span class="fa fa-pencil icon-pencil-prize" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="node-flex text-event-prizelevel">Prize Level</label>
+                      <input class="input-event-prizelevel" type="text" name="name" value="" placeholder="Normal"><span class="fa fa-pencil icon-pencil-prizelevel" aria-hidden="true"></span>
+                    </div>
+                    <div class="row row-button-confirm">
+                      <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
+                    </div>
+                    <div class="event-setup">
+                      <ul class="event-road-map">
+                        <li class="active"><a class="event-roadmap-3">3</a></li>&nbsp;of&nbsp;
+                        <li><a class="event-roadmap-3">3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <footer class="navbar-fixed-bottom container-fluid text-center">
+      <div class="container">
+        <p class="text-muted">&copy; 2016 FanZPlay. All Rights Reserved</p>
+      </div>
+    </footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/create-event.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/00fedaf98c.js"></script>
+</body>
+</html>
