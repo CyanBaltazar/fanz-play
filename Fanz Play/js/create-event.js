@@ -6,3 +6,12 @@ $(document).ready(function(){
         $("#event-form-3").show();
     });
 });
+
+
+$(document).ready(function() {
+  $(".icon-down").click(
+        function() { $('.dropdown-menu', this).stop().fadeIn("slow");
+        },
+        function() { $('.dropdown-menu', this).stop().fadeOut("slow");
+    });
+});

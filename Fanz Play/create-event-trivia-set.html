@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>FanZPlay | Create Event</title>
+    <title>FanZPlay | Create Event (Create Trivia Set)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" />
@@ -72,7 +72,7 @@
 
                   <div class="form-group row-trivia-dropdown">
                     <i class="fa fa-sort-desc icon-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
-                    <input class="input-trivia" type="text" placeholder="Trivia Set A">
+                    <input class="input-trivia" type="text" placeholder="">
 
 
 
@@ -91,30 +91,10 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="success">
-                          <td>Trivia Set A</td>
-                          <td>Easy</td>
-                          <td>10</td>
-                        </tr>
                         <tr>
-                          <td>Team Questions</td>
-                          <td>Easy</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Super Trivia</td>
-                          <td>Normal</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Difficult Level</td>
-                          <td>Hard</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Fun Questions</td>
-                          <td>Easy</td>
-                          <td>10</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                         </tr>
                       </tbody>
                     </table>
@@ -128,7 +108,142 @@
 
 
                   <div class="row form-group row-add-trivia node-flex">
-                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more trivia set
+                    <a class="a-create-trivia" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Create trivia set</a>
+
+
+
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h1 class="modal-title text-left">Create trivia set</h1>
+                          </div>
+
+                          <div class="modal-body">
+
+
+
+
+                            <div class="row">
+                              <div class="col-md-12">
+                                <label class="text-trivia-setname">Trivia set name</label>
+                              </div>
+                            </div>
+                            <div class="row row-input-easyset">
+                              <div class="col-md-12">
+                                <input class="input-set-trivia" type="text" placeholder="Easy set">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label class="text-difficulty">Difficulty</label>
+                                <div class="node-inline-flex">
+                                  <input class="input-difficulty" type="text">
+                                  <i class="fa fa-sort-desc" data-toggle="dropdown" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                  <label class="pull-left text-scramble">Scramble</label>
+                                  <div class="node-inline-flex">
+                                    <input class="input-scramble" type="text" placeholder="Questions and answers">
+                                    <i class="fa fa-sort-desc" data-toggle="dropdown" aria-hidden="true"></i>
+                                  </div>
+                              </div>
+                            </div>
+
+
+                            <div class="row row-questions">
+                              <div class="col-md-12">
+                                <h2 class="pull-left">Questions</h2>
+                              </div>
+                            </div>
+
+                            <div class="row row-question-1">
+                              <div class="col-md-12">
+                                <label class="text-question-1">Question 1</label>
+
+                              </div>
+                            </div>
+
+                            <div class="row row-inputquestion-1">
+                              <div class="col-md-12">
+                                <input class="input-question-1" type="text" placeholder="What is what?">
+                              </div>
+                            </div>
+
+                            <div class="row row-option-1">
+                              <div class="col-md-12">
+                                <label class="text-option-1">Option 1</label>
+                              </div>
+                            </div>
+
+                            <div class="row row-input-option1">
+                              <div class="col-md-12">
+                                <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                <input class="input-option-1" type="text" placeholder="Answer A">
+                                <input id="cbox-option-1" class="cbox-option-1" type="checkbox">
+                                <label class="text-correct-answer">Correct Answer</label>
+                              </div>
+                            </div>
+
+                            <div class="row row-option-2">
+                              <div class="col-md-12">
+                                <label class="text-option-2">Option 2</label>
+                              </div>
+                            </div>
+
+                            <div class="row row-input-option2">
+                              <div class="col-md-12">
+                                <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                <input class="input-option-2" type="text" placeholder="">
+                                <input id="cbox-option-2" class="cbox-option-2" type="checkbox">
+                                <label class="text-correct-answer">Correct Answer</label>
+                              </div>
+                            </div>
+
+                            <div class="row row-more-options">
+                              <div class="col-md-12">
+                                <a href="#">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                  <h3>Add more options (3/4)</h3>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="row row-more-questions">
+                              <div class="col-md-12">
+                                <a href="#">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                  <h3>Add more questions</h3>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="row row-button-done">
+                              <div class="col-md-12">
+                                <button class="button-done" type="button">Done</button>
+                              </div>
+                            </div>
+
+
+
+
+
+
+
+                          </div>
+
+
+
+                        </div>
+
+                      </div>
+                    </div>
+
+
                   </div>
 
 

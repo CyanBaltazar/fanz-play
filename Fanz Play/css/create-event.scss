@@ -41,6 +41,7 @@
 
 $primary-color: #121212; // dark grey
 $secondary-color: #BADA55; // light green
+$dark-green: #949f15; // dark green
 $third-color: #343434; //light grey
 $body-color: #E7E7E7;
 $color-white: #ffffff;
@@ -110,7 +111,27 @@ div.row-add-prizes {
   font-size: 22px;
 }
 
-select.select-trivia {
+div.row-input-easyset {
+  margin-bottom: 10px;
+}
+
+div.row-option-1 {
+  margin-top: 15px;
+}
+
+div.row-option-2 {
+  margin-top: 10px;
+}
+
+div.row-input-option2 {
+
+}
+
+div.row-inputquestion-1 {
+  margin-bottom: 5px;
+}
+
+ul.select-trivia {
   background-color: transparent;
   color: #ffffff;
   margin-left: -10px;
@@ -155,12 +176,17 @@ div.menu-items ul li h1 img.img-lakers {
   height: 35px;
 }
 
-div.menu-items ul li h3 {
+div.menu-items ul li a {
+  color: $color-white !important;
+  text-decoration: none;
+}
+
+div.menu-items ul li a h3 {
   margin-left: 100px;
   margin-bottom: 40px;
 }
 
-div.menu-items ul li h4 {
+div.menu-items ul li a h4 {
   margin-left: 125px;
 }
 
@@ -176,6 +202,16 @@ div.row-event-name {
   margin-bottom: 20px;
 }
 
+div.row-trivia-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.row-trivia-dropdown ul {
+  list-style: none;
+}
+
 div.row-home-away {
   margin-bottom: 20px;
 }
@@ -183,6 +219,80 @@ div.row-home-away {
 div.row-event-time {
   margin-bottom: 20px;
 }
+
+i.icon-down {
+  position: absolute;
+  right: 535px;
+  top: 160px;
+  cursor: pointer;
+}
+
+i.icon-delete {
+  float: left;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-body {
+  color: $primary-color !important;
+}
+
+.modal-footer {
+  border-top: 0px !important;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+
+.modal-title {
+  color: $primary-color !important;
+}
+
+table.dropdown-menu {
+  width: 35%;
+  position: absolute;
+  top: 185px;
+  left: 80px;
+  border-radius: 0px;
+}
+
+table.dropdown-menu thead {
+  background-color: $primary-color;
+}
+
+table.dropdown-menu tbody {
+  color: $primary-color;
+}
+
+input.input-trivia {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+}
+
+input.input-set-trivia {
+  float: left;
+  width: 60%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid #000000;
+}
+
+input.input-question-1 {
+  float: left;
+  width: 60%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid #000000;
+}
+
 
 input.input-nba {
   display: flex;
@@ -293,6 +403,64 @@ input.input-event-prizelevel {
   border-bottom: 1px solid #ffffff;
 }
 
+input.input-difficulty {
+  width: 120px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid $color-black;
+}
+
+input.input-scramble {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid $color-black;
+}
+
+input.input-option-1 {
+  width: 315px;
+  float: left;
+  margin-left: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid $color-black;
+}
+
+input.input-option-2 {
+  width: 315px;
+  float: left;
+  margin-left: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.5px solid $color-black;
+}
+
+input.cbox-option-1 {
+  float: left !important;
+  margin-left: 10px !important;
+}
+
+input.cbox-option-2 {
+  float: left !important;
+  margin-left: 10px !important;
+}
+
+[type="checkbox"]:not(:checked) {
+  border: 1px solid $primary-color;
+  background-color: $color-white;
+}
+
+input[type=checkbox] {
+  border: 1px solid $primary-color;
+}
+
+input#cbox-option-1[type=checkbox]:checked {
+  background-color: $secondary-color !important;
+}
+
 label.text-home {
   margin-left: -15px;
 }
@@ -313,12 +481,48 @@ label.text-event-sponsor {
   margin-left: -15px;
 }
 
+label.text-trivia-setname {
+  float: left;
+  font-size: 14px;
+}
+
 label.text-event-prize {
   margin-left: 10px;
 }
 
 label.text-event-prizelevel {
   margin-left: 35px;
+}
+
+label.text-difficulty {
+  font-size: 14px;
+  float: left;
+}
+
+label.text-scramble {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+label.text-question-1 {
+  float: left;
+}
+
+label.text-option-1 {
+  float: left;
+  margin-left: 25px;
+}
+
+label.text-option-2 {
+  float: left;
+  margin-left: 25px;
+}
+
+label.text-correct-answer {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  color: $secondary-color;
 }
 
 span.icon-pencil-league {
@@ -391,6 +595,23 @@ span.icon-pencil-prizelevel {
   color: $secondary-color;
 }
 
+button.button-done {
+  color: $color-white;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 50px;
+  background-color: $dark-green;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button.button-done:hover {
+  border: 1px solid $secondary-color;
+}
+
 button.event-confirm {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -441,4 +662,16 @@ ul.event-road-map {
 
 div ul li a.event-roadmap-3 {
   color: $color-white !important;
+}
+
+div a.a-create-trivia {
+  color: $secondary-color !important;
+}
+
+div a.a-create-trivia:focus {
+  text-decoration: none;
+}
+
+div a.a-create-trivia:hover {
+  text-decoration: none;
 }
