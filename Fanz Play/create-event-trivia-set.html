@@ -18,8 +18,6 @@
         </div>
     </nav>
 
-
-
     <div class="container">
       <div class="row content">
         <div class="col-md-4 sidebar-menu text-center">
@@ -51,37 +49,16 @@
           <div class="container-fluid container-event">
             <form>
               <div class="event-tab-content">
-
                 <div class="row row-create-event">
                   <h1 class="text-justify">Create an event</h1>
                 </div>
-
-
                 <div id="event-form-2" class="tab-pane active">
-
                   <div class="row row-text-trivia">
                     <h2 class="text-justify">Trivia</h2>
                   </div>
-
-
-
-
-
-
-
-
                   <div class="form-group row-trivia-dropdown">
                     <i class="fa fa-sort-desc icon-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                     <input class="input-trivia" type="text" placeholder="">
-
-
-
-
-
-
-
-
-
                     <table class="dropdown-menu table table-responsive table-bordered table-striped">
                       <thead>
                         <tr>
@@ -98,35 +75,18 @@
                         </tr>
                       </tbody>
                     </table>
-
                   </div>
-
-
-
-
-
-
-
                   <div class="row form-group row-add-trivia node-flex">
                     <a class="a-create-trivia" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Create trivia set</a>
-
-
-
                     <div id="myModal" class="modal fade" role="dialog">
                       <div class="modal-dialog">
-
                         <!-- Modal content-->
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h1 class="modal-title text-left">Create trivia set</h1>
                           </div>
-
                           <div class="modal-body">
-
-
-
-
                             <div class="row">
                               <div class="col-md-12">
                                 <label class="text-trivia-setname">Trivia set name</label>
@@ -153,99 +113,71 @@
                                   </div>
                               </div>
                             </div>
-
-
                             <div class="row row-questions">
                               <div class="col-md-12">
                                 <h2 class="pull-left">Questions</h2>
                               </div>
                             </div>
-
                             <div class="row row-question-1">
                               <div class="col-md-12">
                                 <label class="text-question-1">Question 1</label>
-
                               </div>
                             </div>
-
                             <div class="row row-inputquestion-1">
                               <div class="col-md-12">
                                 <input class="input-question-1" type="text" placeholder="What is what?">
                               </div>
                             </div>
-
                             <div class="row row-option-1">
                               <div class="col-md-12">
                                 <label class="text-option-1">Option 1</label>
                               </div>
                             </div>
-
                             <div class="row row-input-option1">
                               <div class="col-md-12">
                                 <i class="fa fa-times icon-delete" aria-hidden="true"></i>
                                 <input class="input-option-1" type="text" placeholder="Answer A">
-                                <input id="cbox-option-1" class="cbox-option-1" type="checkbox">
+                                <input id="radio-option-1" class="radio-option-1" type="radio" name="selector">
+                                <div class="draw-radio-button">
+                                </div>
                                 <label class="text-correct-answer">Correct Answer</label>
                               </div>
                             </div>
-
                             <div class="row row-option-2">
                               <div class="col-md-12">
                                 <label class="text-option-2">Option 2</label>
                               </div>
                             </div>
-
                             <div class="row row-input-option2">
                               <div class="col-md-12">
                                 <i class="fa fa-times icon-delete" aria-hidden="true"></i>
                                 <input class="input-option-2" type="text" placeholder="">
-                                <input id="cbox-option-2" class="cbox-option-2" type="checkbox">
-                                <label class="text-correct-answer">Correct Answer</label>
+                                <input id="radio-option-2" class="radio-option-2" type="radio" name="selector">
+                                <div class="draw-radio-button">
+                                </div>
+                                <label for="radio-option-2" class="text-correct-answer">Correct Answer</label>
                               </div>
                             </div>
-
                             <div class="row row-more-options">
                               <div class="col-md-12">
-                                <a href="#">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                  <h3>Add more options (3/4)</h3>
-                                </a>
+                                <a class="a-more-options" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more options (3/4)</h3></a>
                               </div>
                             </div>
-
                             <div class="row row-more-questions">
                               <div class="col-md-12">
-                                <a href="#">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                  <h3>Add more questions</h3>
-                                </a>
+                                <a class="a-more-questions" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more questions</h3></a>
                               </div>
                             </div>
-
                             <div class="row row-button-done">
                               <div class="col-md-12">
                                 <button class="button-done" type="button">Done</button>
                               </div>
                             </div>
-
-
-
-
-
-
-
                           </div>
-
-
-
                         </div>
-
                       </div>
                     </div>
-
-
                   </div>
-
 
                   <div class="row row-text-trivia">
                     <h2 class="text-justify">Sponsors and Prizes</h2>
@@ -279,7 +211,6 @@
                     <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more trivia set
                   </div>
 
-
                   <div class="form-group">
                     <button class="event-next" type="button"><a class="next" href="#event-form-3">Next</a></button>
                   </div>
@@ -290,13 +221,7 @@
                       <li><a class="event-roadmap-3">3</a></li>
                     </ul>
                   </div>
-
                 </div>
-
-
-
-
-
 
                 <div id="event-form-3" class="tab-pane">
                   <div class="row row-event-summary">
@@ -362,27 +287,18 @@
                     </div>
                   </div>
                 </div>
-
-
-
               </div>
             </form>
           </div>
         </div>
-
       </div>
     </div>
-
-
-
 
     <footer class="navbar-fixed-bottom container-fluid text-center">
       <div class="container">
         <p class="text-muted">&copy; 2016 FanZPlay. All Rights Reserved</p>
       </div>
     </footer>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/create-event.js"></script>
