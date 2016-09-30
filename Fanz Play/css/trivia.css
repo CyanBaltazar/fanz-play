@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+nav.connect-sidebar {
+  margin: 0 !important; }
+
+h1.text-trivia {
+  text-align: left;
+  margin-top: 50px; }
+
+table.table-trivia {
+  font-size: 20px; }
+
+table.table-trivia tbody tr td {
+  text-align: left;
+  border-top: none; }
+
+table.table-trivia tbody tr td a {
+  color: #ffffff; }
+
+table.table-trivia thead tr th {
+  border-bottom: none; }
+
+tr.trivia-lakers {
+  color: #BADA55; }
+
+a.a-add-trivia-set {
+  color: #BADA55 !important; }
+
+a.a-add-trivia-set:hover {
+  color: #BADA55;
+  text-decoration: none; }
+
+a.a-add-trivia-set:focus {
+  color: #BADA55;
+  text-decoration: none; }
+
+div.row-trivia-add {
+  font-size: 18px; }
+
+/*# sourceMappingURL=trivia.css.map */

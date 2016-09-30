@@ -135,7 +135,7 @@
                             </div>
                             <div class="row row-input-option1">
                               <div class="col-md-12">
-                                <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                <a href="#"><i class="fa fa-times icon-delete" aria-hidden="true"></i></a>
                                 <input class="input-option-1" type="text" placeholder="Answer A">
                                 <input id="radio-option-1" class="radio-option-1" type="radio" name="selector">
                                 <div class="draw-radio-button">
@@ -170,7 +170,86 @@
                             </div>
                             <div class="row row-button-done">
                               <div class="col-md-12">
-                                <button class="button-done" type="button">Done</button>
+                                <button class="button-done" type="button" data-toggle="modal" data-target="#created-trivia-set">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="created-trivia-set" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h1 class="modal-title text-left">Trivia set summary</h1>
+                          </div>
+
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <label class="text-trivia-setname">Trivia set name</label>
+                              </div>
+                            </div>
+                            <div class="row row-trivia-name">
+                              <div class="col-md-12">
+                                <h3 class="text-trivia-name">Easy set name</h3>
+                              </div>
+                            </div>
+                            <div class="row row-difficulty-scramble">
+                              <div class="col-md-4">
+                                <label class="pull-left font-14">Difficulty</label>
+                              </div>
+                              <div class="col-md-4">
+                                <label class="pull-left font-14">Scramble</label>
+                              </div>
+                            </div>
+                            <div class="row row-diff-scram">
+                              <div class="col-md-4">
+                                <h3 class="text-left margin-top-1px">Easy</h3>
+                              </div>
+                              <div class="col-md-4">
+                                <h3 class="text-left margin-top-1px">Questions and answers</h3>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h1 class="pull-left">Questions</h1>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 text-left">
+                                <label class="font-14">Question 1</label>
+                                <h3 class="margin-top-1px">What is what?</h3>
+                              </div>
+                            </div>
+                            <div class="row margin-top-10px">
+                              <div class="col-md-12">
+                                <label class="pull-left text-indent-50px font-14">Option 1</label>
+                                <label class="text-correct-answer">Correct Answer</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 text-left">
+                                <h3 class="text-indent-50px margin-top-1px">Answer A</h3>
+                              </div>
+                            </div>
+                            <div class="row margin-top-10px">
+                              <div class="col-md-12">
+                                <label class="pull-left text-indent-50px font-14">Option 2</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 text-left">
+                                <h3 class="text-indent-50px margin-top-10px">Answer B</h3>
+                              </div>
+                            </div>
+                            <hr>
+                            <a class="a-return-edit" data-toggle="modal" data-target="#myModal">Return and edit</a>
+                            <div class="row row-button-done">
+                              <div class="col-md-12">
+                                <button class="close button-done-close" type="button" data-dismiss="modal">Finish</button>
                               </div>
                             </div>
                           </div>

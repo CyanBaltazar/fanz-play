@@ -63,7 +63,7 @@ div.row-inputquestion-1 {
 div.draw-radio-button {
   display: block;
   position: absolute;
-  margin-left: 10px;
+  margin-left: 5px;
   border: 2px solid #AAAAAA;
   border-radius: 0px;
   cursor: pointer;
@@ -162,7 +162,12 @@ i.icon-down {
   cursor: pointer; }
 
 i.icon-delete {
+  color: #121212;
   float: left; }
+
+i.icon-delete:hover {
+  color: #121212;
+  text-decoration: none; }
 
 .modal-header {
   border-bottom: none !important; }
@@ -504,6 +509,25 @@ button.button-done {
 button.button-done:hover {
   border: 1px solid #BADA55; }
 
+button.button-done-close {
+  color: #ffffff !important;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 50px;
+  background-color: #949f15 !important;
+  border: none !important;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1; }
+
+button.button-done-close:hover {
+  opacity: 1;
+  background-color: #ffffff !important;
+  border: 1px solid #BADA55 !important;
+  color: #BADA55 !important; }
+
 button.event-confirm {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -558,7 +582,9 @@ div a.a-create-trivia:hover {
   text-decoration: none; }
 
 a.a-more-options {
-  color: #BADA55; }
+  color: #BADA55;
+  float: left;
+  margin-left: 30px; }
 
 a.a-more-options:hover {
   color: #BADA55;
@@ -569,6 +595,7 @@ a.a-more-options:focus {
   text-decoration: none; }
 
 a.a-more-questions {
+  float: left;
   color: #BADA55; }
 
 a.a-more-questions:hover {
@@ -578,6 +605,13 @@ a.a-more-questions:hover {
 a.a-more-questions:focus {
   color: #BADA55;
   text-decoration: none; }
+
+.fa-plus {
+  font-size: 18px !important; }
+
+h3.text-trivia-name {
+  float: left;
+  margin-top: 0px; }
 
 .clicked {
   background-color: #949f15; }

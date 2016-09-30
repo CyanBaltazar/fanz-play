@@ -1182,7 +1182,14 @@ div.thank-div {
     }
 // End Padding bottom in px
 
-
+// Start text indent
+// Start Margin Top in px
+@for $i from 1 through 100 {
+        .text-indent-#{$i}px {
+            text-indent: #{$i}px !important;
+      }
+   }
+// End text indent
 
 
 

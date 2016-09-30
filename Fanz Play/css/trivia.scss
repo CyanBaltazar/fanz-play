@@ -1,0 +1,117 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 1025px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+$primary-color: #121212; // dark grey
+$secondary-color: #BADA55; // light green
+$dark-green: #949f15; // dark green
+$third-color: #343434; //light grey
+$body-color: #E7E7E7;
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  background-color: $third-color !important;
+  color: $color-white !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav.connect-sidebar {
+  margin: 0 !important;
+}
+
+h1.text-trivia {
+  text-align: left;
+  margin-top: 50px;
+}
+
+table.table-trivia {
+  font-size: 20px;
+}
+
+table.table-trivia tbody tr td {
+  text-align: left;
+  border-top: none;
+}
+
+table.table-trivia tbody tr td a {
+  color: $color-white;
+}
+
+table.table-trivia thead tr th {
+  border-bottom: none;
+}
+
+tr.trivia-lakers {
+  color: $secondary-color;
+}
+
+a.a-add-trivia-set {
+  color: $secondary-color !important;
+}
+
+a.a-add-trivia-set:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+a.a-add-trivia-set:focus {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+div.row-trivia-add {
+  font-size: 18px;
+}
