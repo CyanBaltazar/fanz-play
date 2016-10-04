@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+nav.connect-sidebar {
+  margin: 0 !important; }
+
+h1.text-sponsors-prizes {
+  text-align: left;
+  margin-top: 50px; }
+
+table.table-sponsors-prizes {
+  font-size: 20px; }
+
+table.table-sponsors-prizes tbody tr td {
+  text-align: left;
+  border-top: none; }
+
+table.table-sponsors-prizes tbody tr td a {
+  color: #ffffff; }
+
+table.table-sponsors-prizes thead tr th {
+  border-bottom: none; }
+
+tr.first-record {
+  color: #BADA55; }
+
+td.expired {
+  color: #c30c15 !important; }
+
+a.a-add-sponsors-prizes {
+  color: #BADA55 !important; }
+
+/*# sourceMappingURL=sponsors-and-prizes.css.map */
