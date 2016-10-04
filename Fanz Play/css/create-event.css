@@ -495,7 +495,6 @@ span.icon-pencil-prizelevel {
   color: #BADA55; }
 
 button.button-done {
-  color: #ffffff;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 40%;
@@ -507,6 +506,7 @@ button.button-done {
   font-weight: bold; }
 
 button.button-done:hover {
+  color: #BADA55 !important;
   border: 1px solid #BADA55; }
 
 button.button-done-close {

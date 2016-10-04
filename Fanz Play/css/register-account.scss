@@ -419,6 +419,7 @@ div.camera-circle {
 .reg-camera-icon {
   font-size: 50px !important;
   margin-top: 100px;
+  color: $color-white;
   @include respond-to(xs) {
     font-size: 40px !important;
     margin-top: 50px;

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+nav.connect-sidebar {
+  margin: 0 !important; }
+
+div.row-text-prizename {
+  margin-top: 20px; }
+
+div.row-inputs-prizes {
+  margin-bottom: 30px; }
+
+div.row-add-prizes {
+  justify-content: center; }
+
+div.row-modal-button {
+  margin: 50px; }
+
+label.text-sponsor {
+  float: left; }
+
+input.input-sponsor {
+  width: 200px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px;
+  font-style: italic; }
+
+label.text-prize-name {
+  float: left; }
+
+input.input-prizename {
+  width: 300px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px; }
+
+a.a-add-sponsor {
+  color: #BADA55;
+  font-size: 20px; }
+
+a.a-add-sponsor:hover {
+  color: #BADA55;
+  text-decoration: none; }
+
+a.a-add-sponsor:focus {
+  color: #BADA55;
+  text-decoration: none; }
+
+input.input-prize-feature {
+  width: 150px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 16px;
+  font-size: 20px; }
+
+input.input-promo-code {
+  width: 150px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 17px;
+  font-size: 20px; }
+
+select.select-condition {
+  width: 100px;
+  background-color: transparent;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+input.date-valid-from {
+  width: 100px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ffffff; }
+
+.down-arrow-date {
+  position: absolute;
+  top: 25px;
+  left: 100px; }
+
+div.modal-header {
+  color: #000000; }
+
+.modal-content {
+  max-width: 500px; }
+
+label.text-modal-sponsor {
+  font-size: 18px;
+  text-indent: 100px; }
+
+input.input-modal-sponsor {
+  width: 275px;
+  margin-left: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  font-style: italic; }
+
+button.modal-done-button {
+  height: 50px;
+  width: 175px;
+  background-color: #959f16;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff; }
+
+button.modal-done-button:hover {
+  border: 1px solid #BADA55; }
+
+button.close {
+  font-size: 40px;
+  font-weight: normal;
+  color: #000000;
+  opacity: 1; }
+
+button a.a-done {
+  color: #ffffff; }
+
+button a.a-done:hover {
+  color: #BADA55;
+  text-decoration: none; }
+
+/*# sourceMappingURL=add-sponsors-prizes.css.map */

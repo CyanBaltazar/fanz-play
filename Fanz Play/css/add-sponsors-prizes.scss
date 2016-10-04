@@ -1,0 +1,240 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 1025px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+$primary-color: #121212; // dark grey
+$secondary-color: #BADA55; // light green
+$dark-green: #949f15; // dark green
+$third-color: #343434; //light grey
+$body-color: #E7E7E7;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-expired: #c30c15;
+
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  background-color: $third-color !important;
+  color: $color-white !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav.connect-sidebar {
+  margin: 0 !important;
+}
+
+div.row-text-prizename {
+  margin-top: 20px;
+}
+
+div.row-inputs-prizes {
+  margin-bottom: 30px;
+}
+
+div.row-add-prizes {
+  justify-content: center;
+}
+
+div.row-modal-button {
+  margin: 50px;
+}
+
+label.text-sponsor {
+  float: left;
+}
+
+input.input-sponsor {
+  width: 200px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px;
+  font-style: italic;
+}
+
+label.text-prize-name {
+  float: left;
+}
+
+input.input-prizename {
+  width: 300px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px;
+}
+
+a.a-add-sponsor {
+  color: $secondary-color;
+  font-size: 20px;
+}
+
+a.a-add-sponsor:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+a.a-add-sponsor:focus {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+input.input-prize-feature {
+  width: 150px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+input.input-promo-code {
+  width: 150px;
+  float: left;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 17px;
+  font-size: 20px;
+}
+
+select.select-condition {
+  width: 100px;
+  background-color: transparent;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input.date-valid-from {
+  width: 100px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $color-white;
+}
+
+.down-arrow-date {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+}
+
+div.modal-header {
+  color: $color-black;
+}
+
+.modal-content {
+  max-width: 500px;
+}
+
+label.text-modal-sponsor {
+  font-size: 18px;
+  text-indent: 100px;
+}
+
+input.input-modal-sponsor {
+  width: 275px;
+  margin-left: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $color-black;
+  font-size: 20px;
+  font-style: italic;
+}
+
+button.modal-done-button {
+  height: 50px;
+  width: 175px;
+  background-color: #959f16;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-white;
+}
+
+button.modal-done-button:hover {
+  border: 1px solid $secondary-color;
+}
+
+button.close {
+  font-size: 40px;
+  font-weight: normal;
+  color: $color-black;
+  opacity: 1;
+}
+
+button a.a-done {
+  color: $color-white;
+}
+
+button a.a-done:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}

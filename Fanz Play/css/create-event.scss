@@ -645,7 +645,6 @@ span.icon-pencil-prizelevel {
 }
 
 button.button-done {
-  color: $color-white;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 40%;
@@ -658,6 +657,7 @@ button.button-done {
 }
 
 button.button-done:hover {
+  color: $secondary-color !important;
   border: 1px solid $secondary-color;
 }
 
