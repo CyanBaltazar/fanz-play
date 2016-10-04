@@ -16,12 +16,8 @@ html, body {
 nav.connect-sidebar {
   margin: 0 !important; }
 
-div.sidebar-menu {
-  height: 863px;
-  background-color: #121212;
-  border: none; }
-
 div.avail-dropdown {
+  float: right;
   display: inline-flex;
   align-items: center;
   margin-top: 20px; }
@@ -38,5 +34,8 @@ div.status {
   background-color: #959f16;
   border-radius: 50%;
   margin-right: 5px; }
+
+div.row-date-availability {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=calendar.css.map */

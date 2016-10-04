@@ -17,6 +17,9 @@ nav {
   background-color: #121212;
   border-radius: 0px 0px 0px 0px !important; }
 
+h1, h2, h3, h4 {
+  text-align: left; }
+
 .fp-menu {
   float: right !important; }
   @media screen and (max-width: 767px) {
@@ -30,6 +33,11 @@ li a {
 li a:hover {
   background-color: #121212 !important;
   color: #ffffff !important; }
+
+div.sidebar-menu {
+  height: 100vh;
+  background-color: #121212;
+  border: none; }
 
 .box {
   padding: 40px 0 50px 0; }

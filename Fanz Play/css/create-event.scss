@@ -76,12 +76,6 @@ nav.connect-sidebar {
     box-shadow: none !important;
 }
 
-div.sidebar-menu {
-  height: 863px;
-  background-color: #121212;
-  border: none;
-}
-
 div.menu-items ul {
   list-style: none;
 }
@@ -216,7 +210,11 @@ div.menu-items ul li a h4 {
 }
 
 div.container-event {
-  margin-left: 50px;;
+  margin-left: 50px;
+}
+
+div.container-success {
+  margin-left: 50px;
 }
 
 div.row-create-event {
@@ -598,7 +596,9 @@ span.icon-pencil-home {
   float: right;
   margin-right: -25nhGpx;
   margin-top: -25px;
-  position: relative;
+  position: absolute;
+  top: 53px;
+  right: -10px;
   z-index: 2;
   font-size: 20px;
   color: $secondary-color;
@@ -645,6 +645,7 @@ span.icon-pencil-prizelevel {
 }
 
 button.button-done {
+  color: $color-white;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 40%;
@@ -778,6 +779,16 @@ a.a-more-questions:focus {
   text-decoration: none;
 }
 
+a.a-return-edit {
+  color: $secondary-color;
+}
+
+a.a-return-edit:hover {
+  color: $secondary-color !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .fa-plus {
   font-size: 18px !important;
 }
@@ -789,4 +800,34 @@ h3.text-trivia-name {
 
 .clicked {
   background-color: $dark-green;
+}
+
+h1.text-title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 44px;
+}
+
+span.text-green {
+  color: $secondary-color;
+}
+
+p.p-success {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button.button-return {
+  height: 40px;
+  width: 200px;
+  opacity: 1;
+  color: #ffffff;
+  background-color: #959f16;
+  border-radius: 5px;
+  border: none;
+}
+
+button.button-return:hover {
+  border: 1px solid $secondary-color;
 }

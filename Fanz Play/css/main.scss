@@ -98,6 +98,10 @@ nav
   border-radius: 0px 0px 0px 0px !important;
 }
 
+h1, h2, h3, h4 {
+  text-align: left;
+}
+
 .fp-menu {
   float: right !important;
   @include respond-to(xs) {
@@ -115,6 +119,12 @@ li a:hover
 {
   background-color: $primary-color !important;
   color: $color-white !important;
+}
+
+div.sidebar-menu {
+  height: 100vh;
+  background-color: $primary-color;
+  border: none;
 }
 
 .box {

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/calendar.css" rel="stylesheet">
+    <link href="css/add-sponsors-prizes.css" rel="stylesheet" />
+    <link href="css/register-account.css" rel="stylesheet" />
+    <link href="css/create-event.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -18,46 +21,66 @@
         </div>
     </nav>
 
-
-
     <div class="container">
         <div class="row content">
             <div class="col-md-4 sidebar-menu text-center">
-                <h1>Team Lakers</h1>
-                <h3>Calendar</h3>
-                <h3>invitations</h3>
-                <h3>Events</h3>
-                <h3>Trivia</h3>
-                <h3>Sponsors</h3>
-                <h3>Statistics</h3>
-                <h3>Help</h3>
-                <h3>Logout</h3>
+              <div class="menu-items">
+                <ul>
+                  <li class="menu-team">
+                    <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                    <select class="form-control select-team">
+                      <option></option>
+                    </select>
+                  </li>
+                  <li><a href="#"><h3>Calendar</h3></a></li>
+                  <li><a href="#"><h3>Invitations</h3></a></li>
+                  <li><a href="#"><h3>Events</h3></a></li>
+                    <li><a href="#"><h4>Create Events</h4></a></li>
+                    <li><a href="#"><h4>Pending Events</h4></a></li>
+                    <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                    <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                  <li><a href="#"><h3>Trivia</h3></a></li>
+                  <li><a href="#"><h3>Sponsors</h3></a></li>
+                  <li><a href="#"><h3>Statistics</h3></a></li>
+                  <li><a href="#"><h3>Help</h3></a></li>
+                  <li><a href="#"><h3>Logout</h3></a></li>
+                </ul>
+              </div>
             </div>
             <div class="col-md-8 text-center">
               <div class="container-fluid">
-                <div class="row">
+
+
+                <div class="row row-date-availability node-with-border">
                   <div class="col-md-6">
-                    <div class="pull-left">
+                    <div>
                       <h1>September</h1>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="pull-right">
-                      <form>
-                        <div class="form-group avail-dropdown">
-                          <div class="status"></div>
-                          <label>Available</label>
-                          <select class="form-control avail-select">
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                          </select>
-                        </div>
-                      </form>
+                  <div class="col-md-6 node-with-border">
+                    <div class="form-group avail-dropdown">
+                      <div class="status"></div>
+                      <label>Available</label>
+                      <select class="form-control avail-select">
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option></option>
+                        <option></option>
+                      </select>
                     </div>
                   </div>
                 </div>
+
+                <div class="row row-calendar node-with-border">
+                  <div class="col-md-12">
+                    <div class="calendar">
+
+                    </div>
+                  </div>
+                </div>
+
+
+
               </div>
 
 
