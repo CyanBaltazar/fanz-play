@@ -16,8 +16,21 @@ html, body {
 nav.connect-sidebar {
   margin: 0 !important; }
 
+button.navbar-toggle {
+  background-color: transparent !important;
+  border-color: #BADA55; }
+
+.navbar-toggle .icon-bar {
+  background-color: #BADA55; }
+
 .form-control:focus {
   box-shadow: none !important; }
+
+div.menu-items {
+  margin-top: 50px; }
+  @media screen and (max-width: 767px) {
+    div.menu-items {
+      margin-top: -40px; } }
 
 div.menu-items ul {
   list-style: none; }
@@ -37,11 +50,17 @@ div.row-add-trivia {
   color: #959f16;
   align-items: center;
   font-size: 22px; }
+  @media screen and (max-width: 767px) {
+    div.row-add-trivia {
+      font-size: 16px; } }
 
 div.row-add-prizes {
   color: #959f16;
   align-items: center;
   font-size: 22px; }
+  @media screen and (max-width: 767px) {
+    div.row-add-prizes {
+      font-size: 16px; } }
 
 div.row-input-easyset {
   margin-bottom: 10px; }
@@ -54,6 +73,28 @@ div.row-option-2 {
 
 div.row-inputquestion-1 {
   margin-bottom: 5px; }
+
+@media screen and (max-width: 767px) {
+  div.row-create-event h1 {
+    font-size: 30px; } }
+
+h2.title-text-trivia {
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    h2.title-text-trivia {
+      font-size: 22px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    h2.title-text-trivia {
+      text-align: center; } }
+
+.title-header {
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    .title-header {
+      font-size: 22px !important; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .title-header {
+      text-align: center; } }
 
 div.draw-radio-button {
   display: block;
@@ -75,6 +116,10 @@ div.draw-radio-button:hover {
 
 div.draw-radio-button:focus {
   background-color: #BADA55; }
+
+@media screen and (max-width: 767px) {
+  h1.team-lakers {
+    font-size: 25px; } }
 
 ul.select-trivia {
   background-color: transparent;
@@ -121,13 +166,29 @@ div.menu-items ul li a {
   text-decoration: none; }
 
 div.menu-items ul li a h3 {
-  margin-left: 100px;
-  margin-bottom: 40px; }
+  margin-left: 75px; }
+  @media screen and (max-width: 767px) {
+    div.menu-items ul li a h3 {
+      font-size: 18px;
+      text-align: justify;
+      margin-bottom: -10px; } }
 
 div.menu-items ul li a h4 {
   margin-left: 125px; }
+  @media screen and (max-width: 767px) {
+    div.menu-items ul li a h4 {
+      margin-left: 90px;
+      margin-bottom: -10px;
+      font-size: 16px; } }
+
+h4.submenu-last-item {
+  margin-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    h4.submenu-last-item {
+      margin-bottom: -30px; } }
 
 div.container-event {
+  margin-top: 80px;
   margin-left: 50px; }
 
 div.container-success {
@@ -148,16 +209,79 @@ div.row-trivia-dropdown ul {
   list-style: none; }
 
 div.row-home-away {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: auto;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    div.row-home-away {
+      margin-left: -15px; } }
 
 div.row-event-time {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin: auto;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    div.row-event-time {
+      margin-left: -15px !important; } }
+
+div.row-sponsors-prizes {
+  margin-left: auto;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    div.row-sponsors-prizes {
+      margin-left: -15px; } }
+
+@media screen and (max-width: 767px) {
+  div.row-event-trivia {
+    margin-top: 70px; } }
 
 i.icon-down {
   position: absolute;
-  right: 535px;
-  top: 160px;
-  cursor: pointer; }
+  right: 550px;
+  top: 210px;
+  cursor: pointer;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    i.icon-down {
+      position: absolute;
+      top: 110px;
+      right: 90px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    i.icon-down {
+      position: absolute;
+      top: 110px;
+      right: 175px; } }
+
+a.a-add-more-tset {
+  color: #BADA55;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    a.a-add-more-tset {
+      margin: 0 auto; } }
+
+a.a-add-more-tset:hover {
+  color: #BADA55;
+  text-decoration: none; }
+
+a.a-add-more-tset:focus {
+  color: #BADA55;
+  text-decoration: none; }
+
+a.a-add-more-snp {
+  color: #BADA55;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    a.a-add-more-snp {
+      margin: 0 auto; } }
+
+a.a-add-more-snp:hover {
+  color: #BADA55;
+  text-decoration: none; }
+
+a.a-add-more-snp:focus {
+  color: #BADA55;
+  text-decoration: none; }
 
 i.icon-delete {
   color: #121212;
@@ -185,9 +309,28 @@ i.icon-delete:hover {
 table.dropdown-menu {
   width: 35%;
   position: absolute;
-  top: 185px;
-  left: 80px;
-  border-radius: 0px; }
+  top: 235px;
+  left: -37px;
+  border-radius: 0px;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    table.dropdown-menu {
+      font-size: 12px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    table.dropdown-menu {
+      width: 70%;
+      position: absolute;
+      top: 130px;
+      left: 65px;
+      font-size: 11px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    table.dropdown-menu {
+      width: 45%;
+      position: absolute;
+      top: 130px;
+      left: 140px;
+      border-radius: 0px; } }
 
 table.dropdown-menu thead {
   background-color: #121212; }
@@ -200,7 +343,11 @@ input.input-trivia {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-width: 1px; }
+  border-width: 1px;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-trivia {
+      margin: 0 auto; } }
 
 input.input-set-trivia {
   float: left;
@@ -227,7 +374,15 @@ input.input-nba {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-nba {
+      width: 65vw;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-nba {
+      margin: 0 auto; } }
 
 input.input-nba-home {
   display: flex;
@@ -238,7 +393,15 @@ input.input-nba-home {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-nba-home {
+      width: 65vw;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-nba-home {
+      margin: 0 auto; } }
 
 input.input-nba-away {
   display: flex;
@@ -249,7 +412,16 @@ input.input-nba-away {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-nba-away {
+      width: 65vw;
+      font-size: 16px;
+      margin-left: -15px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-nba-away {
+      margin: 0 auto; } }
 
 input.input-event-name {
   display: flex;
@@ -260,7 +432,15 @@ input.input-event-name {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-name {
+      width: 65vw;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-name {
+      margin: 0 auto; } }
 
 input.input-event-time {
   display: flex;
@@ -271,7 +451,15 @@ input.input-event-time {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-time {
+      width: 65vw;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-time {
+      margin-left: 60px !important; } }
 
 input.input-event-date {
   display: flex;
@@ -282,7 +470,18 @@ input.input-event-date {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-date {
+      width: 65vw;
+      font-size: 16px;
+      margin-left: -15px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-date {
+      width: 65vw;
+      font-size: 16px;
+      margin-left: 60px !important; } }
 
 input.input-event-sponsor {
   display: flex;
@@ -293,7 +492,15 @@ input.input-event-sponsor {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-sponsor {
+      width: 65vw;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-sponsor {
+      margin: 0 auto; } }
 
 input.input-event-prize {
   display: flex;
@@ -304,7 +511,17 @@ input.input-event-prize {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-prize {
+      width: 65vw;
+      margin-left: -18px;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-prize {
+      margin: 0 auto;
+      margin-left: 60px; } }
 
 input.input-event-prizelevel {
   display: flex;
@@ -315,7 +532,16 @@ input.input-event-prizelevel {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    input.input-event-prizelevel {
+      width: 65vw;
+      margin-left: -18px;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    input.input-event-prizelevel {
+      margin: 0 auto; } }
 
 input.input-difficulty {
   width: 120px;
@@ -373,29 +599,73 @@ input.radio-option-2:checked ~ .draw-radio-button {
   background-color: #BADA55; }
 
 label.text-home {
-  margin-left: -15px; }
+  margin-left: -15px;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-home {
+      margin-left: 60px; } }
 
 label.text-away {
-  margin-left: 10px; }
+  margin-left: 10px;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    label.text-away {
+      margin-left: -15px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-away {
+      margin-left: 60px; } }
 
 label.text-event-time {
-  margin-left: -15px; }
+  margin-left: -15px;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-event-time {
+      margin-left: 60px; } }
 
 label.text-event-date {
-  margin-left: 10px; }
+  margin-left: 10px;
+  /* iphone5 Landscape */
+  /* iphone5 Portrait */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-event-date {
+      margin-left: 60px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    label.text-event-date {
+      margin-left: -15px; } }
 
 label.text-event-sponsor {
-  margin-left: -15px; }
+  margin-left: -15px;
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-event-sponsor {
+      margin-left: 60px; } }
 
 label.text-trivia-setname {
   float: left;
   font-size: 14px; }
 
 label.text-event-prize {
-  margin-left: 10px; }
+  margin-left: 10px;
+  /* iphone5 Landscape */
+  /* iphone5 Portrait */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-event-prize {
+      margin-left: 60px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    label.text-event-prize {
+      margin-left: -15px; } }
 
 label.text-event-prizelevel {
-  margin-left: 35px; }
+  margin-left: 35px;
+  /* iphone5 Landscape */
+  /* iphone5 Portrait */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    label.text-event-prizelevel {
+      margin-left: 60px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    label.text-event-prizelevel {
+      margin-left: -15px; } }
 
 label.text-difficulty {
   font-size: 14px;
@@ -436,7 +706,44 @@ span.icon-pencil-league {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-league {
+      position: absolute;
+      font-size: 16px;
+      top: 150px;
+      left: 258px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-league {
+      position: absolute;
+      top: 150px;
+      right: -380px;
+      font-size: 16px; } }
+
+span.icon-pencil-tset-a {
+  float: right;
+  margin-right: 455px;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-tset-a {
+      position: absolute;
+      font-size: 16px;
+      top: 508px;
+      left: 257px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-tset-a {
+      position: absolute;
+      top: 485px;
+      right: -380px;
+      font-size: 16px; } }
 
 span.icon-pencil-eventname {
   float: right;
@@ -445,7 +752,24 @@ span.icon-pencil-eventname {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-eventname {
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-eventname {
+      position: absolute;
+      top: 198px;
+      right: -148px;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-eventname {
+      position: absolute;
+      top: 178px;
+      right: -120px;
+      font-size: 16px; } }
 
 span.icon-pencil-home {
   float: right;
@@ -456,7 +780,22 @@ span.icon-pencil-home {
   right: -10px;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-home {
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-home {
+      position: absolute;
+      right: 50px;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-home {
+      position: absolute;
+      top: 52px;
+      right: 75px; } }
 
 span.icon-pencil-away {
   float: right;
@@ -465,7 +804,73 @@ span.icon-pencil-away {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-away {
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-away {
+      position: absolute;
+      right: 100px;
+      top: 52px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-away {
+      position: absolute;
+      top: 52px;
+      right: 125px;
+      font-size: 16px; } }
+
+span.icon-pencil-time {
+  float: right;
+  margin-right: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 53px;
+  right: 15px;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-time {
+      font-size: 16px;
+      position: absolute;
+      left: 150px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-time {
+      color: #BADA55;
+      position: absolute;
+      top: 52px;
+      left: 355px;
+      font-size: 16px; } }
+
+span.icon-pencil-date {
+  float: right;
+  margin-right: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 53px;
+  right: -10px;
+  z-index: 2;
+  font-size: 20px;
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-date {
+      font-size: 16px;
+      position: absolute;
+      left: 125px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-date {
+      color: #BADA55;
+      position: absolute;
+      top: 52px;
+      left: 335px;
+      font-size: 16px; } }
 
 span.icon-pencil-sponsor {
   float: right;
@@ -474,7 +879,21 @@ span.icon-pencil-sponsor {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-sponsor {
+      position: absolute;
+      font-size: 16px;
+      top: 52px;
+      left: 192px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-sponsor {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+      font-size: 16px; } }
 
 span.icon-pencil-prize {
   float: right;
@@ -483,7 +902,21 @@ span.icon-pencil-prize {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-prize {
+      position: absolute;
+      font-size: 16px;
+      top: 52px;
+      left: 192px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-prize {
+      position: absolute;
+      top: 50px;
+      right: 125px;
+      font-size: 16px; } }
 
 span.icon-pencil-prizelevel {
   float: right;
@@ -492,7 +925,21 @@ span.icon-pencil-prizelevel {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #BADA55; }
+  color: #BADA55;
+  /* iphone5 Portrait */
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-prizelevel {
+      position: absolute;
+      font-size: 16px;
+      top: 52px;
+      left: 192px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-prizelevel {
+      position: absolute;
+      top: 50px;
+      right: 150px;
+      font-size: 16px; } }
 
 button.button-done {
   color: #ffffff;
@@ -538,7 +985,21 @@ button.event-confirm {
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  /* iphone5 Portrait */ }
+  @media screen and (max-width: 767px) {
+    button.event-confirm {
+      height: 60px;
+      width: 250px;
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    button.event-confirm {
+      height: 40px;
+      width: 220px;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      margin-left: -55px; } }
 
 button.event-next {
   margin-top: 60px;
@@ -549,7 +1010,19 @@ button.event-next {
   border: 3px solid #ffffff;
   border-radius: 50%;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    button.event-next {
+      width: 80px;
+      height: 80px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      margin-right: 50px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    button.event-next {
+      margin-bottom: 30px;
+      margin-right: 30px; } }
 
 button.event-next:hover {
   border-color: #BADA55; }
@@ -629,6 +1102,21 @@ h1.text-title {
   margin-top: 50px;
   text-align: center;
   font-size: 44px; }
+
+.title-semi-header {
+  /* iphone5 Landscape */ }
+  @media screen and (max-width: 767px) {
+    .title-semi-header {
+      font-size: 18px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .title-semi-header {
+      margin-left: 60px; } }
+
+.text-event-name {
+  /* iphone5 Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .text-event-name {
+      margin-left: 60px; } }
 
 span.text-green {
   color: #BADA55; }

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: inherit; }
+
+.calendar-container {
+  width: 100vh; }
+
+.calendar {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  width: 100%; }
+
+.day {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  padding: 15px;
+  text-align: center; }
+
+.day.adj-month {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: .5; }
+
+.calendar-item {
+  display: block;
+  height: 5px; }
+
+.calendar-control {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(170, 170, 170, 0.7);
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 12px; }
+
+.calendar-control[data-calendar-control="prev"] {
+  float: left; }
+
+.calendar-control[data-calendar-control="next"] {
+  float: right; }
+
+/*# sourceMappingURL=calendar-widget.css.map */

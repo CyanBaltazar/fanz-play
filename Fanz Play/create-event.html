@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>FanZPlay | Create Event</title>
@@ -10,268 +10,256 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-static-top connect-sidebar">
+    <nav class="navbar navbar-fixed-top connect-sidebar">
         <div class="container padding-5px">
             <div class="navbar-header">
-                <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
+              <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
             </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="text-center visible-xs">
+                    <div class="menu-items">
+                        <ul class="nav navbar-nav">
+                            <li class="menu-team">
+                                <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                                <select class="form-control select-team">
+                                    <option></option>
+                                </select>
+                            </li>
+                            <li><a href="#"><h3>Calendar</h3></a></li>
+                            <li><a href="#"><h3>Invitations</h3></a></li>
+                            <li><a href="#"><h3>Events</h3></a></li>
+                            <li><a href="#"><h4>Create Events</h4></a></li>
+                            <li><a href="#"><h4>Pending Events</h4></a></li>
+                            <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                            <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
+                            <li><a href="#"><h3>Trivia</h3></a></li>
+                            <li><a href="#"><h3>Sponsors</h3></a></li>
+                            <li><a href="#"><h3>Statistics</h3></a></li>
+                            <li><a href="#"><h3>Help</h3></a></li>
+                            <li><a href="#"><h3>Logout</h3></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </nav>
 
-
-
     <div class="container">
-      <div class="row content">
-        <div class="col-md-4 sidebar-menu text-center">
-          <div class="menu-items">
-            <ul>
-              <li class="menu-team">
-                <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                <select class="form-control select-team">
-                  <option></option>
-                </select>
-              </li>
-              <li><a href="#"><h3>Calendar</h3></a></li>
-              <li><a href="#"><h3>Invitations</h3></a></li>
-              <li><a href="#"><h3>Events</h3></a></li>
-                <li><a href="#"><h4>Create Events</h4></a></li>
-                <li><a href="#"><h4>Pending Events</h4></a></li>
-                <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
-              <li><a href="#"><h3>Trivia</h3></a></li>
-              <li><a href="#"><h3>Sponsors</h3></a></li>
-              <li><a href="#"><h3>Statistics</h3></a></li>
-              <li><a href="#"><h3>Help</h3></a></li>
-              <li><a href="#"><h3>Logout</h3></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-8 text-center">
-          <div class="container-fluid container-event">
-            <form>
-              <div class="event-tab-content">
-
-                <div class="row row-create-event">
-                  <h1 class="text-justify">Create an event</h1>
-                </div>
-
-
-                <div id="event-form-2" class="tab-pane active">
-
-                  <div class="row row-text-trivia">
-                    <h2 class="text-justify">Trivia</h2>
-                  </div>
-
-
-
-
-
-
-
-
-                  <div class="form-group row-trivia-dropdown">
-                    <i class="fa fa-sort-desc icon-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
-                    <input class="input-trivia" type="text" placeholder="Trivia Set A">
-
-
-
-
-
-
-
-
-
-                    <table class="dropdown-menu table table-responsive table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>Set Name</th>
-                          <th>Difficulty</th>
-                          <th>Questions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="success">
-                          <td>Trivia Set A</td>
-                          <td>Easy</td>
-                          <td>10</td>
-                        </tr>
-                        <tr>
-                          <td>Team Questions</td>
-                          <td>Easy</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Super Trivia</td>
-                          <td>Normal</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Difficult Level</td>
-                          <td>Hard</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td>Fun Questions</td>
-                          <td>Easy</td>
-                          <td>10</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </div>
-
-
-
-
-
-
-
-                  <div class="row form-group row-add-trivia node-flex">
-                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more trivia set
-                  </div>
-
-
-                  <div class="row row-text-trivia">
-                    <h2 class="text-justify">Sponsors and Prizes</h2>
-                  </div>
-
-                  <div class="row form-group row-prizes-dropdown">
-                    <div class="col-md-4">
-                      <select class="form-control select-sponsor">
-                        <option>Select Sponsor</option>
-                        <option></option>
-                        <option></option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <select class="form-control select-prize">
-                        <option>Select Prize</option>
-                        <option></option>
-                        <option></option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <select class="form-control select-prizelevel">
-                        <option>Select Prize Level</option>
-                        <option></option>
-                        <option></option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="row form-group row-add-prizes node-flex">
-                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more trivia set
-                  </div>
-
-
-                  <div class="form-group">
-                    <button class="event-next" type="button"><a class="next" href="#event-form-3">Next</a></button>
-                  </div>
-
-                  <div class="event-setup">
-                    <ul class="event-road-map">
-                      <li class="active"><a class="event-roadmap-3">2</a></li>&nbsp;of&nbsp;
-                      <li><a class="event-roadmap-3">3</a></li>
+        <div class="row content">
+            <div class="col-md-4 sidebar-menu text-center hidden-xs">
+                <div class="menu-items">
+                    <ul>
+                        <li class="menu-team">
+                            <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                            <select class="form-control select-team">
+                                <option></option>
+                            </select>
+                        </li>
+                        <li><a href="#"><h3>Calendar</h3></a></li>
+                        <li><a href="#"><h3>Invitations</h3></a></li>
+                        <li><a href="#"><h3>Events</h3></a></li>
+                        <li><a href="#"><h4>Create Events</h4></a></li>
+                        <li><a href="#"><h4>Pending Events</h4></a></li>
+                        <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                        <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                        <li><a href="#"><h3>Trivia</h3></a></li>
+                        <li><a href="#"><h3>Sponsors</h3></a></li>
+                        <li><a href="#"><h3>Statistics</h3></a></li>
+                        <li><a href="#"><h3>Help</h3></a></li>
+                        <li><a href="#"><h3>Logout</h3></a></li>
                     </ul>
-                  </div>
-
                 </div>
+            </div>
+            <div class="col-md-8 text-center">
+                <div class="container-event">
+                    <form>
+                        <div class="event-tab-content">
+                            <div class="row row-create-event">
+                                <h1 class="title-header">Create an event</h1>
+                            </div>
+
+                            <div id="event-form-2" class="tab-pane active">
+
+                                <h2 class="title-text-trivia">Trivia</h2>
+
+                                <div class="form-group row-trivia-dropdown">
+                                    <i class="fa fa-sort-desc icon-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                    <input class="input-trivia" type="text" placeholder="Trivia Set A">
+                                    <table class="dropdown-menu table table-responsive table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Set Name</th>
+                                                <th>Difficulty</th>
+                                                <th>Questions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="success">
+                                                <td>Trivia Set A</td>
+                                                <td>Easy</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Team Questions</td>
+                                                <td>Easy</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Super Trivia</td>
+                                                <td>Normal</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Difficult Level</td>
+                                                <td>Hard</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fun Questions</td>
+                                                <td>Easy</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="row form-group row-add-trivia node-flex">
+                                  <a class="a-add-more-tset" href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more trivia set</a>
+                                </div>
+
+                                <div class="row row-text-trivia">
+                                    <h2 class="title-header">Sponsors and Prizes</h2>
+                                </div>
+                                <div class="row form-group row-prizes-dropdown">
+                                    <div class="col-md-4">
+                                        <select class="form-control select-sponsor">
+                                            <option>Select Sponsor</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control select-prize">
+                                            <option>Select Prize</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control select-prizelevel">
+                                            <option>Select Prize Level</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group row-add-prizes node-flex">
+                                  <a class="a-add-more-snp" href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more sponsor & prizes</a>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="event-next" type="button"><a class="next" href="#event-form-3">Next</a></button>
+                                </div>
+                                <div class="event-setup">
+                                    <ul class="event-road-map">
+                                        <li class="active"><a class="event-roadmap-3">2</a></li>&nbsp;of&nbsp;
+                                        <li><a class="event-roadmap-3">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
 
 
+                            <div id="event-form-3" class="tab-pane">
+
+                                <h2 class="title-semi-header">Event creation summary</h2>
 
 
+                                <input class="input-nba" type="text" name="name" value="" placeholder="NBA"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
 
-                <div id="event-form-3" class="tab-pane">
-                  <div class="row row-event-summary">
-                    <h2 class="text-justify">Event creation summary</h2>
-                  </div>
-                  <div class="row">
-                    <input class="input-nba" type="text" name="name" value="" placeholder="NBA"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-event-name">
-                    <label class="node-flex">Event Name</label>
-                    <input class="input-event-name" type="text" name="name" value="" placeholder="Lakers vs Clippers"><span class="fa fa-pencil icon-pencil-eventname" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-home-away">
-                    <div class="col-md-4">
-                      <label class="node-flex text-home">Home</label>
-                      <input class="input-nba-home" type="text" name="name" value="" placeholder="Lakers"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-away">Away</label>
-                      <input class="input-nba-away" type="text" name="name" value="" placeholder="Clippers"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
-                    </div>
-                  </div>
-                  <div class="row row-event-time">
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-time">Event Time</label>
-                      <input class="input-event-time" type="text" name="name" value="" placeholder="1500"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-date">Event Date</label>
-                      <input class="input-event-date" type="text" name="name" value="" placeholder="Sep-25-2016"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
-                    </div>
-                  </div>
-                  <div class="row row-event-trivia">
-                    <h2 class="text-justify">Trivia</h2>
-                  </div>
-                  <div class="row">
-                    <input class="input-nba" type="text" name="name" value="" placeholder="Trivia Set A"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-event-sponsors">
-                    <h2 class="text-justify">Sponsors and Prizes</h2>
-                  </div>
-                  <div class="row row-sponsors-prizes">
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-sponsor">Sponsor</label>
-                      <input class="input-event-sponsor" type="text" name="name" value="" placeholder="Wendy's"><span class="fa fa-pencil icon-pencil-sponsor" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-prize">Prize</label>
-                      <input class="input-event-prize" type="text" name="name" value="" placeholder="10% off all items"><span class="fa fa-pencil icon-pencil-prize" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-prizelevel">Prize Level</label>
-                      <input class="input-event-prizelevel" type="text" name="name" value="" placeholder="Normal"><span class="fa fa-pencil icon-pencil-prizelevel" aria-hidden="true"></span>
-                    </div>
-                    <div class="row row-button-confirm">
-                      <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
-                    </div>
-                    <div class="event-setup">
-                      <ul class="event-road-map">
-                        <li class="active"><a class="event-roadmap-3">3</a></li>&nbsp;of&nbsp;
-                        <li><a class="event-roadmap-3">3</a></li>
-                      </ul>
-                    </div>
-                  </div>
+
+                                <label class="text-event-name node-flex">Event Name</label>
+                                <input class="input-event-name" type="text" name="name" value="" placeholder="Lakers vs Clippers"><span class="fa fa-pencil icon-pencil-eventname" aria-hidden="true"></span>
+
+                                <div class="row row-home-away">
+                                    <div class="col-md-4">
+                                        <label class="text-home node-flex">Home</label>
+                                        <input class="input-nba-home" type="text" name="name" value="" placeholder="Lakers"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="text-away node-flex">Away</label>
+                                        <input class="input-nba-away" type="text" name="name" value="" placeholder="Clippers"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="row row-event-time">
+                                    <div class="col-md-4">
+                                        <label class="node-flex text-event-time">Event Time</label>
+                                        <input class="input-event-time" type="text" name="name" value="" placeholder="1500"><span class="fa fa-pencil icon-pencil-time" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="node-flex text-event-date">Event Date</label>
+                                        <input class="input-event-date" type="text" name="name" value="" placeholder="Sep-25-2016"><span class="fa fa-pencil icon-pencil-date" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title-header">Trivia</h2>
+
+
+                                <input class="input-nba" type="text" name="name" value="" placeholder="Trivia Set A"><span class="fa fa-pencil icon-pencil-tset-a" aria-hidden="true"></span>
+
+
+                                <h2 class="title-header">Sponsors and Prizes</h2>
+
+                                <div class="row row-sponsors-prizes">
+                                    <div class="col-md-4">
+                                        <label class="node-flex text-event-sponsor">Sponsor</label>
+                                        <input class="input-event-sponsor" type="text" name="name" value="" placeholder="Wendy's"><span class="fa fa-pencil icon-pencil-sponsor" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="node-flex text-event-prize">Prize</label>
+                                        <input class="input-event-prize" type="text" name="name" value="" placeholder="10% off all items"><span class="fa fa-pencil icon-pencil-prize" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="node-flex text-event-prizelevel">Prize Level</label>
+                                        <input class="input-event-prizelevel" type="text" name="name" value="" placeholder="Normal"><span class="fa fa-pencil icon-pencil-prizelevel" aria-hidden="true"></span>
+                                    </div>
+
+                                    <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
+
+                                    <div class="event-setup">
+                                        <ul class="event-road-map">
+                                            <li class="active"><a class="event-roadmap-3">3</a></li>&nbsp;of&nbsp;
+                                            <li><a class="event-roadmap-3">3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
-
-
-
-              </div>
-            </form>
-          </div>
+            </div>
         </div>
-
-      </div>
     </div>
 
 
-
-
     <footer class="navbar-fixed-bottom container-fluid text-center">
-      <div class="container">
-        <p class="text-muted">&copy; 2016 FanZPlay. All Rights Reserved</p>
-      </div>
+        <div class="container">
+            <p class="text-muted">&copy; 2016 FanZPlay. All Rights Reserved</p>
+        </div>
     </footer>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/create-event.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/00fedaf98c.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/create-event.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/00fedaf98c.js"></script>
 </body>
 </html>
