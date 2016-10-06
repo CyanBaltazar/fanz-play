@@ -33,13 +33,21 @@ table.table-sponsors-prizes tbody tr td a {
 table.table-sponsors-prizes thead tr th {
   border-bottom: none; }
 
-tr.first-record {
+table.table-sponsors-prizes tbody tr td:nth-child(1) {
   color: #BADA55; }
 
-td.expired {
+table.table-sponsors-prizes tbody tr:nth-child(2) td:nth-child(5) {
   color: #c30c15 !important; }
 
 a.a-add-sponsors-prizes {
   color: #BADA55 !important; }
+
+a.a-add-sponsors-prizes:hover {
+  color: #BADA55 !important;
+  text-decoration: none; }
+
+a.a-add-sponsors-prizes:focus {
+  color: #BADA55 !important;
+  text-decoration: none; }
 
 /*# sourceMappingURL=sponsors-and-prizes.css.map */

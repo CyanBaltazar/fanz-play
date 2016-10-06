@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  $(".close-1").click(function() {
-    $(".first-record").hide();
+  $("table tbody tr:nth-child(1) td:nth-child(6)").click(function() {
+    $("table tbody tr:nth-child(1)").hide();
   });
-  $(".close-2").click(function() {
-    $(".second-record").hide();
+  $("table tbody tr:nth-child(2) td:nth-child(6)").click(function() {
+    $("table tbody tr:nth-child(2)").hide();
   });
-  $(".close-3").click(function() {
-    $(".third-record").hide();
+  $("table tbody tr:nth-child(3) td:nth-child(6)").click(function() {
+    $("table tbody tr:nth-child(3)").hide();
   });
-  $(".close-4").click(function() {
-    $(".fourth-record").hide();
+  $("table tbody tr:nth-child(4) td:nth-child(6)").click(function() {
+    $("table tbody tr:nth-child(4)").hide();
   });
 });

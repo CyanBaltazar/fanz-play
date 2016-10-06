@@ -64,7 +64,7 @@ $third-color: #343434; //light grey
 $body-color: #E7E7E7;
 $color-white: #ffffff;
 $color-black: #000000;
-
+$color-expired: #c30c15;
 $button-bordercolor: #8BC34A;
 
 
@@ -983,6 +983,53 @@ div.thank-div {
 
 // End Login Style
 
+
+// Start Sponsors and Prizes Styles
+h1.text-sponsors-prizes {
+  text-align: left;
+  margin-top: 50px;
+}
+
+table.table-sponsors-prizes {
+  font-size: 20px;
+}
+
+table.table-sponsors-prizes tbody tr td {
+  text-align: left;
+  border-top: none;
+}
+
+table.table-sponsors-prizes tbody tr td a {
+  color: $color-white;
+}
+
+table.table-sponsors-prizes thead tr th {
+  border-bottom: none;
+}
+
+table.table-sponsors-prizes tbody tr td:nth-child(1) {
+  color: $secondary-color;
+}
+
+table.table-sponsors-prizes tbody tr:nth-child(2) td:nth-child(5) {
+  color: $color-expired !important;
+}
+
+a.a-add-sponsors-prizes {
+  color: $secondary-color !important;
+}
+
+a.a-add-sponsors-prizes:hover {
+  color: $secondary-color !important;
+  text-decoration: none;
+}
+
+a.a-add-sponsors-prizes:focus {
+  color: $secondary-color !important;
+  text-decoration: none;
+}
+
+// End Sponsors and Prizes Styles
 
 
 

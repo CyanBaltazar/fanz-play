@@ -155,12 +155,20 @@ div.row-create-event h1 {
 
 h2.title-text-trivia {
   @include respond-to(xs) {
-    font-size: 22px;
+    font-size: 20px;
   }
   /* iphone5 Landscape */
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    text-align: center;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     text-align: center;
@@ -169,6 +177,7 @@ h2.title-text-trivia {
 
 .title-header {
   @include respond-to(xs) {
+    text-align: center;
     font-size: 22px !important;
   }
   /* iphone5 Landscape */
@@ -177,7 +186,15 @@ h2.title-text-trivia {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    text-align: center;
+
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
   }
 }
 
@@ -208,7 +225,7 @@ div.draw-radio-button:focus {
 h1.team-lakers {
 
   @include respond-to(xs) {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -266,7 +283,7 @@ div.menu-items ul li a {
 div.menu-items ul li a h3 {
   margin-left: 75px;
   @include respond-to(xs) {
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     margin-bottom: -10px;
   }
@@ -277,7 +294,7 @@ div.menu-items ul li a h4 {
   @include respond-to(xs) {
     margin-left: 90px;
     margin-bottom: -10px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -379,13 +396,22 @@ i.icon-down {
   }
   /* iphone5 Landscape */
   @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-      position: absolute;
-      top: 110px;
-      right: 175px;
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    position: absolute;
+    top: 110px;
+    right: 90px !important;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    position: absolute;
+    left: 300px;
   }
 }
 
@@ -395,6 +421,14 @@ a.a-add-more-tset {
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
@@ -417,6 +451,14 @@ a.a-add-more-snp {
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
@@ -492,9 +534,19 @@ table.dropdown-menu {
   and (orientation: landscape) {
     width: 45%;
     position: absolute;
-    top: 130px;
-    left: 140px;
+    top: 130px !important;
+    left: 140px !important;
     border-radius: 0px;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    position: absolute;
+    top: 130px;
+    left: 212px;
   }
 }
 
@@ -516,6 +568,14 @@ input.input-trivia {
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
@@ -563,6 +623,14 @@ input.input-nba {
   and (orientation: landscape) {
     margin: 0 auto;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
 }
 
 input.input-nba-home {
@@ -586,6 +654,14 @@ input.input-nba-home {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
   }
 }
 
@@ -612,6 +688,14 @@ input.input-nba-away {
   and (orientation: landscape) {
     margin: 0 auto;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
+  }
 }
 
 
@@ -633,6 +717,14 @@ input.input-event-name {
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
@@ -661,6 +753,14 @@ input.input-event-time {
   and (orientation: landscape) {
     margin-left: 60px !important;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
 }
 
 input.input-event-date {
@@ -688,6 +788,14 @@ input.input-event-date {
     font-size: 16px;
     margin-left: 60px !important;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin: 0 auto;
+  }
 }
 
 input.input-event-sponsor {
@@ -711,6 +819,14 @@ input.input-event-sponsor {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
   }
 }
 
@@ -738,6 +854,14 @@ input.input-event-prize {
     margin: 0 auto;
     margin-left: 60px;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
+  }
 }
 
 input.input-event-prizelevel {
@@ -762,6 +886,14 @@ input.input-event-prizelevel {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin: 0 auto;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
   }
 }
 
@@ -837,6 +969,14 @@ label.text-home {
   @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 60px;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin-left: 60px;
@@ -1378,7 +1518,7 @@ button.event-confirm {
   font-size: 18px;
   font-weight: bold;
   @include respond-to(xs) {
-    height: 60px;
+    height: 50px;
     width: 250px;
     font-size: 16px;
   }
@@ -1539,9 +1679,17 @@ h1.text-title {
   and (orientation: landscape) {
     margin-left: 60px;
   }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 75px;
+  }
 }
 
-.text-event-name {
+label.text-event-name {
   /* iphone5 Landscape */
   @media only screen
   and (min-device-width: 320px)
@@ -1549,6 +1697,14 @@ h1.text-title {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     margin-left: 60px;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-left: 75px;
   }
 }
 

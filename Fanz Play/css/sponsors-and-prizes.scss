@@ -96,14 +96,24 @@ table.table-sponsors-prizes thead tr th {
   border-bottom: none;
 }
 
-tr.first-record {
+table.table-sponsors-prizes tbody tr td:nth-child(1) {
   color: $secondary-color;
 }
 
-td.expired {
+table.table-sponsors-prizes tbody tr:nth-child(2) td:nth-child(5) {
   color: $color-expired !important;
 }
 
 a.a-add-sponsors-prizes {
   color: $secondary-color !important;
+}
+
+a.a-add-sponsors-prizes:hover {
+  color: $secondary-color !important;
+  text-decoration: none;
+}
+
+a.a-add-sponsors-prizes:focus {
+  color: $secondary-color !important;
+  text-decoration: none;
 }
