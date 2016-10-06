@@ -560,8 +560,7 @@ button:hover {
   color: #BADA55 !important; }
 
 h1.text-sponsors-prizes {
-  text-align: left;
-  margin-top: 50px; }
+  text-align: left; }
 
 table.table-sponsors-prizes {
   font-size: 20px; }
@@ -592,6 +591,18 @@ a.a-add-sponsors-prizes:hover {
 a.a-add-sponsors-prizes:focus {
   color: #BADA55 !important;
   text-decoration: none; }
+
+button.button-edit {
+  background-color: #BADA55;
+  border: 2px solid #BADA55 !important; }
+
+button.button-edit:hover {
+  color: #BADA55;
+  background-color: #ffffff;
+  border: 2px solid #BADA55 !important; }
+
+.expired {
+  color: #c30c15; }
 
 .circle {
   border-radius: 50% !important; }
