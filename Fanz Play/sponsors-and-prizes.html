@@ -96,14 +96,14 @@
                     <th></th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="tsp-body">
                   <tr>
-                    <td>50% Off on Big Mac</td>
+                    <td><a href="created-event.html">50% Off on Big Mac</a></td>
                     <td>McDonalds</td>
                     <td>Normal</td>
                     <td>Aug 10, 2016</td>
                     <td>Aug 15, 2016</td>
-                    <td><a href="#"><span class="fa fa-times"></span></a></td>
+                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
                     <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
                   </tr>
                   <tr>
@@ -112,7 +112,7 @@
                     <td>Normal</td>
                     <td>Aug 15, 2016</td>
                     <td class="expired">EXPIRED</td>
-                    <td><a href="#"><span class="fa fa-times"></span></a></td>
+                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
                     <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
                   </tr>
                   <tr>
@@ -121,7 +121,7 @@
                     <td>Grand</td>
                     <td>Sep 01, 2016</td>
                     <td>Sep 11, 2016</td>
-                    <td><a href="#"><span class="fa fa-times"></span></a></td>
+                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
                     <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
                   </tr>
                   <tr>
@@ -130,7 +130,7 @@
                     <td>Normal</td>
                     <td>Sep 05, 2016</td>
                     <td>Sep 30, 2016</td>
-                    <td><a href="#"><span class="fa fa-times"></span></a></td>
+                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
                     <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
                   </tr>
                 </tbody>
@@ -140,7 +140,22 @@
             <a class="a-add-sponsors-prizes" href="#create-trivia-set" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span>&nbsp;Add Sponsors and Prizes</a>
 
 
+            <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
 
+                  </div>
+                  <div class="modal-body">
+                    <h3>Are you sure you want to delete?</h3>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok btn-delete" onclick="deleteRow(this)">Delete</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog">

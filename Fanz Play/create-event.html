@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-fixed-top connect-sidebar">
         <div class="container padding-5px">
-            <div class="navbar-header">
+            <div class="navbar-header visible-sm">
               <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
 
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -54,7 +54,7 @@
 
     <div class="container">
         <div class="row content">
-            <div class="col-md-4 sidebar-menu text-center hidden-xs">
+            <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
                 <div class="menu-items">
                     <ul>
                         <li class="menu-team">
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-8 text-center">
+            <div class="col-md-8 col-xs-12 text-center">
                 <div class="container-event">
                     <form>
                         <div class="event-tab-content">
@@ -86,8 +86,7 @@
                                 <h1 class="title-header">Create an event</h1>
                             </div>
 
-                            <div id="event-form-2" class="tab-pane active">
-
+                            <div id="event-form-2" class="wrapper-content tab-pane active">
                                 <h2 class="title-text-trivia">Trivia</h2>
 
                                 <div class="form-group row-trivia-dropdown">
@@ -178,67 +177,150 @@
 
 
 
-                            <div id="event-form-3" class="tab-pane">
-
-                                <h2 class="title-semi-header">Event creation summary</h2>
-
-
-                                <input class="input-nba" type="text" name="name" value="" placeholder="NBA"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
-
-
-                                <label class="text-event-name node-flex">Event Name</label>
-                                <input class="input-event-name" type="text" name="name" value="" placeholder="Lakers vs Clippers"><span class="fa fa-pencil icon-pencil-eventname" aria-hidden="true"></span>
-
-                                <div class="row row-home-away">
-                                    <div class="col-md-4">
-                                        <label class="text-home node-flex">Home</label>
-                                        <input class="input-nba-home" type="text" name="name" value="" placeholder="Lakers"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="text-away node-flex">Away</label>
-                                        <input class="input-nba-away" type="text" name="name" value="" placeholder="Clippers"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
-                                    </div>
+                            <div id="event-form-3" class="wrapper-content tab-pane">
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Name</label>
                                 </div>
-                                <div class="row row-event-time">
-                                    <div class="col-md-4">
-                                        <label class="node-flex text-event-time">Event Time</label>
-                                        <input class="input-event-time" type="text" name="name" value="" placeholder="1500"><span class="fa fa-pencil icon-pencil-time" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="node-flex text-event-date">Event Date</label>
-                                        <input class="input-event-date" type="text" name="name" value="" placeholder="Sep-25-2016"><span class="fa fa-pencil icon-pencil-date" aria-hidden="true"></span>
-                                    </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <input class="textbox-style" type="text">
                                 </div>
+                              </div>
 
-                                <h2 class="title-header">Trivia</h2>
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Start Date</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <input class="textbox-style" type="date">
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">End Date</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <input class="textbox-style" type="date">
+                                </div>
+                              </div>
 
 
-                                <input class="input-nba" type="text" name="name" value="" placeholder="Trivia Set A"><span class="fa fa-pencil icon-pencil-tset-a" aria-hidden="true"></span>
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Event Type</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <select class="select-style">
+                                    <option value="option"></option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Home Team</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <select class="select-style">
+                                    <option value="option"></option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Visiting Team</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <select class="select-style">
+                                    <option value="option"></option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Venue</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <select class="select-style">
+                                    <option value="option"></option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Free Seating</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <input class="checkbox-style node-flex" type="checkbox">
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Round Waiting Time</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <input class="textbox-style" type="number">
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                  <label class="label-generic" for="event-name">Rewards</label>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                  <select class="select-style">
+                                    <option value="option">Starbucks</option>
+                                    <option value="option">Burger King</option>
+                                    <option value="option">Army Navy</option>
+                                    <option value="option">Others</option>
+                                  </select>
+                                </div>
+                              </div>
 
 
-                                <h2 class="title-header">Sponsors and Prizes</h2>
 
-                                <div class="row row-sponsors-prizes">
-                                    <div class="col-md-4">
-                                        <label class="node-flex text-event-sponsor">Sponsor</label>
-                                        <input class="input-event-sponsor" type="text" name="name" value="" placeholder="Wendy's"><span class="fa fa-pencil icon-pencil-sponsor" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="node-flex text-event-prize">Prize</label>
-                                        <input class="input-event-prize" type="text" name="name" value="" placeholder="10% off all items"><span class="fa fa-pencil icon-pencil-prize" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="node-flex text-event-prizelevel">Prize Level</label>
-                                        <input class="input-event-prizelevel" type="text" name="name" value="" placeholder="Normal"><span class="fa fa-pencil icon-pencil-prizelevel" aria-hidden="true"></span>
-                                    </div>
 
-                                    <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
+
+
+
+
+                              <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
+                                </div>
+                              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                     <div class="event-setup">
+                                      <div class="pager-circle">
                                         <ul class="event-road-map">
+                                            <li><a class="previous" href="#"><</a></li>&nbsp;
                                             <li class="active"><a class="event-roadmap-3">3</a></li>&nbsp;of&nbsp;
-                                            <li><a class="event-roadmap-3">3</a></li>
+                                            <li><a class="event-roadmap-3">3</a></li>&nbsp;
+                                            <li><a class="next" href="#">></a></li>
                                         </ul>
+                                      </div>
                                     </div>
                                 </div>
                             </div>

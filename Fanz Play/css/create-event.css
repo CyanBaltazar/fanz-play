@@ -80,16 +80,20 @@ div.row-inputquestion-1 {
 
 h2.title-text-trivia {
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Landscape */ }
   @media screen and (max-width: 767px) {
     h2.title-text-trivia {
       font-size: 20px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     h2.title-text-trivia {
-      text-align: center; } }
+      text-align: center !important; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     h2.title-text-trivia {
-      text-align: center; } }
+      text-align: center !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    h2.title-text-trivia {
+      text-align: center !important; } }
 
 .title-header {
   /* iphone5 Landscape */
@@ -193,15 +197,12 @@ h4.submenu-last-item {
 div.container-event {
   margin-top: 80px;
   margin-left: 50px; }
+  @media screen and (max-width: 767px) {
+    div.container-event {
+      margin-left: auto; } }
 
 div.container-success {
   margin-left: 50px; }
-
-div.row-create-event {
-  margin-top: 30px; }
-
-div.row-event-name {
-  margin-bottom: 20px; }
 
 div.row-trivia-dropdown {
   display: flex;
@@ -213,7 +214,6 @@ div.row-trivia-dropdown ul {
 
 div.row-home-away {
   margin-bottom: 20px;
-  margin-left: auto;
   /* iphone5 Portrait */
   /* iphone5 Landscape */ }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -222,18 +222,13 @@ div.row-home-away {
 
 div.row-event-time {
   margin-bottom: 20px;
-  margin: auto;
   /* iphone5 Landscape */ }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     div.row-event-time {
       margin-left: -15px !important; } }
 
 div.row-sponsors-prizes {
-  margin-left: auto;
   /* iphone5 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    div.row-sponsors-prizes {
-      margin-left: -15px; } }
 
 @media screen and (max-width: 767px) {
   div.row-event-trivia {
@@ -244,31 +239,63 @@ i.icon-down {
   right: 550px;
   top: 210px;
   cursor: pointer;
+  /* iphone5 Portrait */
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */
+  /* iphone6 plus(+) Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     i.icon-down {
-      position: absolute;
-      top: 110px;
-      right: 90px; } }
+      position: absolute !important;
+      top: 188px !important;
+      left: 283px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     i.icon-down {
-      position: absolute;
-      top: 110px;
-      right: 90px !important; } }
+      position: absolute !important;
+      top: 188px !important;
+      left: 382px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    i.icon-down {
+      position: absolute !important;
+      top: 188px !important;
+      left: 334px !important; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     i.icon-down {
       position: absolute;
-      left: 300px; } }
+      top: 189px !important;
+      left: 493px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    i.icon-down {
+      position: absolute !important;
+      top: 188px !important;
+      left: 368px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    i.icon-down {
+      position: absolute !important;
+      right: 185px !important;
+      top: 188px !important; } }
 
 a.a-add-more-tset {
   color: #BADA55;
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */
+  /* iphone6 plus(+) Landscape */ }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     a.a-add-more-tset {
       margin: 0 auto; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    a.a-add-more-tset {
+      margin: 0 auto; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    a.a-add-more-tset {
+      margin: 0 auto; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    a.a-add-more-tset {
+      margin: 0 auto; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     a.a-add-more-tset {
       margin: 0 auto; } }
 
@@ -283,11 +310,19 @@ a.a-add-more-tset:focus {
 a.a-add-more-snp {
   color: #BADA55;
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     a.a-add-more-snp {
       margin: 0 auto; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    a.a-add-more-snp {
+      margin: 0 auto; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    a.a-add-more-snp {
+      margin: 0 auto; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     a.a-add-more-snp {
       margin: 0 auto; } }
 
@@ -330,29 +365,34 @@ table.dropdown-menu {
   border-radius: 0px;
   /* iphone5 Portrait */
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
   @media screen and (max-width: 767px) {
     table.dropdown-menu {
       font-size: 12px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     table.dropdown-menu {
-      width: 70%;
-      position: absolute;
-      top: 130px;
-      left: 65px;
+      width: 70% !important;
+      position: absolute !important;
+      top: 208px !important;
+      left: 67px !important;
       font-size: 11px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     table.dropdown-menu {
       width: 45%;
-      position: absolute;
-      top: 130px !important;
-      left: 140px !important;
-      border-radius: 0px; } }
+      position: absolute !important;
+      top: 208px !important;
+      left: 138px !important; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     table.dropdown-menu {
-      position: absolute;
-      top: 130px;
-      left: 212px; } }
+      font-size: 14px !important;
+      width: 40% !important;
+      position: absolute !important;
+      top: 208px !important;
+      left: 225px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    table.dropdown-menu {
+      font-size: 14px !important; } }
 
 table.dropdown-menu thead {
   background-color: #121212; }
@@ -360,20 +400,118 @@ table.dropdown-menu thead {
 table.dropdown-menu tbody {
   color: #121212; }
 
+div.pager-circle {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  margin: auto;
+  padding: 40px 0;
+  background-color: transparent;
+  border: 3px solid #ffffff; }
+
+a.previous {
+  color: #ffffff !important; }
+
+a.previous:hover {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  text-decoration: none !important; }
+
+a.previous:focus {
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
+a.next {
+  color: #ffffff !important; }
+
+a.next:hover {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  text-decoration: none !important; }
+
+a.next:focus {
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
 input.input-trivia {
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
   border-width: 1px;
+  /* iphone5 Portrait */
   /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Landscape */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    input.input-trivia {
+      width: 95% !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     input.input-trivia {
       margin: 0 auto; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     input.input-trivia {
-      margin: 0 auto; } }
+      width: 50% !important;
+      margin: 0 auto !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    input.input-trivia {
+      width: 50% !important;
+      margin: 0 auto !important; } }
+
+label.label-generic {
+  float: left;
+  margin: 20px 20px 0px 0px; }
+  @media screen and (max-width: 767px) {
+    label.label-generic {
+      font-size: 12px;
+      margin: 5px 20px 0px 0px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    label.label-generic {
+      font-size: 14px;
+      margin: 5px 20px 0px 0px; } }
+
+input.textbox-style {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  margin: 20px 20px 0px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    input.textbox-style {
+      width: 95%;
+      font-size: 14px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    input.textbox-style {
+      width: 95%;
+      font-size: 16px; } }
+
+select.select-style {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 20px 0px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    select.select-style {
+      width: 95%;
+      font-size: 14px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    select.select-style {
+      width: 95%;
+      font-size: 16px; } }
+
+input.checkbox-style {
+  margin: 20px 20px 0px 0px !important; }
 
 input.input-set-trivia {
   float: left;
@@ -390,220 +528,6 @@ input.input-question-1 {
   border-right: none;
   border-left: none;
   border-bottom: 1.5px solid #000000; }
-
-input.input-nba {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-nba {
-      width: 65vw;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba {
-      margin: 0 auto; } }
-
-input.input-nba-home {
-  display: flex;
-  align-items: flex-start;
-  margin-left: -15px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-nba-home {
-      width: 65vw;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba-home {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba-home {
-      margin-left: 60px; } }
-
-input.input-nba-away {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-nba-away {
-      width: 65vw;
-      font-size: 16px;
-      margin-left: -15px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba-away {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-nba-away {
-      margin-left: 60px; } }
-
-input.input-event-name {
-  display: flex;
-  width: 503px;
-  align-items: flex-start;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-name {
-      width: 65vw;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-name {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-name {
-      margin: 0 auto; } }
-
-input.input-event-time {
-  display: flex;
-  align-items: flex-start;
-  margin-left: -15px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-time {
-      width: 65vw;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-time {
-      margin-left: 60px !important; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-time {
-      margin: 0 auto; } }
-
-input.input-event-date {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-date {
-      width: 65vw;
-      font-size: 16px;
-      margin-left: -15px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-date {
-      width: 65vw;
-      font-size: 16px;
-      margin-left: 60px !important; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-date {
-      margin: 0 auto; } }
-
-input.input-event-sponsor {
-  display: flex;
-  align-items: flex-start;
-  margin-left: -15px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-sponsor {
-      width: 65vw;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-sponsor {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-sponsor {
-      margin-left: 60px; } }
-
-input.input-event-prize {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-prize {
-      width: 65vw;
-      margin-left: -18px;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-prize {
-      margin: 0 auto;
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-prize {
-      margin-left: 60px; } }
-
-input.input-event-prizelevel {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 35px;
-  font-size: 20px;
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #ffffff;
-  /* iphone5 Landscape */
-  /* iphone6 Landscape */ }
-  @media screen and (max-width: 767px) {
-    input.input-event-prizelevel {
-      width: 65vw;
-      margin-left: -18px;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-prizelevel {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    input.input-event-prizelevel {
-      margin-left: 60px; } }
 
 input.input-difficulty {
   width: 120px;
@@ -661,77 +585,34 @@ input.radio-option-2:checked ~ .draw-radio-button {
   background-color: #BADA55; }
 
 label.text-home {
-  margin-left: -15px;
   /* iphone5 Landscape */
   /* iphone6 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-home {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-home {
-      margin-left: 60px; } }
 
 label.text-away {
-  margin-left: 10px;
   /* iphone5 Portrait */
   /* iphone5 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    label.text-away {
-      margin-left: -15px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-away {
-      margin-left: 60px; } }
 
 label.text-event-time {
-  margin-left: -15px;
   /* iphone5 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-time {
-      margin-left: 60px; } }
 
 label.text-event-date {
-  margin-left: 10px;
   /* iphone5 Landscape */
   /* iphone5 Portrait */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-date {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    label.text-event-date {
-      margin-left: -15px; } }
 
 label.text-event-sponsor {
-  margin-left: -15px;
   /* iphone5 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-sponsor {
-      margin-left: 60px; } }
 
 label.text-trivia-setname {
   float: left;
   font-size: 14px; }
 
 label.text-event-prize {
-  margin-left: 10px;
   /* iphone5 Landscape */
   /* iphone5 Portrait */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-prize {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    label.text-event-prize {
-      margin-left: -15px; } }
 
 label.text-event-prizelevel {
-  margin-left: 35px;
   /* iphone5 Landscape */
   /* iphone5 Portrait */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-prizelevel {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    label.text-event-prizelevel {
-      margin-left: -15px; } }
 
 label.text-difficulty {
   font-size: 14px;
@@ -774,19 +655,38 @@ span.icon-pencil-league {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-league {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-league {
-      position: absolute;
-      font-size: 16px;
-      top: 150px;
-      left: 258px; } }
+      position: absolute !important;
+      top: 75px !important;
+      left: 175px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-league {
-      position: absolute;
-      top: 150px;
-      right: -380px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 75px !important;
+      left: 443px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-league {
+      position: absolute !important;
+      top: 75px !important;
+      left: 219px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-league {
+      position: absolute !important;
+      top: 75px !important;
+      left: 510px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-league {
+      position: absolute !important;
+      top: 75px !important;
+      left: 259px !important; } }
 
 span.icon-pencil-tset-a {
   float: right;
@@ -797,19 +697,38 @@ span.icon-pencil-tset-a {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-tset-a {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-tset-a {
-      position: absolute;
-      font-size: 16px;
-      top: 508px;
-      left: 257px; } }
+      position: absolute !important;
+      top: 80px !important;
+      left: 173px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-tset-a {
-      position: absolute;
-      top: 485px;
-      right: -380px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 80px !important;
+      left: 443px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-tset-a {
+      position: absolute !important;
+      top: 80px !important;
+      left: 215px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-tset-a {
+      position: absolute !important;
+      top: 81px !important;
+      left: 505px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-tset-a {
+      position: absolute !important;
+      top: 81px !important;
+      left: 255px !important; } }
 
 span.icon-pencil-eventname {
   float: right;
@@ -820,22 +739,38 @@ span.icon-pencil-eventname {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
   @media screen and (max-width: 767px) {
     span.icon-pencil-eventname {
       font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-eventname {
       position: absolute;
-      top: 198px;
-      right: -148px;
-      font-size: 16px; } }
+      top: 52px;
+      left: 172px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-eventname {
-      position: absolute;
-      top: 178px;
-      right: -120px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 52px !important;
+      left: 443px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-eventname {
+      position: absolute !important;
+      top: 52px !important;
+      left: 218px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-eventname {
+      position: absolute !important;
+      top: 52px !important;
+      left: 508px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-eventname {
+      position: absolute !important;
+      top: 52px !important;
+      left: 259px !important; } }
 
 span.icon-pencil-home {
   float: right;
@@ -848,20 +783,38 @@ span.icon-pencil-home {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
   @media screen and (max-width: 767px) {
     span.icon-pencil-home {
       font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-home {
-      position: absolute;
-      right: 50px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 52px !important;
+      left: 107px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-home {
-      position: absolute;
-      top: 52px;
-      right: 75px; } }
+      position: absolute !important;
+      top: 50px !important;
+      left: 403px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-home {
+      position: absolute !important;
+      top: 52px !important;
+      left: 144px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-home {
+      position: absolute !important;
+      top: 52px !important;
+      left: 431px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-home {
+      position: absolute !important;
+      top: 52px !important;
+      left: 186px !important; } }
 
 span.icon-pencil-away {
   float: right;
@@ -872,21 +825,38 @@ span.icon-pencil-away {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
   @media screen and (max-width: 767px) {
     span.icon-pencil-away {
       font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-away {
-      position: absolute;
-      right: 100px;
-      top: 52px; } }
+      position: absolute !important;
+      top: 52px !important;
+      left: 187px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-away {
-      position: absolute;
-      top: 52px;
-      right: 125px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 50px !important;
+      left: 459px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-away {
+      position: absolute !important;
+      top: 52px !important;
+      left: 232px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-away {
+      position: absolute !important;
+      top: 52px !important;
+      left: 522px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-away {
+      position: absolute !important;
+      top: 52px !important;
+      left: 273px !important; } }
 
 span.icon-pencil-time {
   float: right;
@@ -899,113 +869,203 @@ span.icon-pencil-time {
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-time {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-time {
-      font-size: 16px;
-      position: absolute;
-      left: 150px; } }
+      position: absolute !important;
+      top: 52px !important;
+      left: 107px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-time {
-      color: #BADA55;
-      position: absolute;
-      top: 52px;
-      left: 355px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 50px !important;
+      left: 403px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-time {
+      position: absolute !important;
+      top: 52px !important;
+      left: 143px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-time {
+      position: absolute !important;
+      top: 52px !important;
+      left: 429px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-time {
+      position: absolute !important;
+      top: 52px !important;
+      left: 184px !important; } }
 
 span.icon-pencil-date {
-  float: right;
-  margin-right: -25px;
-  margin-top: -25px;
   position: absolute;
-  top: 53px;
-  right: -10px;
+  right: 15px;
+  bottom: 5px;
   z-index: 2;
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-date {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-date {
-      font-size: 16px;
-      position: absolute;
-      left: 125px; } }
+      position: absolute !important;
+      top: 25px !important;
+      left: 130px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-date {
-      color: #BADA55;
-      position: absolute;
-      top: 52px;
-      left: 335px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 27px !important;
+      left: 427px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-date {
+      position: absolute !important;
+      top: 27px !important;
+      left: 166px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-date {
+      position: absolute !important;
+      top: 26px !important;
+      left: 454px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-date {
+      position: absolute !important;
+      top: 27px !important;
+      left: 208px !important; } }
 
 span.icon-pencil-sponsor {
   float: right;
-  margin-right: -25px;
-  margin-top: -25px;
-  position: relative;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
   z-index: 2;
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-sponsor {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-sponsor {
-      position: absolute;
-      font-size: 16px;
-      top: 52px;
-      left: 192px; } }
+      position: absolute !important;
+      top: 26px !important;
+      left: 135px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-sponsor {
-      position: absolute;
-      top: 50px;
-      right: 100px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 27px !important;
+      left: 425px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-sponsor {
+      position: absolute !important;
+      top: 26px !important;
+      left: 163px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-sponsor {
+      position: absolute !important;
+      top: 28px !important;
+      left: 447px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-sponsor {
+      position: absolute !important;
+      top: 26px !important;
+      left: 210px !important; } }
 
 span.icon-pencil-prize {
-  float: right;
-  margin-right: -50px;
-  margin-top: -25px;
-  position: relative;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
   z-index: 2;
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-prize {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-prize {
-      position: absolute;
-      font-size: 16px;
-      top: 52px;
-      left: 192px; } }
+      position: absolute !important;
+      top: 26px !important;
+      left: 135px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-prize {
-      position: absolute;
-      top: 50px;
-      right: 125px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 27px !important;
+      left: 423px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-prize {
+      position: absolute !important;
+      top: 26px !important;
+      left: 162px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-prize {
+      position: absolute !important;
+      top: 28px !important;
+      left: 448px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-prize {
+      position: absolute !important;
+      top: 26px !important;
+      left: 210px !important; } }
 
 span.icon-pencil-prizelevel {
-  float: right;
-  margin-right: -75px;
-  margin-top: -25px;
-  position: relative;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
   z-index: 2;
   font-size: 20px;
   color: #BADA55;
   /* iphone5 Portrait */
-  /* iphone5 Landscape */ }
+  /* iphone5 Landscape */
+  /* iphone6 Portrait */
+  /* iphone6 Landscape */
+  /* iphone6 plus(+) Portrait */ }
+  @media screen and (max-width: 767px) {
+    span.icon-pencil-prizelevel {
+      font-size: 16px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     span.icon-pencil-prizelevel {
-      position: absolute;
-      font-size: 16px;
-      top: 52px;
-      left: 192px; } }
+      position: absolute !important;
+      top: 27px !important;
+      left: 132px !important; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     span.icon-pencil-prizelevel {
-      position: absolute;
-      top: 50px;
-      right: 150px;
-      font-size: 16px; } }
+      position: absolute !important;
+      top: 27px !important;
+      left: 423px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    span.icon-pencil-prizelevel {
+      position: absolute !important;
+      top: 27px !important;
+      left: 161px !important; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    span.icon-pencil-prizelevel {
+      position: absolute !important;
+      top: 27px !important;
+      left: 448px !important; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    span.icon-pencil-prizelevel {
+      position: absolute !important;
+      top: 27px !important;
+      left: 210px !important; } }
 
 button.button-done {
   color: #ffffff;
@@ -1045,27 +1105,27 @@ button.button-done-close:hover {
 button.event-confirm {
   margin-top: 60px;
   margin-bottom: 40px;
-  width: 40%;
+  width: 50%;
   height: 50px;
   background-color: #BADA55;
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: bold;
-  /* iphone5 Portrait */ }
+  font-weight: bold; }
   @media screen and (max-width: 767px) {
     button.event-confirm {
-      height: 50px;
-      width: 250px;
-      font-size: 16px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    button.event-confirm {
       height: 40px;
-      width: 220px;
-      font-size: 14px;
+      width: 80%;
+      font-size: 16px;
       margin-top: 20px;
-      margin-bottom: 40px;
-      margin-left: -55px; } }
+      margin-bottom: 40px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    button.event-confirm {
+      height: 50px;
+      width: 50%;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 40px; } }
 
 button.event-next {
   margin-top: 60px;
@@ -1107,7 +1167,17 @@ button.event-next a:hover {
 ul.event-road-map {
   display: inline-flex;
   list-style: none;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 90px; }
+
+div.event-tab-content {
+  max-width: 650px;
+  margin: 0 auto; }
+
+div.wrapper-content {
+  max-width: 100%;
+  margin: auto;
+  /* iphone6 Landscape */ }
 
 div ul li a.event-roadmap-3 {
   color: #ffffff !important; }
@@ -1120,6 +1190,10 @@ div a.a-create-trivia:focus {
 
 div a.a-create-trivia:hover {
   text-decoration: none; }
+
+div.div-style {
+  position: relative;
+  width: 100%; }
 
 a.a-more-options {
   color: #BADA55;
@@ -1171,26 +1245,18 @@ h1.text-title {
 
 .title-semi-header {
   /* iphone5 Landscape */
+  /* iphone6 Portrait */
   /* iphone6 Landscape */ }
   @media screen and (max-width: 767px) {
     .title-semi-header {
       font-size: 18px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .title-semi-header {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .title-semi-header {
-      margin-left: 75px; } }
+      font-size: 17px; } }
 
 label.text-event-name {
   /* iphone5 Landscape */
   /* iphone6 Landscape */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-name {
-      margin-left: 60px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    label.text-event-name {
-      margin-left: 75px; } }
 
 span.text-green {
   color: #BADA55; }

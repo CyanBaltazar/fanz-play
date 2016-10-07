@@ -1153,6 +1153,21 @@ button.button-edit:hover {
     display: flex !important;
   }
 
+  .flex-start {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .flex-center {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .flex-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
 // End Display
 
 

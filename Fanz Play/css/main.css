@@ -664,6 +664,18 @@ button.button-edit:hover {
 .node-flex {
   display: flex !important; }
 
+.flex-start {
+  display: flex !important;
+  justify-content: flex-start !important; }
+
+.flex-center {
+  display: flex !important;
+  justify-content: center !important; }
+
+.flex-end {
+  display: flex !important;
+  justify-content: flex-end !important; }
+
 .font-1 {
   font-size: 1px !important; }
 
