@@ -20,6 +20,10 @@ nav {
 h1, h2, h3, h4 {
   text-align: left; }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 24px !important; } }
+
 .fp-menu {
   float: right !important; }
   @media screen and (max-width: 767px) {
@@ -35,7 +39,7 @@ li a:hover {
   color: #ffffff !important; }
 
 div.sidebar-menu {
-  height: 100vh;
+  height: 100vmax;
   background-color: #121212;
   border: none; }
 

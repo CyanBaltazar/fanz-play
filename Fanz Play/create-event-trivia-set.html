@@ -10,40 +10,75 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-static-top connect-sidebar">
-        <div class="container padding-5px">
-            <div class="navbar-header">
-                <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-fixed-top connect-sidebar">
+      <div class="container padding-5px">
+          <div class="navbar-header visible-sm">
+            <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar">
+              <div class="text-center visible-xs">
+                  <div class="menu-items">
+                      <ul class="nav navbar-nav">
+                          <li class="menu-team">
+                              <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                              <select class="form-control select-team">
+                                  <option></option>
+                              </select>
+                          </li>
+                          <li><a href="#"><h3>Calendar</h3></a></li>
+                          <li><a href="#"><h3>Invitations</h3></a></li>
+                          <li><a href="#"><h3>Events</h3></a></li>
+                          <li class="active"><a href="#"><h4>Create Events</h4></a></li>
+                          <li><a href="#"><h4>Pending Events</h4></a></li>
+                          <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                          <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
+                          <li><a href="#"><h3>Trivia</h3></a></li>
+                          <li><a href="#"><h3>Sponsors</h3></a></li>
+                          <li><a href="#"><h3>Statistics</h3></a></li>
+                          <li><a href="#"><h3>Help</h3></a></li>
+                          <li><a href="#"><h3>Logout</h3></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </nav>
 
     <div class="container">
       <div class="row content">
-        <div class="col-md-4 sidebar-menu text-center">
-          <div class="menu-items">
-            <ul>
-              <li class="menu-team">
-                <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                <select class="form-control select-team">
-                  <option></option>
-                </select>
-              </li>
-              <li><a href="#"><h3>Calendar</h3></a></li>
-              <li><a href="#"><h3>Invitations</h3></a></li>
-              <li><a href="#"><h3>Events</h3></a></li>
-                <li><a href="#"><h4>Create Events</h4></a></li>
-                <li><a href="#"><h4>Pending Events</h4></a></li>
-                <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
-              <li><a href="#"><h3>Trivia</h3></a></li>
-              <li><a href="#"><h3>Sponsors</h3></a></li>
-              <li><a href="#"><h3>Statistics</h3></a></li>
-              <li><a href="#"><h3>Help</h3></a></li>
-              <li><a href="#"><h3>Logout</h3></a></li>
-            </ul>
-          </div>
+        <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
+            <div class="menu-items">
+                <ul>
+                    <li class="menu-team">
+                        <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                        <select class="form-control select-team">
+                            <option></option>
+                        </select>
+                    </li>
+                    <li><a href="#"><h3>Calendar</h3></a></li>
+                    <li><a href="#"><h3>Invitations</h3></a></li>
+                    <li><a href="#"><h3>Events</h3></a></li>
+                    <li><a href="#"><h4>Create Events</h4></a></li>
+                    <li><a href="#"><h4>Pending Events</h4></a></li>
+                    <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                    <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                    <li><a href="#"><h3>Trivia</h3></a></li>
+                    <li><a href="#"><h3>Sponsors</h3></a></li>
+                    <li><a href="#"><h3>Statistics</h3></a></li>
+                    <li><a href="#"><h3>Help</h3></a></li>
+                    <li><a href="#"><h3>Logout</h3></a></li>
+                </ul>
+            </div>
         </div>
+
 
         <div class="col-md-8 text-center">
           <div class="container-fluid container-event">
@@ -303,68 +338,68 @@
                 </div>
 
                 <div id="event-form-3" class="tab-pane">
-                  <div class="row row-event-summary">
-                    <h2>Event creation summary</h2>
-                  </div>
+
                   <div class="row">
-                    <input class="input-nba" type="text" name="name" value="" placeholder="NBA"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-event-name">
-                    <label class="node-flex">Event Name</label>
-                    <input class="input-event-name" type="text" name="name" value="" placeholder="Lakers vs Clippers"><span class="fa fa-pencil icon-pencil-eventname" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-home-away">
-                    <div class="col-md-4">
-                      <label class="node-flex text-home">Home</label>
-                      <input class="input-nba-home" type="text" name="name" value="" placeholder="Lakers"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-away">Away</label>
-                      <input class="input-nba-away" type="text" name="name" value="" placeholder="Clippers"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
+                    <div class="col-md-12">
+                      <h2>Event Creation Summary</h2>
                     </div>
                   </div>
-                  <div class="row row-event-time">
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-time">Event Time</label>
-                      <input class="input-event-time" type="text" name="name" value="" placeholder="1500"><span class="fa fa-pencil icon-pencil-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-date">Event Date</label>
-                      <input class="input-event-date" type="text" name="name" value="" placeholder="Sep-25-2016"><span class="fa fa-pencil icon-pencil-away" aria-hidden="true"></span>
+
+                  <div class="row margin-bottom-5px">
+                    <div class="col-md-12">
+                      <input class="small-textbox" type="text" placeholder="NBA">
                     </div>
                   </div>
-                  <div class="row row-event-trivia">
-                    <h2 class="text-left">Trivia</h2>
-                  </div>
+
                   <div class="row">
-                    <input class="input-nba" type="text" name="name" value="" placeholder="Trivia Set A"><span class="fa fa-pencil icon-pencil-league" aria-hidden="true"></span>
-                  </div>
-                  <div class="row row-event-sponsors">
-                    <h2>Sponsors and Prizes</h2>
-                  </div>
-                  <div class="row row-sponsors-prizes">
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-sponsor">Sponsor</label>
-                      <input class="input-event-sponsor" type="text" name="name" value="" placeholder="Wendy's"><span class="fa fa-pencil icon-pencil-sponsor" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-prize">Prize</label>
-                      <input class="input-event-prize" type="text" name="name" value="" placeholder="10% off all items"><span class="fa fa-pencil icon-pencil-prize" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="node-flex text-event-prizelevel">Prize Level</label>
-                      <input class="input-event-prizelevel" type="text" name="name" value="" placeholder="Normal"><span class="fa fa-pencil icon-pencil-prizelevel" aria-hidden="true"></span>
-                    </div>
-                    <div class="row row-button-confirm">
-                      <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
-                    </div>
-                    <div class="event-setup">
-                      <ul class="event-road-map">
-                        <li class="active"><a class="event-roadmap-3">3</a></li>&nbsp;of&nbsp;
-                        <li><a class="event-roadmap-3">3</a></li>
-                      </ul>
+                    <div class="col-md-12 flex-start">
+                      <label>Event Name</label>
                     </div>
                   </div>
+
+                  <div class="row margin-bottom-5px">
+                    <div class="col-md-12 flex-start">
+                      <input class="full-textbox" type="text" placeholder="Lakers vs Clippers">
+                    </div>
+                  </div>
+
+                  <div class="row margin-bottom-5px">
+                    <div class="col-md-6">
+                      <input class="full-textbox" type="text" placeholder="Home">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="full-textbox" type="text" placeholder="Away">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="full-textbox" type="number" placeholder="Event Time">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="full-textbox" type="text" placeholder="Event Date">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Trivia</h2>
+                    </div>
+                  </div>
+
+                  <div class="row margin-bottom-5px">
+                    <div class="col-md-12">
+                      <input class="small-textbox" type="text" placeholder="Trivia Set A">
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
                 </div>
               </div>
             </form>

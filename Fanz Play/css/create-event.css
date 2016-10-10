@@ -149,12 +149,16 @@ select.select-sponsor {
 
 select.select-prize {
   background-color: transparent;
+  -webkit-appearance: none;
   color: #ffffff;
   margin-left: -10px;
   border-top: none;
   border-right: none;
   border-left: none;
   border-radius: 0px; }
+
+select.select-prize:focus {
+  outline: none; }
 
 select.select-prizelevel {
   background-color: transparent;
@@ -172,6 +176,37 @@ div.menu-items ul li a {
   color: #ffffff !important;
   text-decoration: none; }
 
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  div.menu-items ul li h1 {
+    font-size: 22px; } }
+
+@media screen and (max-width: 767px) {
+  div h1 {
+    font-size: 26px; } }
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  div h1 {
+    font-size: 28px; } }
+
+div.flex-start label {
+  font-size: 16px;
+  font-weight: normal; }
+  @media screen and (max-width: 767px) {
+    div.flex-start label {
+      font-size: 14px; } }
+
+div.flex-end label {
+  font-size: 16px;
+  font-weight: normal; }
+  @media screen and (max-width: 767px) {
+    div.flex-end label {
+      font-size: 14px; } }
+
+div.last-row {
+  margin-bottom: 50px; }
+  @media screen and (max-width: 767px) {
+    div.last-row {
+      margin-bottom: 75px; } }
+
 div.menu-items ul li a h3 {
   margin-left: 75px; }
   @media screen and (max-width: 767px) {
@@ -179,6 +214,9 @@ div.menu-items ul li a h3 {
       font-size: 16px;
       text-align: justify;
       margin-bottom: -10px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    div.menu-items ul li a h3 {
+      font-size: 18px; } }
 
 div.menu-items ul li a h4 {
   margin-left: 125px; }
@@ -490,6 +528,68 @@ input.textbox-style {
       width: 95%;
       font-size: 16px; } }
 
+input.small-textbox {
+  display: flex;
+  align-items: flex-start;
+  width: 47.5%;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    input.small-textbox {
+      font-size: 16px;
+      width: 90%; } }
+
+input:focus {
+  outline: none; }
+
+input.medium-textbox {
+  display: flex;
+  align-items: flex-start;
+  width: 75%;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    input.medium-textbox {
+      font-size: 16px;
+      width: 90%; } }
+
+input.full-textbox {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    input.full-textbox {
+      font-size: 16px;
+      width: 90%; } }
+
+input.ce-textbox {
+  width: 50%;
+  margin: 0px 20px 0px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff; }
+  @media screen and (max-width: 767px) {
+    input.ce-textbox {
+      width: 70%;
+      margin: auto; } }
+
 select.select-style {
   width: 90%;
   display: flex;
@@ -509,6 +609,12 @@ select.select-style {
     select.select-style {
       width: 95%;
       font-size: 16px; } }
+
+select option {
+  color: #121212; }
+
+select.select-style:focus {
+  outline: none; }
 
 input.checkbox-style {
   margin: 20px 20px 0px 0px !important; }
@@ -1163,6 +1269,66 @@ button.event-next a:hover {
   color: #BADA55;
   border-color: #BADA55;
   text-decoration: none; }
+
+button.g-game-summary {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold; }
+  @media screen and (max-width: 767px) {
+    button.g-game-summary {
+      margin: 15px;
+      height: 40px;
+      width: 200px;
+      font-size: 15px; } }
+
+button.g-game-summary:hover {
+  border: 2px solid #BADA55; }
+
+button.back-button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 150px;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold; }
+  @media screen and (max-width: 767px) {
+    button.back-button {
+      margin: 5px;
+      height: 40px;
+      width: 200px;
+      font-size: 15px; } }
+
+button.back-button:hover {
+  border: 2px solid #BADA55; }
+
+button.button-3 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 150px;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold; }
+  @media screen and (max-width: 767px) {
+    button.button-3 {
+      margin: 5px;
+      height: 40px;
+      width: 200px;
+      font-size: 15px; } }
+
+button.button-3:hover {
+  border: 2px solid #BADA55; }
 
 ul.event-road-map {
   display: inline-flex;
