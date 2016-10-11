@@ -46,6 +46,11 @@ div.sidebar-menu {
 .box {
   padding: 40px 0 50px 0; }
 
+.image-input {
+  background: #121212;
+  color: #ffffff;
+  margin: 20px 20px 0px 0px; }
+
 .form-box {
   height: 735px;
   padding: 25px 25px 30px 25px;
@@ -579,9 +584,6 @@ table.table-sponsors-prizes tbody tr td a {
 table.table-sponsors-prizes thead tr th {
   border-bottom: none; }
 
-table.table-sponsors-prizes tbody tr td:nth-child(1) {
-  color: #BADA55; }
-
 table.table-sponsors-prizes tbody tr:nth-child(2) td:nth-child(5) {
   color: #c30c15 !important; }
 
@@ -679,6 +681,12 @@ button.button-edit:hover {
 .flex-end {
   display: flex !important;
   justify-content: flex-end !important; }
+
+.margin-auto {
+  margin: auto; }
+
+div.menu-items ul li a.active {
+  color: #BADA55 !important; }
 
 .font-1 {
   font-size: 1px !important; }
@@ -10579,8 +10587,5 @@ button.button-edit:hover {
 
 .text-indent-100px {
   text-indent: 100px !important; }
-
-/* iPhones */
-/* iphone5 landscape */
 
 /*# sourceMappingURL=main.css.map */

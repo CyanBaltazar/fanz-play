@@ -12,7 +12,7 @@
 
   <nav class="navbar navbar-fixed-top connect-sidebar">
       <div class="container padding-5px">
-          <div class="navbar-header visible-sm">
+          <div class="navbar-header visible-xs visible-sm">
             <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -66,7 +66,7 @@
                     <li><a href="#"><h3>Calendar</h3></a></li>
                     <li><a href="#"><h3>Invitations</h3></a></li>
                     <li><a href="#"><h3>Events</h3></a></li>
-                    <li><a href="#"><h4>Create Events</h4></a></li>
+                    <li><a class="active" href="#"><h4>Create Events</h4></a></li>
                     <li><a href="#"><h4>Pending Events</h4></a></li>
                     <li><a href="#"><h4>Upcoming Events</h4></a></li>
                     <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
@@ -120,7 +120,11 @@
 
                   <div class="row">
                     <div class="col-md-12 flex-start">
+
+
                       <a class="a-style" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Create trivia set</a>
+
+
                       <div id="myModal" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                           <!-- Modal content-->
@@ -143,91 +147,110 @@
                                 </div>
                               </div>
 
-
-
-
-                              <div class="row">
+                              <div class="row margin-top-10px">
                                 <div class="col-md-6">
-                                  <label>Difficulty</label>
-                                  <select class="select-style" name="">
-                                    <option value=""></option>
+                                  <label class="pull-left">Difficulty</label>
+                                  <select class="select-white-style" name="">
+                                    <option value="">Easy</option>
+                                    <option value="">Normal</option>
+                                    <option value="">Hard</option>
                                   </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label>Scramble</label>
-                                    <select class="select-style" name="">
+                                    <label class="pull-left">Scramble</label>
+                                    <select class="select-white-style" name="">
                                       <option value=""></option>
                                     </select>
                                 </div>
                               </div>
 
-
-
-
-                              <div class="row row-questions">
+                              <div class="row">
                                 <div class="col-md-12">
                                   <h2 class="pull-left">Questions</h2>
                                 </div>
                               </div>
-                              <div class="row row-question-1">
+
+                              <div class="row">
                                 <div class="col-md-12">
-                                  <label class="text-question-1">Question 1</label>
+                                  <label class="pull-left">Question 1</label>
                                 </div>
                               </div>
-                              <div class="row row-inputquestion-1">
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <input class="input-question-1" type="text" placeholder="What is what?">
                                 </div>
                               </div>
-                              <div class="row row-option-1">
+
+                              <div class="row margin-top-10px">
                                 <div class="col-md-12">
                                   <label class="text-option-1">Option 1</label>
                                 </div>
                               </div>
-                              <div class="row row-input-option1">
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <a href="#"><i class="fa fa-times icon-delete" aria-hidden="true"></i></a>
-                                  <input class="input-option-1" type="text" placeholder="Answer A">
+                                  <input class="input-white-option" type="text" placeholder="Answer A">
                                   <input id="radio-option-1" class="radio-option-1" type="radio" name="selector">
-                                  <div class="draw-radio-button">
-                                  </div>
-                                  <label class="text-correct-answer">Correct Answer</label>
+                                  <label for="radio-option-1" class="text-correct-answer">Correct Answer</label>
                                 </div>
                               </div>
-                              <div class="row row-option-2">
+
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <label class="text-option-2">Option 2</label>
                                 </div>
                               </div>
-                              <div class="row row-input-option2">
+
+
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <i class="fa fa-times icon-delete" aria-hidden="true"></i>
-                                  <input class="input-option-2" type="text" placeholder="">
+                                  <input class="input-white-option" type="text" placeholder="">
                                   <input id="radio-option-2" class="radio-option-2" type="radio" name="selector">
-                                  <div class="draw-radio-button">
-                                  </div>
                                   <label for="radio-option-2" class="text-correct-answer">Correct Answer</label>
                                 </div>
                               </div>
-                              <div class="row row-more-options">
+
+
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <a class="a-more-options" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more options (3/4)</h3></a>
                                 </div>
                               </div>
-                              <div class="row row-more-questions">
+
+
+
+
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <a class="a-more-questions" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more questions</h3></a>
                                 </div>
                               </div>
-                              <div class="row row-button-done">
+
+
+
+                              <div class="row">
                                 <div class="col-md-12">
                                   <button class="button-done" type="button" data-toggle="modal" data-target="#created-trivia-set">Done</button>
                                 </div>
                               </div>
+
+
                             </div>
                           </div>
                         </div>
                       </div>
+
+
+
+
+
 
                       <div id="created-trivia-set" class="modal fade" role="dialog">
                         <div class="modal-dialog">
@@ -238,16 +261,25 @@
                             </div>
 
                             <div class="modal-body">
+
+
+
                               <div class="row">
                                 <div class="col-md-12">
-                                  <label class="text-trivia-setname">Trivia set name</label>
+                                  <label class="pull-left">Trivia set name</label>
                                 </div>
                               </div>
+
+
+
                               <div class="row row-trivia-name">
                                 <div class="col-md-12">
                                   <h3 class="text-trivia-name">Easy set name</h3>
                                 </div>
                               </div>
+
+
+
                               <div class="row row-difficulty-scramble">
                                 <div class="col-md-4">
                                   <label class="pull-left font-14">Difficulty</label>
@@ -256,36 +288,52 @@
                                   <label class="pull-left font-14">Scramble</label>
                                 </div>
                               </div>
+
+
+
                               <div class="row row-diff-scram">
                                 <div class="col-md-4">
-                                  <h3 class="text-left margin-top-1px">Easy</h3>
+                                  <h3>Easy</h3>
                                 </div>
                                 <div class="col-md-4">
-                                  <h3 class="text-left margin-top-1px">Questions and answers</h3>
+                                  <h3>Questions and answers</h3>
                                 </div>
                               </div>
+
+
+
                               <div class="row">
                                 <div class="col-md-12">
-                                  <h1 class="pull-left">Questions</h1>
+                                  <h1>Questions</h1>
                                 </div>
                               </div>
+
+
                               <div class="row">
                                 <div class="col-md-12 text-left">
-                                  <label class="font-14">Question 1</label>
-                                  <h3 class="margin-top-1px">What is what?</h3>
+                                  <label>Question 1</label>
+                                  <h3>What is what?</h3>
                                 </div>
                               </div>
+
+
                               <div class="row margin-top-10px">
                                 <div class="col-md-12">
-                                  <label class="pull-left text-indent-50px font-14">Option 1</label>
+                                  <label>Option 1</label>
                                   <label class="text-correct-answer">Correct Answer</label>
                                 </div>
                               </div>
+
+
+
+
                               <div class="row">
-                                <div class="col-md-12 text-left">
-                                  <h3 class="text-indent-50px margin-top-1px">Answer A</h3>
+                                <div class="col-md-12">
+                                  <h3>Answer A</h3>
                                 </div>
                               </div>
+
+
                               <div class="row margin-top-10px">
                                 <div class="col-md-12">
                                   <label class="pull-left text-indent-50px font-14">Option 2</label>
@@ -348,7 +396,7 @@
 
 
 
-                  <div class="row">
+                  <div class="row margin-30px">
                     <div class="col-md-12">
                       <button class="event-next" type="button"><a class="next" href="#event-form-3">Next</a></button>
                     </div>
@@ -364,14 +412,13 @@
 
                   <div class="row">
                     <div class="col-md-12 last-row">
-                      <div class="pager-circle">
-                        <ul class="event-road-map">
-                            <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><</a></li>&nbsp;
-                            <li class="active"><a class="current">2</a></li>&nbsp;of&nbsp;
-                            <li><a class="event-roadmap-3">3</a></li>&nbsp;
-                            <li><a class="next" href="#" data-toggle="tooltip" title="Next">></a></li>
+                        <ul class="pagination pagination-lg">
+                            <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><<</a></li>
+                            <li><a class="current">1</a></li>
+                            <li class="active"><a class="current">2</a></li>
+                            <li><a class="event-roadmap-3" href="#event-form-3">3</a></li>&nbsp;
+                            <li><a class="next" href="#" data-toggle="tooltip" title="Next">>></a></li>
                         </ul>
-                      </div>
                     </div>
                   </div>
 
@@ -454,22 +501,23 @@
                     </div>
                   </div>
 
-                  <div class="row last-row">
+                  <div class="row margin-20px">
                     <div class="col-md-12">
                       <button class="event-confirm" type="button">Confirm & Invite Opponent</button>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-md-12 last-row">
-                      <div class="pager-circle">
-                        <ul class="event-road-map">
-                            <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><</a></li>&nbsp;
-                            <li class="active"><a class="current">3</a></li>&nbsp;of&nbsp;
-                            <li><a class="event-roadmap-3">3</a></li>&nbsp;
-                            <li><a class="next" href="#" data-toggle="tooltip" title="Next">></a></li>
+
+
+                  <div class="row margin-bottom-80px">
+                    <div class="col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><<</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a class="current">2</a></li>
+                            <li class="active"><a href="#event-form-3">3</a></li>&nbsp;
+                            <li><a class="next" href="#" data-toggle="tooltip" title="Next">>></a></li>
                         </ul>
-                      </div>
                     </div>
                   </div>
 
@@ -495,6 +543,7 @@
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/create-event.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/00fedaf98c.js"></script>
