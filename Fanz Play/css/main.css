@@ -39,7 +39,7 @@ li a:hover {
   color: #ffffff !important; }
 
 div.sidebar-menu {
-  height: 100vmax;
+  height: 100em;
   background-color: #121212;
   border: none; }
 

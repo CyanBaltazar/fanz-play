@@ -261,7 +261,6 @@ select.select-sponsor {
 
 select.select-prize {
   background-color: transparent;
-  -webkit-appearance: none;
   color: #ffffff;
   margin-left: -10px;
   border-top: none;
@@ -329,6 +328,9 @@ div.last-row {
   @include respond-to(xs) {
     margin-bottom: 75px;
   }
+  @include respond-to(sm) {
+    margin-bottom: 100px;
+  }
 }
 
 div.menu-items ul li a h3 {
@@ -383,6 +385,10 @@ div.row-trivia-dropdown {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @include respond-to(xs) {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 div.row-trivia-dropdown ul {
@@ -511,6 +517,7 @@ i.icon-down {
 
 a.a-add-more-tset {
   color: $secondary-color;
+  font-size: 22px;
   /* iphone5 Landscape */
   @media only screen
   and (min-device-width: 320px)
@@ -563,52 +570,6 @@ a.a-add-more-tset:focus {
   text-decoration: none;
 }
 
-a.a-add-more-snp {
-  color: $secondary-color;
-  /* iphone5 Landscape */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    margin: 0 auto;
-  }
-  /* iphone6 Portrait */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    margin: 0 auto;
-  }
-  /* iphone6 Landscape */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    margin: 0 auto;
-  }
-  /* iphone6 plus(+) Portrait */
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-	  margin: 0 auto;
-  }
-}
-
-a.a-add-more-snp:hover {
-  color: $secondary-color;
-  text-decoration: none;
-}
-
-a.a-add-more-snp:focus {
-  color: $secondary-color;
-  text-decoration: none;
-}
-
 i.icon-delete {
   color: $primary-color;
   float: left;
@@ -639,11 +600,13 @@ i.icon-delete:hover {
   color: $primary-color !important;
 }
 
-table.dropdown-menu {
-  width: 35%;
+table#dropdown-menu {
+  background-color: $color-white;
+  color: $color-black;
+  width: 42%;
   position: absolute;
-  top: 235px;
-  left: -37px;
+  top: 260px;
+  left: 90px;
   border-radius: 0px;
   @include respond-to(xs) {
     font-size: 12px;
@@ -709,36 +672,11 @@ div.pager-circle {
   padding: 40px 0;
   background-color: transparent;
   border: 3px solid $color-white;
-}
-
-a.previous {
-  color: $color-white !important;
-}
-
-a.previous:hover {
-  color: $color-white !important;
-  background-color: transparent !important;
-  text-decoration: none !important;
-}
-
-a.previous:focus {
-  color: $color-white !important;
-  text-decoration: none !important;
-}
-
-a.next {
-  color: $color-white !important;
-}
-
-a.next:hover {
-  color: $color-white !important;
-  background-color: transparent !important;
-  text-decoration: none !important;
-}
-
-a.next:focus {
-  color: $color-white !important;
-  text-decoration: none !important;
+  @include respond-to(xs) {
+    height: 90px;
+    width: 90px;
+    padding: 30px 0;
+  }
 }
 
 input.input-trivia {
@@ -884,6 +822,20 @@ input.ce-textbox {
   }
 }
 
+select.select-small-style {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 20px 0px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $color-white;
+  outline: none;
+}
+
 select.select-style {
   width: 90%;
   display: flex;
@@ -895,6 +847,7 @@ select.select-style {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid $color-white;
+  outline: none;
   @include respond-to(xs) {
     width: 95%;
     font-size: 14px;
@@ -1843,7 +1796,7 @@ button.button-done-close:hover {
 button.event-confirm {
   margin-top: 60px;
   margin-bottom: 40px;
-  width: 50%;
+  width: 300px;
   height: 50px;
   background-color: $secondary-color;
   border: 1px solid $color-black;
@@ -1852,36 +1805,32 @@ button.event-confirm {
   font-weight: bold;
   @include respond-to(xs) {
     height: 40px;
-    width: 80%;
+    width: 250px;
     font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 30px;
   }
   @include respond-to(sm) {
-    height: 50px;
-    width: 50%;
+    height: 40px;
+    width: 275px;
     font-size: 16px;
-    margin-top: 20px;
     margin-bottom: 40px;
   }
 }
 
 button.event-next {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: 3px solid $color-white;
-  border-radius: 50%;
+  margin: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: $secondary-color;
+  border: 1px solid $color-black;
+  border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
   @include respond-to(xs) {
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    margin: auto;
   }
   /* iphone5 Landscape */
   @media only screen
@@ -1983,6 +1932,9 @@ ul.event-road-map {
   list-style: none;
   font-size: 18px;
   margin-bottom: 90px;
+  @include respond-to(xs) {
+    font-size: 15px;
+  }
 }
 
 div.event-tab-content {
@@ -2003,19 +1955,64 @@ div.wrapper-content {
   }
 }
 
-div ul li a.event-roadmap-3 {
+a.event-roadmap-3 {
   color: $color-white !important;
 }
 
-div a.a-create-trivia {
-  color: $secondary-color !important;
+a.current {
+  color: $color-white !important;
+  cursor: pointer;
 }
 
-div a.a-create-trivia:focus {
+a.current:hover {
+  background: transparent !important;
+  text-decoration: underline;
+}
+
+a.previous {
+  color: $color-white !important;
+}
+
+a.previous:hover {
+  color: $color-white !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+a.previous:focus {
+  color: $color-white !important;
+  text-decoration: underline !important;
+}
+
+a.next {
+  color: $color-white !important;
+}
+
+a.next:hover {
+  color: $color-white !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+a.next:focus {
+  color: $color-white !important;
+  text-decoration: underline !important;
+}
+
+a.a-style {
+  color: $secondary-color !important;
+  font-size: 22px;
+  @include respond-to(xs) {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+a.a-style:focus {
   text-decoration: none;
 }
 
-div a.a-create-trivia:hover {
+a.a-style:hover {
   text-decoration: none;
 }
 
@@ -2024,6 +2021,10 @@ div.div-style {
   width: 100%;
 }
 
+img {
+ max-width: 100%;
+ height: auto;
+ }
 
 a.a-more-options {
   color: $secondary-color;

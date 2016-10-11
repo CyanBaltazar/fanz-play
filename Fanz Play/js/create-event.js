@@ -5,45 +5,47 @@ $(document).ready(function(){
         $("#event-form-2").hide();
         $("#event-form-3").show();
     });
-});
 
-$(document).ready(function() {
-  $(".icon-down").click(
-        function() { $('.dropdown-menu', this).stop().fadeIn("slow");
-        },
-        function() { $('.dropdown-menu', this).stop().fadeOut("slow");
+    $(".draw-radio-button").click(function() {
+      $(this).toggleClass('clicked');
     });
-});
 
-$(document).ready(function() {
-  $(".draw-radio-button").click(function() {
-    $(this).toggleClass('clicked');
-  });
-});
+    // Megamenu table show and hide
+    $(".icon-down").click(
+          function() { $('.dropdown-menu', this).stop().fadeIn("slow");
+          },
+          function() { $('.dropdown-menu', this).stop().fadeOut("slow");
+      });
 
-$(document).ready(function() {
-  $(".icon-delete").click(function() {
-    $(".row-option-1").hide();
-    $(".row-input-option1").hide();
-  });
-});
+      // When X is clicked, row will de deleted
+      $(".icon-delete").click(function() {
+        $(".row-option-1").hide();
+        $(".row-input-option1").hide();
+      });
 
-$(document).ready(function() {
-  $(".button-done").click(function() {
-    $('#myModal').modal('hide');
-      $('#myModal').on('hidden', function () {
-        // Load up a new modal...
-        $('#created-trivia-set').modal('show');
-    });
-  });
-});
+      // When "Done" button is clicked, modal will close out
+      $(".button-done").click(function() {
+        $('#myModal').modal('hide');
+          $('#myModal').on('hidden', function () {
+            // Load up a new modal...
+            $('#created-trivia-set').modal('show');
+        });
+      });
 
-$(document).ready(function() {
-  $(".a-return-edit").click(function() {
-    $('#created-trivia-set').modal('hide');
-      $('#created-trivia-set').on('hidden', function () {
-        // Load up a new modal...
-        $('#myModal').modal('show');
-    });
-  });
+      $(".a-return-edit").click(function() {
+        $('#created-trivia-set').modal('hide');
+          $('#created-trivia-set').on('hidden', function () {
+            // Load up a new modal...
+            $('#myModal').modal('show');
+        });
+      });
+
+      // Megamenu table is initially hidden
+      $("#dropdown-menu").hide();
+
+      $(".select-target").click(function() {
+        $("#dropdown-menu").fadeToggle();
+      });
+
+      $('[data-toggle="tooltip"]').tooltip();
 });

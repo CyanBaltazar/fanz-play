@@ -149,7 +149,6 @@ select.select-sponsor {
 
 select.select-prize {
   background-color: transparent;
-  -webkit-appearance: none;
   color: #ffffff;
   margin-left: -10px;
   border-top: none;
@@ -206,6 +205,9 @@ div.last-row {
   @media screen and (max-width: 767px) {
     div.last-row {
       margin-bottom: 75px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    div.last-row {
+      margin-bottom: 100px; } }
 
 div.menu-items ul li a h3 {
   margin-left: 75px; }
@@ -246,6 +248,10 @@ div.row-trivia-dropdown {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+  @media screen and (max-width: 767px) {
+    div.row-trivia-dropdown {
+      display: flex !important;
+      justify-content: center !important; } }
 
 div.row-trivia-dropdown ul {
   list-style: none; }
@@ -316,6 +322,7 @@ i.icon-down {
 
 a.a-add-more-tset {
   color: #BADA55;
+  font-size: 22px;
   /* iphone5 Landscape */
   /* iphone6 Portrait */
   /* iphone6 Landscape */
@@ -345,33 +352,6 @@ a.a-add-more-tset:focus {
   color: #BADA55;
   text-decoration: none; }
 
-a.a-add-more-snp {
-  color: #BADA55;
-  /* iphone5 Landscape */
-  /* iphone6 Portrait */
-  /* iphone6 Landscape */
-  /* iphone6 plus(+) Portrait */ }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    a.a-add-more-snp {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    a.a-add-more-snp {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    a.a-add-more-snp {
-      margin: 0 auto; } }
-  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    a.a-add-more-snp {
-      margin: 0 auto; } }
-
-a.a-add-more-snp:hover {
-  color: #BADA55;
-  text-decoration: none; }
-
-a.a-add-more-snp:focus {
-  color: #BADA55;
-  text-decoration: none; }
-
 i.icon-delete {
   color: #121212;
   float: left; }
@@ -395,41 +375,43 @@ i.icon-delete:hover {
 .modal-title {
   color: #121212 !important; }
 
-table.dropdown-menu {
-  width: 35%;
+table#dropdown-menu {
+  background-color: #ffffff;
+  color: #000000;
+  width: 42%;
   position: absolute;
-  top: 235px;
-  left: -37px;
+  top: 260px;
+  left: 90px;
   border-radius: 0px;
   /* iphone5 Portrait */
   /* iphone5 Landscape */
   /* iphone6 Landscape */
   /* iphone6 plus(+) Portrait */ }
   @media screen and (max-width: 767px) {
-    table.dropdown-menu {
+    table#dropdown-menu {
       font-size: 12px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    table.dropdown-menu {
+    table#dropdown-menu {
       width: 70% !important;
       position: absolute !important;
       top: 208px !important;
       left: 67px !important;
       font-size: 11px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    table.dropdown-menu {
+    table#dropdown-menu {
       width: 45%;
       position: absolute !important;
       top: 208px !important;
       left: 138px !important; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    table.dropdown-menu {
+    table#dropdown-menu {
       font-size: 14px !important;
       width: 40% !important;
       position: absolute !important;
       top: 208px !important;
       left: 225px !important; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    table.dropdown-menu {
+    table#dropdown-menu {
       font-size: 14px !important; } }
 
 table.dropdown-menu thead {
@@ -446,30 +428,11 @@ div.pager-circle {
   padding: 40px 0;
   background-color: transparent;
   border: 3px solid #ffffff; }
-
-a.previous {
-  color: #ffffff !important; }
-
-a.previous:hover {
-  color: #ffffff !important;
-  background-color: transparent !important;
-  text-decoration: none !important; }
-
-a.previous:focus {
-  color: #ffffff !important;
-  text-decoration: none !important; }
-
-a.next {
-  color: #ffffff !important; }
-
-a.next:hover {
-  color: #ffffff !important;
-  background-color: transparent !important;
-  text-decoration: none !important; }
-
-a.next:focus {
-  color: #ffffff !important;
-  text-decoration: none !important; }
+  @media screen and (max-width: 767px) {
+    div.pager-circle {
+      height: 90px;
+      width: 90px;
+      padding: 30px 0; } }
 
 input.input-trivia {
   background-color: transparent;
@@ -590,6 +553,19 @@ input.ce-textbox {
       width: 70%;
       margin: auto; } }
 
+select.select-small-style {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 20px 0px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none; }
+
 select.select-style {
   width: 90%;
   display: flex;
@@ -600,7 +576,8 @@ select.select-style {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  outline: none; }
   @media screen and (max-width: 767px) {
     select.select-style {
       width: 95%;
@@ -1211,7 +1188,7 @@ button.button-done-close:hover {
 button.event-confirm {
   margin-top: 60px;
   margin-bottom: 40px;
-  width: 50%;
+  width: 300px;
   height: 50px;
   background-color: #BADA55;
   border: 1px solid #000000;
@@ -1221,36 +1198,32 @@ button.event-confirm {
   @media screen and (max-width: 767px) {
     button.event-confirm {
       height: 40px;
-      width: 80%;
+      width: 250px;
       font-size: 16px;
-      margin-top: 20px;
-      margin-bottom: 40px; } }
+      margin: 30px; } }
   @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     button.event-confirm {
-      height: 50px;
-      width: 50%;
+      height: 40px;
+      width: 275px;
       font-size: 16px;
-      margin-top: 20px;
       margin-bottom: 40px; } }
 
 button.event-next {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
+  margin: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: #BADA55;
+  border: 1px solid #000000;
+  border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
   /* iphone5 Landscape */ }
   @media screen and (max-width: 767px) {
     button.event-next {
-      width: 80px;
-      height: 80px;
-      margin-top: 20px;
-      margin-bottom: 50px;
-      margin-right: 50px; } }
+      width: 150px;
+      height: 40px;
+      font-size: 16px;
+      margin: auto; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     button.event-next {
       margin-bottom: 30px;
@@ -1335,6 +1308,9 @@ ul.event-road-map {
   list-style: none;
   font-size: 18px;
   margin-bottom: 90px; }
+  @media screen and (max-width: 767px) {
+    ul.event-road-map {
+      font-size: 15px; } }
 
 div.event-tab-content {
   max-width: 650px;
@@ -1345,21 +1321,62 @@ div.wrapper-content {
   margin: auto;
   /* iphone6 Landscape */ }
 
-div ul li a.event-roadmap-3 {
+a.event-roadmap-3 {
   color: #ffffff !important; }
 
-div a.a-create-trivia {
-  color: #BADA55 !important; }
+a.current {
+  color: #ffffff !important;
+  cursor: pointer; }
 
-div a.a-create-trivia:focus {
+a.current:hover {
+  background: transparent !important;
+  text-decoration: underline; }
+
+a.previous {
+  color: #ffffff !important; }
+
+a.previous:hover {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  text-decoration: underline !important; }
+
+a.previous:focus {
+  color: #ffffff !important;
+  text-decoration: underline !important; }
+
+a.next {
+  color: #ffffff !important; }
+
+a.next:hover {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  text-decoration: underline !important; }
+
+a.next:focus {
+  color: #ffffff !important;
+  text-decoration: underline !important; }
+
+a.a-style {
+  color: #BADA55 !important;
+  font-size: 22px; }
+  @media screen and (max-width: 767px) {
+    a.a-style {
+      margin-top: 5px;
+      font-size: 14px; } }
+
+a.a-style:focus {
   text-decoration: none; }
 
-div a.a-create-trivia:hover {
+a.a-style:hover {
   text-decoration: none; }
 
 div.div-style {
   position: relative;
   width: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 a.a-more-options {
   color: #BADA55;
