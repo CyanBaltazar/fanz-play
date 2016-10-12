@@ -302,9 +302,8 @@ label, input::-webkit-input-placeholder, button {
   text-align: center;
 }
 
-
-input.input-username {
-  width: 100%;
+input.input-email-address {
+  width: 50%;
   border: none;
   padding: 10px 0;
   border-bottom: solid 1px $color-white;
@@ -329,39 +328,6 @@ input.input-username {
   }
   @include respond-to(xs) {
     font-size: 20px;
-  }
-  // iphone5 landscape
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    font-size: 16px;
-  }
-  /* iphone5 portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 18px;
-    margin-top: 1px;
-  }
-  /* iphone6 landscape */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    font-size: 24px;
-  }
-  /* iphone6 plus(+) landscape */
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    font-size: 24px;
   }
 }
 
@@ -503,98 +469,14 @@ input.input-password {
 }
 
 .fp-logo-login {
-  height: 200px;
-  width: 100%;
+  height: 20%;
+  width: 20%;
   margin-top: 50px;
   margin-bottom: -50px;
   @include respond-to(xs) {
 
   }
-  /* iphone5 landscape */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    height: 30px;
-    width: 40px;
-    margin-top: -10px;
-    margin-left: 195px;
-    margin-bottom: 0px;
-  }
-  /* iphone5 portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    height: 70px;
-    width: 80px;
-    margin-top: -10px;
-    /* margin-bottom: -100px; */
-    margin-left: 20px;
-  }
-  /* iphone6 portrait */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    margin-top: 10px;
-    margin-bottom: -30px;
-  }
-  /* iphone6 landscape */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    height: 45px;
-    width: 55px;
-    margin-top: -40px;
-    margin-bottom: -55px;
-    margin-left: 300px;
-  }
-  /* iphone6 plus(+) portrait */
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-  /* iphone6 plus(+) landscape */
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    height: 50px;
-    width: 60px;
-    margin-top: -10px;
-    margin-left: 330px;
-    margin-bottom: -10px;
-  }
-  /* iPad Portrait */
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    margin-top: 40px;
-  }
-  /* iPad Landscape */
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    height: 100px;
-    width: 110px;
-    margin-top: 10px;
-    margin-left: 100px;
-  }
+
 }
 
 .fp-logo-sidebar {
@@ -830,7 +712,12 @@ div.thank-div {
   margin: 10px;
   @include respond-to(xs) {
     height: 40px;
+    font-size: 16px;
   }
+}
+
+span.icon-bar {
+  background: $secondary-color;
 }
 
 
@@ -1063,7 +950,19 @@ button.button-edit:hover {
 
 
 
+div#change-size div h1 {
+  font-size: 50px;
+  @include respond-to(xs) {
+    font-size:36px !important;
+  }
+}
 
+div#change-size div p {
+  font-size: 20px;
+  @include respond-to(xs) {
+    font-size:16px !important;
+  }
+}
 
 
 
@@ -1090,7 +989,7 @@ button.button-edit:hover {
   }
 
   .node-with-border-black {
-    border: 1px solid #000000;
+    border: 1px solid $color-black;
   }
 
   .border-sharp {
@@ -1193,6 +1092,14 @@ button.button-edit:hover {
 div.menu-items ul li a  .active {
   color: $secondary-color !important;
 }
+
+// Start Margin in %
+@for $i from 1 through 100 {
+        .margin-#{$i} {
+            margin: #{$i}% !important;
+      }
+   }
+// End Margin in %
 
 // Start Margin Left in %
 @for $i from 1 through 100 {
