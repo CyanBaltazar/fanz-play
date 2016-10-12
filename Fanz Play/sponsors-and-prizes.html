@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-static-top connect-sidebar">
-        <div class="container padding-5px">
+  <nav class="navbar navbar-fixed-top connect-sidebar">
+      <div class="container padding-5px">
           <div class="navbar-header visible-xs visible-sm">
             <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
 
@@ -35,7 +35,7 @@
                           <li><a href="#"><h3>Calendar</h3></a></li>
                           <li><a href="#"><h3>Invitations</h3></a></li>
                           <li><a href="#"><h3>Events</h3></a></li>
-                          <li><a href="#"><h4>Create Events</h4></a></li>
+                          <li><a class="active" href="#"><h4>Create Events</h4></a></li>
                           <li><a href="#"><h4>Pending Events</h4></a></li>
                           <li><a href="#"><h4>Upcoming Events</h4></a></li>
                           <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
@@ -48,97 +48,106 @@
                   </div>
               </div>
           </div>
-        </div>
-    </nav>
 
-    <div class="container">
+      </div>
+  </nav>
+
+  <div class="container">
       <div class="row content">
-        <div class="col-md-4 sidebar-menu text-center hidden-xs">
-          <div class="menu-items">
-            <ul>
-              <li class="menu-team">
-                <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                <select class="form-control select-team">
-                  <option></option>
-                </select>
-              </li>
-              <li><a href="#"><h3>Calendar</h3></a></li>
-              <li><a href="#"><h3>Invitations</h3></a></li>
-              <li><a href="#"><h3>Events</h3></a></li>
-                <li><a href="#"><h4>Create Events</h4></a></li>
-                <li><a href="#"><h4>Pending Events</h4></a></li>
-                <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
-              <li><a href="#"><h3>Trivia</h3></a></li>
-              <li><a href="#"><h3>Sponsors</h3></a></li>
-              <li><a href="#"><h3>Statistics</h3></a></li>
-              <li><a href="#"><h3>Help</h3></a></li>
-              <li><a href="#"><h3>Logout</h3></a></li>
-            </ul>
-          </div>
+          <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
+              <div class="menu-items">
+                <ul>
+                    <li class="menu-team">
+                      <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                      <select class="form-control select-team">
+                        <option></option>
+                      </select>
+                    </li>
+                    <li><a href="#"><h3>Calendar</h3></a></li>
+                    <li><a href="#"><h3>Invitations</h3></a></li>
+                    <li><a href="#"><h3>Events</h3></a></li>
+                    <li><a href="#"><h4>Create Events</h4></a></li>
+                    <li><a href="#"><h4>Pending Events</h4></a></li>
+                    <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                    <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                    <li><a href="#"><h3>Trivia</h3></a></li>
+                    <li><a href="#"><h3>Sponsors</h3></a></li>
+                    <li><a href="#"><h3>Statistics</h3></a></li>
+                    <li><a href="#"><h3>Help</h3></a></li>
+                    <li><a href="#"><h3>Logout</h3></a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="col-md-8 text-center">
-          <div class="container-fluid container-event">
+          <div class="container-event">
             <div class="row">
-              <h1 class="text-sponsors-prizes">Sponsors & Prizes</h1>
-            </div>
-            <div class="row">
-              <table class="table table-sponsors-prizes table-responsive">
-                <thead>
-                  <tr>
-                    <th>Prize Name</th>
-                    <th>Sponsor</th>
-                    <th>Condition</th>
-                    <th>Date</th>
-                    <th>Validity</th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="tsp-body">
-                  <tr>
-                    <td><a href="created-event.html">50% Off on Big Mac</a></td>
-                    <td>McDonalds</td>
-                    <td>Normal</td>
-                    <td>Aug 10, 2016</td>
-                    <td>Aug 15, 2016</td>
-                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
-                    <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
-                  </tr>
-                  <tr>
-                    <td>Free Upgrade on ...</td>
-                    <td>Bigtime</td>
-                    <td>Normal</td>
-                    <td>Aug 15, 2016</td>
-                    <td class="expired">EXPIRED</td>
-                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
-                    <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
-                  </tr>
-                  <tr>
-                    <td>Free Upgrade on ...</td>
-                    <td>Walters</td>
-                    <td>Grand</td>
-                    <td>Sep 01, 2016</td>
-                    <td>Sep 11, 2016</td>
-                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
-                    <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
-                  </tr>
-                  <tr>
-                    <td>Buy 1 Take 1 on ...</td>
-                    <td>Dairy Queen</td>
-                    <td>Normal</td>
-                    <td>Sep 05, 2016</td>
-                    <td>Sep 30, 2016</td>
-                    <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
-                    <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="col-md-12">
+                <h1 class="text-sponsors-prizes">Sponsors & Prizes</h1>
+              </div>
             </div>
 
-            <a class="a-add-sponsors-prizes" href="#create-trivia-set" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span>&nbsp;Add Sponsors and Prizes</a>
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-sponsors-prizes">
+                  <thead>
+                    <tr>
+                      <th>PRIZE NAME</th>
+                      <th>SPONSOR</th>
+                      <th>CONDITION</th>
+                      <th>DATE</th>
+                      <th>VALIDITY</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="tsp-body">
+                    <tr>
+                      <td><a href="created-event.html">50% Off on Big Mac</a></td>
+                      <td>McDonalds</td>
+                      <td>Normal</td>
+                      <td>Aug 10, 2016</td>
+                      <td>Aug 15, 2016</td>
+                      <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
+                      <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
+                    </tr>
+                    <tr>
+                      <td>Free Upgrade on ...</td>
+                      <td>Bigtime</td>
+                      <td>Normal</td>
+                      <td>Aug 15, 2016</td>
+                      <td class="expired">EXPIRED</td>
+                      <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
+                      <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
+                    </tr>
+                    <tr>
+                      <td>Free Upgrade on ...</td>
+                      <td>Walters</td>
+                      <td>Grand</td>
+                      <td>Sep 01, 2016</td>
+                      <td>Sep 11, 2016</td>
+                      <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
+                      <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
+                    </tr>
+                    <tr>
+                      <td>Buy 1 Take 1 on ...</td>
+                      <td>Dairy Queen</td>
+                      <td>Normal</td>
+                      <td>Sep 05, 2016</td>
+                      <td>Sep 30, 2016</td>
+                      <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="fa fa-times"></span></a></td>
+                      <td><a href="#"><button class="btn button-edit" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Edit</button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
+            <div class="row">
+              <div class="col-md-12">
+                <a class="a-add-sponsors-prizes" href="#create-trivia-set" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span>&nbsp;Add Sponsors and Prizes</a>
+              </div>
+            </div>
 
             <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -157,9 +166,8 @@
               </div>
             </div>
 
-            <div id="myModal" class="modal fade" role="dialog">
+            <!-- <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-                <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -255,9 +263,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div id="created-trivia-set" class="modal fade" role="dialog">
+            <!-- <div id="created-trivia-set" class="modal fade" role="dialog">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -334,9 +342,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-
+            </div> -->
 
           </div>
         </div>

@@ -12,135 +12,175 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-static-top connect-sidebar">
-        <div class="container padding-5px">
-            <div class="navbar-header">
-                <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-fixed-top connect-sidebar">
+      <div class="container padding-5px">
+          <div class="navbar-header visible-xs visible-sm">
+            <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
 
-    <div class="container">
-      <div class="row content">
-        <div class="col-md-4 sidebar-menu text-center">
-          <div class="menu-items">
-            <ul>
-              <li class="menu-team">
-                <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                <select class="form-control select-team">
-                  <option></option>
-                </select>
-              </li>
-              <li><a href="#"><h3>Calendar</h3></a></li>
-              <li><a href="#"><h3>Invitations</h3></a></li>
-              <li><a href="#"><h3>Events</h3></a></li>
-                <li><a href="#"><h4>Create Events</h4></a></li>
-                <li><a href="#"><h4>Pending Events</h4></a></li>
-                <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
-              <li><a href="#"><h3>Trivia</h3></a></li>
-              <li><a href="#"><h3>Sponsors</h3></a></li>
-              <li><a href="#"><h3>Statistics</h3></a></li>
-              <li><a href="#"><h3>Help</h3></a></li>
-              <li><a href="#"><h3>Logout</h3></a></li>
-            </ul>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
           </div>
-        </div>
+
+          <div class="collapse navbar-collapse" id="navbar">
+              <div class="text-center visible-xs visible-sm">
+                  <div class="menu-items">
+                      <ul class="nav navbar-nav">
+                          <li class="menu-team">
+                              <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                              <select class="form-control select-team">
+                                  <option></option>
+                              </select>
+                          </li>
+                          <li><a href="#"><h3>Calendar</h3></a></li>
+                          <li><a href="#"><h3>Invitations</h3></a></li>
+                          <li><a href="#"><h3>Events</h3></a></li>
+                          <li class="active"><a href="#"><h4>Create Events</h4></a></li>
+                          <li><a href="#"><h4>Pending Events</h4></a></li>
+                          <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                          <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
+                          <li><a href="#"><h3>Trivia</h3></a></li>
+                          <li><a href="#"><h3>Sponsors</h3></a></li>
+                          <li><a href="#"><h3>Statistics</h3></a></li>
+                          <li><a href="#"><h3>Help</h3></a></li>
+                          <li><a href="#"><h3>Logout</h3></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </nav>
+
+  <div class="container">
+      <div class="row content">
+          <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
+              <div class="menu-items">
+                  <ul>
+                      <li class="menu-team">
+                          <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                          <select class="form-control select-team">
+                              <option></option>
+                          </select>
+                      </li>
+                      <li><a href="#"><h3>Calendar</h3></a></li>
+                      <li><a href="#"><h3>Invitations</h3></a></li>
+                      <li><a href="#"><h3>Events</h3></a></li>
+                      <li><a href="#"><h4>Create Events</h4></a></li>
+                      <li><a href="#"><h4>Pending Events</h4></a></li>
+                      <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                      <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                      <li><a href="#"><h3>Trivia</h3></a></li>
+                      <li><a class="active" href="#"><h3>Sponsors</h3></a></li>
+                      <li><a href="#"><h3>Statistics</h3></a></li>
+                      <li><a href="#"><h3>Help</h3></a></li>
+                      <li><a href="#"><h3>Logout</h3></a></li>
+                  </ul>
+              </div>
+          </div>
 
         <div class="col-md-8 text-center">
-          <div class="container-fluid container-event">
-            <form>
-              <div class="sponsors-prizes-content">
-                <div class="row row-add-sponsors-prizes">
+          <div class="container-event">
+                <div class="row">
                   <div class="col-md-12">
-                    <h1 class="text-justify">Add Sponsors & Prizes</h1>
+                    <h1>Add Sponsors & Prizes</h1>
                   </div>
                 </div>
-                <div>
-                  <div class="row row-text-sponsor">
-                    <div class="col-md-12">
-                      <label class="text-sponsor">Sponsor</label>
-                    </div>
+                <div class="row margin-top-5">
+                  <div class="col-md-12">
+                    <label class="pull-left">Sponsor</label>
                   </div>
-
-                  <div class="row row-input-sponsor">
-                    <div class="col-md-4">
-                      <input class="input-sponsor" type="text" placeholder="Enter Sponsor Name">
-                    </div>
-                    <div class="col-md-8 text-left">
-                      <a class="a-add-sponsor" href="#addSponsorModal" data-toggle="modal" data-target="#addSponsorModal"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Sponsor</a>
-                    </div>
-                  </div>
-
-                  <div class="row row-text-prizename">
-                    <div class="col-md-12">
-                      <label class="text-prize-name">Prize Name</label>
-                    </div>
-                  </div>
-
-                  <div class="row row-input-prizename">
-                    <div class="col-md-12">
-                      <input class="input-prizename" type="text" placeholder="Wallgreens 20% OFF">
-                    </div>
-                  </div>
-
-                  <div class="row row-prizes">
-                    <div class="col-md-12">
-                      <h2 class="text-prizes text-left">Prizes</h2>
-                    </div>
-                  </div>
-
-
-
-                  <div class="row row-inputs-prizes">
-                    <div class="col-md-3">
-                      <input class="input-prize-feature" type="text" placeholder="Prize feature">
-                    </div>
-                    <div class="col-md-2">
-                      <label class="text-condition">Condition</label>
-                      <select class="select-condition">
-                        <option>Normal</option>
-                        <option>Normal</option>
-                        <option>Normal</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2">
-                      <label class="text-condition">Valid from</label>
-                      <input class="date-valid-from" type="text" onfocus="(this.type='date')" placeholder="Date"><i class="fa fa-sort-desc down-arrow-date" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-2">
-                      <label class="text-condition">Valid to</label>
-                      <input class="date-valid-from" type="text" onfocus="(this.type='date')" placeholder="Date"><i class="fa fa-sort-desc down-arrow-date" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-3">
-                      <input class="input-promo-code" type="text" placeholder="Promo Code">
-                    </div>
-
-
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                  <div class="row form-group row-add-prizes node-flex">
-                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Prize
-                  </div>
-
-                  <div class="form-group">
-                    <button class="button-done" type="button"><a class="a-done">Done</a></button>
-                  </div>
-
-
-
                 </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input class="full-textbox" type="text" placeholder="Enter Sponsor Name">
+                  </div>
+                  <div class="col-md-6 flex-start">
+                    <a class="a-style" href="#addSponsorModal" data-toggle="modal" data-target="#addSponsorModal"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Sponsor</a>
+                  </div>
+                </div>
+                <div class="row margin-top-5">
+                  <div class="col-md-12">
+                    <label class="pull-left">Prize Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input class="small-textbox" type="text" placeholder="Wallgreens 20% OFF">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="pull-left">Prizes</h2>
+                  </div>
+                </div>
+                <div class="row margin-bottom-5">
+                  <div class="col-md-6">
+                    <label class="pull-left">Prize feature</label>
+                    <input class="full-textbox" type="text" placeholder="Prize feature">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="pull-left">Condition</label>
+                    <select class="select-prizes-style">
+                      <option>Normal</option>
+                      <option>Easy</option>
+                      <option>Hard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row margin-bottom-5">
+                  <div class="col-md-6">
+                    <label class="pull-left" for="valid-from">Valid from</label>
+                    <input class="full-textbox" type="date" name="valid-from">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="pull-left" for="valid-from">Valid to</label>
+                    <input class="full-textbox" type="date" name="valid-to">
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label class="pull-left" for="promo-code">Promo Code</label>
+                    </div>
+                  </div>
+
+                  <div class="row margin-bottom-5">
+                    <div class="col-md-12">
+                      <input class="small-textbox" type="text" name="promo-code" placeholder="Promo Code">
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <a class="a-style" href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Prize</a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="button-done" type="button"><a class="a-done">Done</a></button>
+                    </div>
+                  </div>
+
+
+
+
+
 
                 <div id="addSponsorModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
@@ -150,22 +190,31 @@
                         <h1 class="text-add-sponsor">Add Sponsor</h1>
                       </div>
                       <div class="modal-body">
-                        <div class="camera-circle height-200px width-200px">
-                          <i class="fa fa-camera reg-camera-icon margin-top-75px" aria-hidden="true"></i>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <i class="fa fa-camera reg-camera-icon" aria-hidden="true"></i>
+                          </div>
                         </div>
 
 
-                        <div class="row-modal-sponsor node-flex">
-                          <label class="text-modal-sponsor">Sponsor</label>
+                        <div class="row margin-top-10">
+                          <div class="col-md-12">
+                            <label class="pull-left margin-left-70">Sponsor</label>
+                          </div>
                         </div>
 
-                        <div class="row-modal-sponsorinput node-flex">
-                          <input class="input-modal-sponsor" type="text" placeholder="Enter Sponsor Name">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="input-modal-sponsor" type="text" placeholder="Enter Sponsor Name">
+                          </div>
                         </div>
 
-                        <div class="row-modal-button">
-                          <button class="modal-done-button" type="button" data-dismiss="modal">Done</button>
+                        <div class="row margin-top-5">
+                          <div class="col-md-12">
+                            <button class="modal-done-button" type="button" data-dismiss="modal">Done</button>
+                          </div>
                         </div>
+
 
 
 
@@ -176,7 +225,7 @@
                 </div>
 
               </div>
-            </form>
+
 
 
           </div>
@@ -191,6 +240,7 @@
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/add-sponsors-prizes.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/00fedaf98c.js"></script>

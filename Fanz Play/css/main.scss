@@ -65,6 +65,7 @@ $body-color: #E7E7E7;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-expired: #c30c15;
+$color-dgreen: #959f16;
 $button-bordercolor: #8BC34A;
 
 
@@ -822,7 +823,7 @@ div.thank-div {
 .return-home-btn {
   height: 60px;
   width: 240px;
-  background-color: #959f16;
+  background-color: $color-dgreen;
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: 18px;
@@ -1002,8 +1003,14 @@ h1.text-sponsors-prizes {
   text-align: left;
 }
 
+.table-responsive {
+  @include respond-to(xs) {
+    border: none;
+  }
+}
+
 table.table-sponsors-prizes {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 table.table-sponsors-prizes tbody tr td {
@@ -1183,10 +1190,41 @@ button.button-edit:hover {
   margin: auto;
 }
 
-div.menu-items ul li a.active {
+div.menu-items ul li a  .active {
   color: $secondary-color !important;
 }
 
+// Start Margin Left in %
+@for $i from 1 through 100 {
+        .margin-left-#{$i} {
+            margin-left: #{$i}% !important;
+        }
+    }
+// End Margin Left in %
+
+// Start Margin Right in %
+@for $i from 1 through 100 {
+        .margin-right-#{$i} {
+            margin-right: #{$i}% !important;
+      }
+   }
+// End Margin Right in %
+
+// Start Margin Top in %
+@for $i from 1 through 100 {
+        .margin-top-#{$i} {
+            margin-top: #{$i}% !important;
+      }
+   }
+// End Margin Top in %
+
+// Start Margin Bottom in %
+@for $i from 1 through 100 {
+        .margin-bottom-#{$i} {
+            margin-bottom: #{$i}% !important;
+      }
+   }
+// End Margin Bottom in %
 
 // Start Font in px
 @for $i from 1 through 50 {
@@ -1287,8 +1325,8 @@ div.menu-items ul li a.active {
 // Start text indent
 // Start Margin Top in px
 @for $i from 1 through 100 {
-        .text-indent-#{$i}px {
-            text-indent: #{$i}px !important;
+        .text-indent-#{$i} {
+            text-indent: #{$i}% !important;
       }
    }
 // End text indent

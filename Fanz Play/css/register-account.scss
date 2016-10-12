@@ -45,6 +45,9 @@ $third-color: #343434; //light grey
 $body-color: #E7E7E7;
 $color-white: #ffffff;
 $color-black: #000000;
+$color-expired: #c30c15;
+$color-dgreen: #959f16;
+$button-bordercolor: #8BC34A;
 
 
 * {
@@ -375,62 +378,16 @@ ul.form-road-map {
   }
 }
 
-div.camera-circle {
-  margin: auto;
-  height: 250px;
-  width: 250px;
-  background-color: #959f16;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  @include respond-to(xs) {
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  /* iphone5 Portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    height: 130px;
-    width: 130px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-  /* ipad Portrait */
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    height: 200px;
-    width: 200px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-  }
-
-
-
-
-}
-
 .reg-camera-icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: $color-dgreen;
+  padding: 50px;
   font-size: 50px !important;
-  margin-top: 100px;
   color: $color-white;
   @include respond-to(xs) {
     font-size: 40px !important;
-    margin-top: 50px;
-  }
-  /* ipad Portrait */
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    margin-top: 80px;
   }
 }
 
@@ -499,6 +456,7 @@ select.type {
   margin: auto;
   width: 80%;
   border: none;
+  border-radius: 0px;
   padding: 0px 0px;
   border-bottom: solid 1px $color-white;
   transition: all 0.3s cubic-bezier(.64,.09,.08,1);
@@ -577,136 +535,5 @@ input.input-reg-email {
   and (orientation: portrait) {
     font-size: 16px;
     margin-bottom: -10px;
-  }
-}
-
-input.input-reg-hqaddress {
-  width: 80%;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px $color-white;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 0px 100%;
-  background-repeat: no-repeat;
-  font-size: 24px;
-  font-style: italic;
-  color: darken($color-white, 50%);
-
-  @include respond-to(xs) {
-    font-size: 18px;
-  }
-  /* iphone5 Portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 16px;
-    margin-bottom: -10px;
-  }
-}
-
-input.input-reg-mobilenumber {
-  width: 80%;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px $color-white;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 0px 100%;
-  background-repeat: no-repeat;
-  font-size: 24px;
-  font-style: italic;
-  color: darken($color-white, 50%);
-
-  @include respond-to(xs) {
-    font-size: 18px;
-  }
-  /* iphone5 Portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 16px;
-    margin-bottom: -10px;
-  }
-}
-
-input.input-reg-teambio {
-  margin: auto;
-  width: 80%;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px $color-white;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 0px 100%;
-  background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 25px;
-  color: darken($color-white, 50%);
-  &:focus, &:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0;
-    &::-webkit-input-placeholder {
-      color: $color-white;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important;
-    }
-  }
-  @include respond-to(xs) {
-    font-size: 18px;
-  }
-  /* iphone5 Portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 16px;
-  }
-}
-
-input.input-reg-teamawards {
-  margin: auto;
-  width: 80%;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px $color-white;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 0px 100%;
-  background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 25px;
-  color: darken($color-white, 50%);
-  &:focus, &:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0;
-    &::-webkit-input-placeholder {
-      color: $color-white;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important;
-    }
-  }
-  @include respond-to(xs) {
-    font-size: 18px;
-  }
-  /* iphone5 Portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 16px;
   }
 }

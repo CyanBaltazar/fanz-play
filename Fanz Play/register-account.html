@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/register-account.css" rel="stylesheet" />
+    <link href="css/create-event.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -13,10 +14,12 @@
   <nav class="navbar navbar-static-top">
     <div class="container padding-5px">
       <div class="navbar-header">
-        <button id="menu-toggle-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-target" aria-expanded="false">
-          Menu
-        </button>
         <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo.png" alt="basketball" class="fp-logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu-target">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
       </div>
       <div class="collapse navbar-collapse" id="nav-menu-target">
         <ul id="mobile-menu" class="fp-menu nav navbar-nav">
@@ -36,66 +39,109 @@
           <div class="tab-content">
             <h1 class="registeraccount-text">Register an account</h1>
             <div id="form-1" class="tab-pane active">
-              <div class="form-group-parent">
-                <div class="form-group text-left">
-                  <label class="reg-teamname-text">Team name</label>
-                  <input class="form-control team-name" type="text" name="name" value="">
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <label class="pull-left" for="team-name">Team name</label>
+                  <input class="full-textbox" type="text" name="team-name">
                 </div>
-                <div class="form-group text-left">
-                  <label class="reg-type-text">Type</label>
-                  <select class="form-control type">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <label class="pull-left">Type</label>
+                  <select class="select-full-style">
                     <option>Baseball</option>
                     <option>Basketball</option>
                     <option>Football</option>
                     <option>Rugby</option>
                   </select>
                 </div>
-                <div class="form-group text-left">
-                  <label class="reg-completename-text">Complete name</label>
-                  <input class="form-control input-reg-completename" type="text" name="name" value="">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <label class="pull-left" for="complete-name">Complete Name</label>
+                  <input class="full-textbox" type="text" name="complete-name">
                 </div>
-                <div class="form-group">
-                  <input class="input-reg-email" type="text" name="name" value="" placeholder="Email Address">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <input class="full-textbox" type="text" name="email-address" placeholder="Email Address">
                 </div>
-                <div class="form-group">
-                  <input class="input-reg-hqaddress" type="text" name="name" value="" placeholder="Office/HQ Address">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <input class="full-textbox" type="text" name="office-address" value="" placeholder="Office/HQ Address">
                 </div>
-                <div class="form-group">
-                  <input class="input-reg-mobilenumber" type="number" name="name" value="" placeholder="Mobile Number">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <input class="full-textbox" type="number" name="mobile-number" placeholder="Mobile Number">
                 </div>
-                <div class="form-group">
+              </div>
+              <div class="row margin-top-5">
+                <div class="col-md-12">
                   <button class="reg-button" type="button"><a class="next" href="#form-2">Next</a></button>
                 </div>
-                <div class="setup">
-                  <ul class="form-road-map">
-                    <li class="active"><a class="form-roadmap-1">1</a></li>&nbsp;of&nbsp;
-                    <li><a class="form-roadmap-2">2</a></li>
-                  </ul>
+              </div>
+              <div class="row margin-top-5 margin-bottom-15">
+                <div class="col-md-12">
+                    <ul class="pagination pagination-lg">
+                        <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><<</a></li>
+                        <li class="active"><a class="current">1</a></li>
+                        <li><a class="current">2</a></li>
+                        <li><a class="next" href="#" data-toggle="tooltip" title="Next">>></a></li>
+                    </ul>
                 </div>
               </div>
             </div>
+
+
+
+
             <div id="form-2" class="tab-pane second-form">
-              <div class="form-group">
-                <div class="camera-circle"><i class="fa fa-camera reg-camera-icon" aria-hidden="true"></i></div>
-                <label class="upload-teamlogo-txt">Upload team logo</label>
+
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <div class="camera-circle margin-bottom-5"><i class="fa fa-camera reg-camera-icon" aria-hidden="true"></i></div>
+                  <label class="upload-teamlogo-txt">Upload team logo</label>
+                </div>
               </div>
-              <div class="form-group">
-                <label class="team-bio-txt">Team Bio</label>
-                <input class="input-reg-teambio form-control" type="text" name="name" value="">
+
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <label class="pull-left">Team Bio</label>
+                  <input class="full-textbox" type="text" name="name" value="">
+                </div>
               </div>
-              <div class="form-group">
-                <label class="team-awards-txt">Awards</label>
-                <input class="input-reg-teamawards form-control" type="text" name="name" value="">
+
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <label class="pull-left">Awards</label>
+                  <input class="full-textbox" type="text" name="name" value="">
+                </div>
               </div>
-              <div class="form-group">
-                <button class="reg-button" type="button">Finish</button>
+
+
+
+              <div class="row margin-top-5">
+                <div class="col-md-12">
+                  <button class="reg-button" type="button">Finish</button>
+                </div>
               </div>
-              <div class="setup">
-                <ul class="form-road-map">
-                  <li class="active"><a class="form-roadmap-1">2</a></li>&nbsp;of&nbsp;
-                  <li><a class="form-roadmap-2">2</a></li>
-                </ul>
+
+
+
+              <div class="row margin-top-5 margin-bottom-15">
+                <div class="col-md-12">
+                    <ul class="pagination pagination-lg">
+                        <li><a class="previous" href="#" data-toggle="tooltip" title="Previous"><<</a></li>
+                        <li><a class="current">1</a></li>
+                        <li class="active"><a class="current">2</a></li>
+                        <li><a class="next" href="#" data-toggle="tooltip" title="Next">>></a></li>
+                    </ul>
+                </div>
               </div>
+
+
             </div>
           </div>
         </form>

@@ -39,7 +39,7 @@ input.input-sponsor {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic; }
 
 label.text-prize-name {
@@ -121,8 +121,7 @@ label.text-modal-sponsor {
   text-indent: 100px; }
 
 input.input-modal-sponsor {
-  width: 275px;
-  margin-left: 100px;
+  width: 70%;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -132,6 +131,7 @@ input.input-modal-sponsor {
 
 button.modal-done-button {
   height: 50px;
+  width: 70% !important;
   width: 175px;
   background-color: #959f16;
   border: none;
