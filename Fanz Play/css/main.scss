@@ -65,6 +65,8 @@ $body-color: #E7E7E7;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-expired: #c30c15;
+$color-red: #d9534f;
+$color-lgray: #cccccc;
 $color-dgreen: #959f16;
 $button-bordercolor: #8BC34A;
 
@@ -280,129 +282,68 @@ label, input::-webkit-input-placeholder, button {
   and (orientation: portrait) {
     margin-bottom: 75px;
   }
-
 }
 
-.form-email-grp {
-  margin: auto;
-  width: 85%;
+input.search-style {
+  background: transparent !important;
+  border: 1px solid $secondary-color !important;
+  border-right: none !important;
+  margin-top: 1px !important;
+  margin-bottom: -1px !important;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-indent: 5%;
 }
 
-.form-pwd-grp {
-  margin: auto;
-  width: 85%;
+input.search-style::-webkit-input-placeholder {
+  text-indent: 5%;
 }
 
-.form-login-btn-grp {
-  margin: auto;
-  width: 60%;
+button.search-button {
+  background: transparent !important;
+  border: 1px solid $secondary-color !important;
+  border-left: none !important;
 }
 
-.form-no-acct-grp {
-  text-align: center;
-}
-
-input.input-email-address {
-  width: 50%;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px $color-white;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 200px 100%;
-  background-repeat: no-repeat;
-  margin-top: -10px;
-  font-size: 35px;
-  color: darken($color-white, 50%);
-  &:focus, &:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0;
-    &::-webkit-input-placeholder {
-      color: $color-white;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important;
-    }
-  }
-  @include respond-to(xs) {
-    font-size: 20px;
-  }
-}
-
-input.input-password {
+input.input-animate {
   width: 100%;
   border: none;
   padding: 10px 0;
   border-bottom: solid 1px $color-white;
   transition: all 0.3s cubic-bezier(.64,.09,.08,1);
   background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color-white 4%);
-  background-position: -200px 0;
-  background-size: 200px 100%;
+  background-position: -200px 0 !important;
+  background-size: 0px 100%;
   background-repeat: no-repeat;
-  font-size: 35px;
-  color: darken($color-white, 50%);
+  font-size: 30px;
+  color: darken($color-white, 20%);
   &:focus, &:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
     &::-webkit-input-placeholder {
       color: $color-white;
-      font-size: 11px;
+      font-size: 16px;
       transform: translateY(-20px);
       visibility: visible !important;
     }
   }
   @include respond-to(xs) {
-    font-size: 20px;
-  }
-  // iphone5 landscape
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    font-size: 16px;
-    margin-top: -10px;
-  }
-  /* iphone5 portrait */
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    font-size: 18px;
-    margin-top: 1px;
-  }
-  /* iphone6 landscape */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    font-size: 24px;
-    margin-top: -30px;
-  }
-  /* iphone6 plus(+) landscape */
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    font-size: 24px;
-    margin-top: -10px;
-  }
-  /* iPad Landscape */
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    margin-top: 10px;
+    font-size: 20px !important;
   }
 }
 
+label.text-email-address {
+  @include respond-to(xs) {
+    font-size: 12px;
+  }
+}
+
+p.p-no-account {
+  @include respond-to(xs) {
+    font-size: 12px;
+  }
+}
 
 
 .container-side {
@@ -454,29 +395,18 @@ input.input-password {
   }
 }
 
-.form-email-grp {
-  @include respond-to(xs) {
-
-  }
-  // iphone5 landscape
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    margin-top: -130px;
-  }
+div.row-login {
+  margin-top: 10%;
 }
 
 .fp-logo-login {
-  height: 20%;
-  width: 20%;
-  margin-top: 50px;
-  margin-bottom: -50px;
+  height: 50%;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   @include respond-to(xs) {
-
+    visibility: hidden;
   }
-
 }
 
 .fp-logo-sidebar {
@@ -726,18 +656,33 @@ span.icon-bar {
 // Start Login Style
   .login-box
   {
+    height: 100%;
+    width: 60% !important;
     background-color: $primary-color;
     border-radius: 10px;
-    margin-top: 35px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 3% !important;
+    padding: 10%;
+    @include respond-to(xs) {
+      width: 95% !important;
+      margin-top: 20% !important;
+    }
+    /* iphone6 Landscape */
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      margin-top: 5% !important;
+    }
+
+
   }
   .login-button
   {
-    margin-top: 60px;
-    width: 100%;
+    margin-top: 10%;
+    width: 60%;
     height: 50px;
     background-color: $secondary-color;
     border: 1px solid $color-black;
@@ -745,64 +690,8 @@ span.icon-bar {
     font-size: 18px;
     font-weight: bold;
     @include respond-to(xs) {
-
-    }
-    // iphone5 landscape
-    @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-      margin-top: -10px;
-      width: 100%;
-      height: 30px;
       font-size: 14px;
-    }
-    /* iphone5 portrait */
-    @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
-      margin-top: 20px;
       height: 40px;
-      font-size: 16px;
-    }
-    /* iphone6 portrait */
-    @media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
-      margin-top: 30px;
-    }
-    /* iphone6 landscape */
-    @media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-      margin-top: 0px;
-      height: 30px;
-      font-size: 14px;
-    }
-    /* iphone6 plus(+) landscape */
-    @media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: landscape) {
-      margin-top: 0px;
-      height: 30px;
-      font-size: 14px;
-    }
-    /* iPad Landscape */
-    @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 1) {
-      margin-top: 25px;
     }
   }
 
@@ -879,6 +768,15 @@ span.icon-bar {
   {
     background-color: $color-white !important;
     color: $secondary-color !important;
+  }
+
+  button.close {
+    color: $color-red !important;
+  }
+
+  button.button-cancel:hover {
+    color: $color-red !important;
+    border: 1px solid $color-red !important;
   }
 
 
@@ -971,7 +869,9 @@ div#change-size div p {
 
 
 
-
+.bg-gray {
+  background: $primary-color;
+}
 
 
 
@@ -1225,6 +1125,22 @@ div.menu-items ul li a  .active {
 @for $i from 1 through 100 {
         .padding-bottom#{$i}px {
             padding: #{$i}px !important;
+        }
+    }
+// End Padding bottom in px
+
+// Start Padding in px
+@for $i from 1 through 100 {
+        .padding-#{$i} {
+            padding: #{$i}% !important;
+        }
+    }
+// End Padding in px
+
+// Start Padding bottom in px
+@for $i from 1 through 100 {
+        .padding-bottom-#{$i} {
+            padding-bottom: #{$i}% !important;
         }
     }
 // End Padding bottom in px

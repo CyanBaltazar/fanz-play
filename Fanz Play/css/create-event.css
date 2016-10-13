@@ -382,6 +382,12 @@ i.icon-delete:hover {
   color: #121212;
   text-decoration: none; }
 
+div.del-modal-footer {
+  border-top: 1px solid #cccccc !important; }
+
+div.del-modal-header {
+  border-bottom: 1px solid #cccccc !important; }
+
 .modal-header {
   border-bottom: none !important; }
 
