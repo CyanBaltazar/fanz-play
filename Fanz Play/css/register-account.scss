@@ -96,6 +96,13 @@ div.second-form {
   }
 }
 
+.register-content {
+  margin-top: 10%;
+  @include respond-to(xs) {
+    margin-top: 15%;
+  }
+}
+
 .team-bio-txt {
   font-size: 20px;
   margin-left: -375px;

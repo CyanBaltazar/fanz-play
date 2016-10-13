@@ -32,6 +32,12 @@ div.second-form {
     div.second-form {
       margin-top: 10px; } }
 
+.register-content {
+  margin-top: 10%; }
+  @media screen and (max-width: 767px) {
+    .register-content {
+      margin-top: 15%; } }
+
 .team-bio-txt {
   font-size: 20px;
   margin-left: -375px;

@@ -136,10 +136,6 @@ div.sidebar-menu {
   border: none;
 }
 
-.box {
-  padding: 40px 0 50px 0;
-}
-
 .image-input
 {
   background: $primary-color;
@@ -402,7 +398,6 @@ div.row-login {
 .fp-logo-login {
   height: 50%;
   width: 50%;
-  margin-top: 5%;
   margin-bottom: 5%;
   @include respond-to(xs) {
     visibility: hidden;
@@ -661,9 +656,9 @@ span.icon-bar {
     background-color: $primary-color;
     border-radius: 10px;
     margin: auto !important;
-    margin-top: 5% !important;
+    margin-top: 9% !important;
     margin-bottom: 3% !important;
-    padding: 10%;
+    padding: 7%;
     @include respond-to(xs) {
       width: 95% !important;
       margin-top: 20% !important;

@@ -43,9 +43,6 @@ div.sidebar-menu {
   background-color: #121212;
   border: none; }
 
-.box {
-  padding: 40px 0 50px 0; }
-
 .image-input {
   background: #121212;
   color: #ffffff;
@@ -228,7 +225,6 @@ div.row-login {
 .fp-logo-login {
   height: 50%;
   width: 50%;
-  margin-top: 5%;
   margin-bottom: 5%; }
   @media screen and (max-width: 767px) {
     .fp-logo-login {
@@ -383,9 +379,9 @@ span.icon-bar {
   background-color: #121212;
   border-radius: 10px;
   margin: auto !important;
-  margin-top: 5% !important;
+  margin-top: 9% !important;
   margin-bottom: 3% !important;
-  padding: 10%;
+  padding: 7%;
   /* iphone6 Landscape */ }
   @media screen and (max-width: 767px) {
     .login-box {
