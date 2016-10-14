@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/calendar.css" rel="stylesheet">
+    <link href="css/parent-calendar.css" rel="stylesheet">
+    <link href="css/calendar-custom-1.css" rel="stylesheet">
+    <link href="css/calendar-custom-2.css" rel="stylesheet">
     <link href="css/calendar-widget.css" rel="stylesheet">
     <link href="css/add-sponsors-prizes.css" rel="stylesheet" />
     <link href="css/register-account.css" rel="stylesheet" />
     <link href="css/create-event.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/modernizr.custom.63321.js"></script>
 </head>
 <body>
 
@@ -85,41 +89,46 @@
               <div class="container-fluid">
 
 
-                <div class="row row-date-availability">
-                  <div class="col-md-6">
-                    <div>
-                      <h1>September</h1>
-                    </div>
+                <div class="row margin-top-5">
+                  <div class="col-md-6 text-left col-date">
+                    <span id="custom-month" class="custom-month"></span>&nbsp;<span id="custom-year" class="custom-year"></span>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group avail-dropdown">
                       <div class="status"></div>
-                      <label>Available</label>
-                      <select class="form-control avail-select">
-                        <option>Yes</option>
-                        <option>No</option>
-                        <option></option>
-                        <option></option>
+                      <select class="avail-select">
+                        <option>Available</option>
+                        <option>Away</option>
+                        <option>Busy</option>
+                        <option>In a meeting</option>
                       </select>
                     </div>
                   </div>
                 </div>
 
-                <div class="row row-calendar">
+                <div class="row pull-left">
                   <div class="col-md-12">
-
-
-
-                    <div class="calendar-container node-with-border" id="calendar">
-
-
-                    </div>
-
-
-
+                    <button class="btn custom-prev" type="button" id="custom-prev" data-toggle="tooltip" title="Previous month"> < Previous month</button>
+                    <button class="btn custom-next" type="button" id="custom-next" data-toggle="tooltip" title="Next month">> Next month</button>
+                    <button class="btn custom-current" type="button" id="custom-current" data-toggle="tooltip" title="Back to the current date">Back to current date</button>
                   </div>
                 </div>
 
+
+
+                <div class="row margin-top-5">
+                  <div class="col-md-12">
+                    <div id="calendar" class="fc-calendar-container"></div>
+                  </div>
+                </div>
+
+                <!-- <div class="row pull-right margin-top-4">
+                  <div class="col-md-12">
+                    <button class="circle-more node-with-border">
+                      more
+                    </button>
+                  </div>
+                </div> -->
 
 
               </div>
@@ -142,8 +151,79 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/jquery.calendario.js"></script>
+<script src="js/calendar-data.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/00fedaf98c.js"></script>
-<script src="js/calendar.js"></script>
+<script type="text/javascript">
+  $(function() {
+
+    var transEndEventNames = {
+        'WebkitTransition' : 'webkitTransitionEnd',
+        'MozTransition' : 'transitionend',
+        'OTransition' : 'oTransitionEnd',
+        'msTransition' : 'MSTransitionEnd',
+        'transition' : 'transitionend'
+      },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      $wrapper = $( '#custom-inner' ),
+      $calendar = $( '#calendar' ),
+      cal = $calendar.calendario( {
+        onDayClick : function( $el, $contentEl, dateProperties ) {
+
+          if( $contentEl.length > 0 ) {
+            showEvents( $contentEl, dateProperties );
+          }
+
+        },
+        caldata : codropsEvents,
+        displayWeekAbbr : true
+      } ),
+      $month = $( '#custom-month' ).html( cal.getMonthName() ),
+      $year = $( '#custom-year' ).html( cal.getYear() );
+
+    $( '#custom-next' ).on( 'click', function() {
+      cal.gotoNextMonth( updateMonthYear );
+    } );
+    $( '#custom-prev' ).on( 'click', function() {
+      cal.gotoPreviousMonth( updateMonthYear );
+    } );
+
+    function updateMonthYear() {
+      $month.html( cal.getMonthName() );
+      $year.html( cal.getYear() );
+    }
+
+    // just an example..
+    function showEvents( $contentEl, dateProperties ) {
+
+      hideEvents();
+
+      var $events = $( '<div id="custom-content-reveal" class="custom-content-reveal"><h4>Events for ' + dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year + '</h4></div>' ),
+        $close = $( '<span class="custom-content-close"></span>' ).on( 'click', hideEvents );
+
+      $events.append( $contentEl.html() , $close ).insertAfter( $wrapper );
+
+      setTimeout( function() {
+        $events.css( 'top', '0%' );
+      }, 25 );
+
+    }
+    function hideEvents() {
+
+      var $events = $( '#custom-content-reveal' );
+      if( $events.length > 0 ) {
+
+        $events.css( 'top', '100%' );
+        Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
+
+      }
+
+    }
+  });
+</script>
+
+
 </body>
 </html>

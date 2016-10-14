@@ -60,7 +60,7 @@
 
 $primary-color: #121212; // dark grey
 $secondary-color: #BADA55; // light green
-$third-color: #343434; //light grey
+$third-color: #343434; // other dark grey
 $body-color: #E7E7E7;
 $color-white: #ffffff;
 $color-black: #000000;
@@ -109,6 +109,10 @@ h2 {
   @include respond-to(xs) {
     font-size: 24px !important;
   }
+}
+
+button:focus {
+  outline: none;
 }
 
 .fp-menu {
