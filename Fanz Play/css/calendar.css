@@ -1,3 +1,4 @@
+/* Vertical align mixin */
 @import url("parent-calendar.css");
 * {
   margin: 0;
@@ -17,44 +18,24 @@ html, body {
 nav.connect-sidebar {
   margin: 0 !important; }
 
-nav.calendar-controls {
-  background: transparent; }
-
-button.custom-prev {
-  background: transparent;
-  color: #ffffff;
-  border-color: #BADA55;
-  font-size: 16px;
-  font-weight: 700; }
+.calendar-controls {
+  height: 50px !important;
+  background: #121212;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: -10px;
+  margin-left: 20px;
+  margin-top: 100px;
+  /* ipad Portrait */ }
   @media screen and (max-width: 767px) {
-    button.custom-prev {
-      font-size: 14px; } }
-
-button.custom-prev:hover {
-  color: #BADA55 !important;
-  background: #ffffff;
-  border: 1px solid #BADA55; }
-
-button.custom-prev:focus {
-  outline: none; }
-
-button.custom-next {
-  background: transparent;
-  color: #ffffff;
-  border-color: #BADA55;
-  font-size: 16px;
-  font-weight: 700; }
-  @media screen and (max-width: 767px) {
-    button.custom-next {
-      font-size: 14px; } }
-
-button.custom-next:hover {
-  color: #BADA55 !important;
-  background: #ffffff;
-  border: 1px solid #BADA55; }
-
-button.custom-next:focus {
-  outline: none; }
+    .calendar-controls {
+      background: transparent;
+      border: none; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .calendar-controls {
+      background: transparent;
+      border: none; } }
 
 button.custom-current {
   background: transparent !important;
@@ -83,7 +64,7 @@ div.col-date {
 select.avail-select {
   background: transparent;
   float: right;
-  font-size: 18px;
+  font-size: 20px;
   border: none; }
 
 select.avail-select:focus {
@@ -115,6 +96,91 @@ button.circle-more:focus {
 
 button.circle-more:hover {
   border: 3px solid #BADA55; }
+
+.custom-month {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative !important;
+  top: 5% !important;
+  transform: translateY(-50%) !important; }
+  @media screen and (max-width: 767px) {
+    .custom-month {
+      top: 20% !important;
+      font-size: 16px; } }
+
+.custom-year {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative !important;
+  top: 5% !important;
+  transform: translateY(-50%) !important; }
+  @media screen and (max-width: 767px) {
+    .custom-year {
+      top: 20% !important;
+      font-size: 16px; } }
+
+.custom-prev {
+  float: left;
+  font-size: 22px !important;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 2%;
+  position: relative !important; }
+  @media screen and (max-width: 767px) {
+    .custom-prev {
+      top: 2%;
+      font-size: 14px; } }
+
+.custom-prev:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
+.custom-prev:focus {
+  color: #ffffff !important;
+  outline: none; }
+
+.custom-next {
+  float: right;
+  font-size: 22px !important;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 2%;
+  position: relative !important; }
+  @media screen and (max-width: 767px) {
+    .custom-next {
+      top: 2%;
+      font-size: 14px; } }
+
+.custom-next:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
+.custom-next:focus {
+  color: #ffffff !important;
+  outline: none; }
+
+.fc-month-year {
+  height: 10% !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #121212 !important;
+  color: #ffffff; }
+
+.fc-row:nth-last-child(1) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+  @media screen and (max-width: 767px) {
+    .fc-row:nth-last-child(1) {
+      margin-bottom: 70px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .fc-row:nth-last-child(1) {
+      margin-bottom: 80px; } }
 
 .fc-calendar-container {
   position: relative;

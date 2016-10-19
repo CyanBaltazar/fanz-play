@@ -175,7 +175,22 @@ nav.connect-sidebar {
   height: 600px;
   width: 100%;
   padding: 30px;
-  background: transparent; }
+  margin-top: 89px;
+  background: transparent;
+  /* Nexus 7 Landscape */
+  /* ipad Landscape */ }
+  @media screen and (max-width: 767px) {
+    .fc-calendar-container {
+      margin: auto; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .fc-calendar-container {
+      margin: auto; } }
+  @media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    .fc-calendar-container {
+      margin-top: -11px !important; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .fc-calendar-container {
+      margin-top: 89px !important; } }
 
 .fc-calendar .fc-head {
   background: transparent;

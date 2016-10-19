@@ -86,35 +86,6 @@ button.navbar-toggle {
     box-shadow: none !important;
 }
 
-div.menu-items {
-  margin-top: 50px;
-  @include respond-to(xs) {
-    margin-top: -40px;
-  }
-}
-
-div.menu-items ul {
-  list-style: none;
-}
-
-div.menu-items ul li.menu-team {
-  display: inline-flex;
-  align-items: center;
-}
-
-div.menu-items ul li.menu-team h1 {
-  @include respond-to(md) {
-    font-size: 28px;
-  }
-}
-
-div.menu-items ul li select.select-team {
-  width: 40px;
-  color: $color-white;
-  background-color: transparent;
-  border: none;
-}
-
 div.row-create-event h1 {
   @include respond-to(xs) {
     font-size: 30px;

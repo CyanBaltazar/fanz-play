@@ -39,6 +39,15 @@
     }
 }
 
+/* Vertical align mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 $primary-color: #121212; // dark grey
 $secondary-color: #BADA55; // light green
 $third-color: #343434; //light grey
@@ -72,50 +81,28 @@ nav.connect-sidebar {
   margin: 0 !important;
 }
 
-nav.calendar-controls {
-  background: transparent;
-}
-
-button.custom-prev {
-  background: transparent;
-  color: $color-white;
-  border-color: $secondary-color;
-  font-size: 16px;
-  font-weight: 700;
+.calendar-controls {
+  height: 50px !important;
+  background: $primary-color;
+  border: 1px solid $color-white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: -10px;
+  margin-left: 20px;
+  margin-top: 100px;
   @include respond-to(xs) {
-    font-size: 14px;
+    background: transparent;
+    border: none;
   }
-}
-
-button.custom-prev:hover {
-  color: $secondary-color !important;
-  background: $color-white;
-  border: 1px solid $secondary-color;
-}
-
-button.custom-prev:focus {
-  outline: none;
-}
-
-button.custom-next {
-  background: transparent;
-  color: $color-white;
-  border-color: $secondary-color;
-  font-size: 16px;
-  font-weight: 700;
-  @include respond-to(xs) {
-    font-size: 14px;
+  /* ipad Portrait */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    background: transparent;
+    border: none;
   }
-}
-
-button.custom-next:hover {
-  color: $secondary-color !important;
-  background: $color-white;
-  border: 1px solid $secondary-color;
-}
-
-button.custom-next:focus {
-  outline: none;
 }
 
 button.custom-current {
@@ -146,11 +133,10 @@ div.col-date {
   }
 }
 
-
 select.avail-select {
   background: transparent;
   float: right;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
 }
 
@@ -188,6 +174,100 @@ button.circle-more:focus {
 
 button.circle-more:hover {
   border: 3px solid $secondary-color;
+}
+
+.custom-month {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-white;
+  position: relative !important;
+  top: 5% !important;
+  transform: translateY(-50%) !important;
+  @include respond-to(xs) {
+    top: 20% !important;
+    font-size: 16px;
+  }
+}
+
+.custom-year {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-white;
+  position: relative !important;
+  top: 5% !important;
+  transform: translateY(-50%) !important;
+  @include respond-to(xs) {
+    top: 20% !important;
+    font-size: 16px;
+  }
+}
+.custom-prev {
+  float: left;
+  font-size: 22px !important;
+  background: transparent;
+  color: $color-white;
+  cursor: pointer;
+  margin-left: 2%;
+  position: relative !important;
+  @include respond-to(xs) {
+    top: 2%;
+    font-size: 14px;
+  }
+}
+
+.custom-prev:hover {
+  background: transparent !important;
+  color: $color-white !important;
+  text-decoration: none !important;
+}
+
+.custom-prev:focus {
+  color: $color-white !important;
+  outline: none;
+}
+
+.custom-next {
+  float: right;
+  font-size: 22px !important;
+  background: transparent;
+  color: $color-white;
+  cursor: pointer;
+  margin-right: 2%;
+  position: relative !important;
+  @include respond-to(xs) {
+    top: 2%;
+    font-size: 14px;
+  }
+}
+
+.custom-next:hover {
+  background: transparent !important;
+  color: $color-white !important;
+  text-decoration: none !important;
+}
+
+.custom-next:focus {
+  color: $color-white !important;
+  outline: none;
+}
+
+.fc-month-year {
+  height: 10% !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: $primary-color !important;
+  color: $color-white;
+}
+
+.fc-row:nth-last-child(1) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include respond-to(xs) {
+    margin-bottom: 70px;
+  }
+  @include respond-to(sm) {
+    margin-bottom: 80px;
+  }
 }
 
 @import url('parent-calendar.css');

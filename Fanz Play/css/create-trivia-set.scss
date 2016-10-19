@@ -1,0 +1,115 @@
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+  }
+}
+
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 1025px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+/* Vertical align mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$primary-color: #121212; // dark grey
+$secondary-color: #BADA55; // light green
+$third-color: #343434; // other dark grey
+$body-color: #E7E7E7;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-expired: #c30c15;
+$color-red: #d9534f;
+$color-lgray: #cccccc;
+$color-dgreen: #959f16;
+$button-bordercolor: #8BC34A;
+
+
+$form-width: 575px;
+$form-height: 750px;
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  background-color: $third-color !important;
+  color: $color-white !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav
+{
+  background-color: $primary-color;
+  border-radius: 0px 0px 0px 0px !important;
+}
+
+.row-option-1 {
+
+}

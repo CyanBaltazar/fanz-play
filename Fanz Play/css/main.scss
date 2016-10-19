@@ -58,6 +58,15 @@
     }
 }
 
+/* Vertical align mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 $primary-color: #121212; // dark grey
 $secondary-color: #BADA55; // light green
 $third-color: #343434; // other dark grey
@@ -113,6 +122,67 @@ h2 {
 
 button:focus {
   outline: none;
+}
+
+div.menu-items {
+  margin-top: 50px;
+  @include respond-to(xs) {
+    margin-top: 0px;
+  }
+}
+
+div.menu-items ul {
+  list-style: none;
+}
+
+div.menu-items ul li.menu-team {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 50px;
+  @include respond-to(xs) {
+    margin-top: auto;
+  }
+}
+
+div.menu-items ul li.menu-team h1 {
+  @include respond-to(md) {
+    font-size: 28px;
+  }
+}
+
+div.menu-items ul li select.select-team {
+  width: 40px;
+  color: $color-white;
+  background-color: transparent;
+  border: none;
+}
+
+nav.navbar {
+  background: $primary-color;
+  border: none;
+}
+
+.navbar-nav>li {
+  @include respond-to(sm) {
+    float: none !important;
+  }
+}
+
+span.glyphicon {
+  position: relative !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.container-center {
+  margin: 30% 0% 0% 10%;
+  @include respond-to(xs) {
+    margin: 30% 0% 0% 0%;
+  }
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  margin-left: 40% !important;
 }
 
 .fp-menu {
@@ -645,8 +715,12 @@ div.thank-div {
   }
 }
 
+button.navbar-toggle {
+  border: 1px solid $secondary-color !important;
+}
+
 span.icon-bar {
-  background: $secondary-color;
+  background: $secondary-color !important;
 }
 
 

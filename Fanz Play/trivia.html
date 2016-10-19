@@ -11,45 +11,50 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-fixed-top navbar-static-top connect-sidebar">
-        <div class="container padding-5px">
-          <div class="navbar-header visible-xs visible-sm">
-            <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo-2.png" alt="basketball" class="fp-logo" /></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-          </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container padding-5px">
+      <div class="navbar-header">
+        <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo-2.png" alt="basketball" class="fp-logo" /></a>
 
-          <div class="collapse navbar-collapse" id="navbar">
-              <div class="text-center visible-xs">
-                  <div class="menu-items">
-                      <ul class="nav navbar-nav">
-                          <li class="menu-team">
-                              <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                              <select class="form-control select-team">
-                                  <option></option>
-                              </select>
-                          </li>
-                          <li><a href="#"><h3>Calendar</h3></a></li>
-                          <li><a href="#"><h3>Invitations</h3></a></li>
-                          <li><a href="#"><h3>Events</h3></a></li>
-                          <li><a href="#"><h4>Create Events</h4></a></li>
-                          <li><a href="#"><h4>Pending Events</h4></a></li>
-                          <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                          <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
-                          <li><a href="#"><h3>Trivia</h3></a></li>
-                          <li><a href="#"><h3>Sponsors</h3></a></li>
-                          <li><a href="#"><h3>Statistics</h3></a></li>
-                          <li><a href="#"><h3>Help</h3></a></li>
-                          <li><a href="#"><h3>Logout</h3></a></li>
-                      </ul>
-                  </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar">
+          <div class="text-center">
+              <div class="menu-items">
+                  <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+                      <li class="menu-team">
+                          <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                          <select class="form-control select-team">
+                              <option></option>
+                          </select>
+                      </li>
+                      <li><a href="#"><h3>Calendar</h3></a></li>
+                      <li><a href="#"><h3>Invitations</h3></a></li>
+                      <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h3>Events</h3><span class="glyphicon glyphicon-chevron-right flex-center"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Create Events</a></li>
+                          <li><a href="#">Pending Events</a></li>
+                          <li><a href="#">Upcoming Events</a></li>
+                          <li><a href="#">Past Events</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><h3>Trivia</h3></a></li>
+                      <li><a href="#"><h3>Sponsors</h3></a></li>
+                      <li><a href="#"><h3>Statistics</h3></a></li>
+                      <li><a href="#"><h3>Help</h3></a></li>
+                      <li><a href="#"><h3>Logout</h3></a></li>
+                  </ul>
               </div>
           </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
 
 
@@ -156,184 +161,7 @@
 
 
 
-            <div id="myModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h1 class="modal-title text-left">Create trivia set</h1>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <label class="text-trivia-setname">Trivia set name</label>
-                      </div>
-                    </div>
-                    <div class="row row-input-easyset">
-                      <div class="col-md-12">
-                        <input class="input-set-trivia" type="text" placeholder="Easy set">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <label class="text-difficulty">Difficulty</label>
-                        <div class="node-inline-flex">
-                          <input class="input-difficulty" type="text">
-                          <i class="fa fa-sort-desc" data-toggle="dropdown" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                      <div class="col-md-7">
-                          <label class="pull-left text-scramble">Scramble</label>
-                          <div class="node-inline-flex">
-                            <input class="input-scramble" type="text" placeholder="Questions and answers">
-                            <i class="fa fa-sort-desc" data-toggle="dropdown" aria-hidden="true"></i>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="row row-questions">
-                      <div class="col-md-12">
-                        <h2 class="pull-left">Questions</h2>
-                      </div>
-                    </div>
-                    <div class="row row-question-1">
-                      <div class="col-md-12">
-                        <label class="text-question-1">Question 1</label>
-                      </div>
-                    </div>
-                    <div class="row row-inputquestion-1">
-                      <div class="col-md-12">
-                        <input class="input-question-1" type="text" placeholder="What is what?">
-                      </div>
-                    </div>
-                    <div class="row row-option-1">
-                      <div class="col-md-12">
-                        <label class="text-option-1">Option 1</label>
-                      </div>
-                    </div>
-                    <div class="row row-input-option1">
-                      <div class="col-md-12">
-                        <a href="#"><i class="fa fa-times icon-delete" aria-hidden="true"></i></a>
-                        <input class="input-option-1" type="text" placeholder="Answer A">
-                        <input id="radio-option-1" class="radio-option-1" type="radio" name="selector">
-                        <div class="draw-radio-button">
-                        </div>
-                        <label class="text-correct-answer">Correct Answer</label>
-                      </div>
-                    </div>
-                    <div class="row row-option-2">
-                      <div class="col-md-12">
-                        <label class="text-option-2">Option 2</label>
-                      </div>
-                    </div>
-                    <div class="row row-input-option2">
-                      <div class="col-md-12">
-                        <i class="fa fa-times icon-delete" aria-hidden="true"></i>
-                        <input class="input-option-2" type="text" placeholder="">
-                        <input id="radio-option-2" class="radio-option-2" type="radio" name="selector">
-                        <div class="draw-radio-button">
-                        </div>
-                        <label for="radio-option-2" class="text-correct-answer">Correct Answer</label>
-                      </div>
-                    </div>
-                    <div class="row row-more-options">
-                      <div class="col-md-12">
-                        <a class="a-more-options" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more options (3/4)</h3></a>
-                      </div>
-                    </div>
-                    <div class="row row-more-questions">
-                      <div class="col-md-12">
-                        <a class="a-more-questions" href="#"><h3><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add more questions</h3></a>
-                      </div>
-                    </div>
-                    <div class="row row-button-done">
-                      <div class="col-md-12">
-                        <button class="button-done" type="button" data-toggle="modal" data-target="#created-trivia-set">Done</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="created-trivia-set" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h1 class="modal-title text-left">Trivia set summary</h1>
-                  </div>
-
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <label class="text-trivia-setname">Trivia set name</label>
-                      </div>
-                    </div>
-                    <div class="row row-trivia-name">
-                      <div class="col-md-12">
-                        <h3 class="text-trivia-name">Easy set name</h3>
-                      </div>
-                    </div>
-                    <div class="row row-difficulty-scramble">
-                      <div class="col-md-4">
-                        <label class="pull-left font-14">Difficulty</label>
-                      </div>
-                      <div class="col-md-4">
-                        <label class="pull-left font-14">Scramble</label>
-                      </div>
-                    </div>
-                    <div class="row row-diff-scram">
-                      <div class="col-md-4">
-                        <h3 class="text-left margin-top-1px">Easy</h3>
-                      </div>
-                      <div class="col-md-4">
-                        <h3 class="text-left margin-top-1px">Questions and answers</h3>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h1 class="pull-left">Questions</h1>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 text-left">
-                        <label class="font-14">Question 1</label>
-                        <h3 class="margin-top-1px">What is what?</h3>
-                      </div>
-                    </div>
-                    <div class="row margin-top-10px">
-                      <div class="col-md-12">
-                        <label class="pull-left text-indent-50px font-14">Option 1</label>
-                        <label class="text-correct-answer">Correct Answer</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 text-left">
-                        <h3 class="text-indent-50px margin-top-1px">Answer A</h3>
-                      </div>
-                    </div>
-                    <div class="row margin-top-10px">
-                      <div class="col-md-12">
-                        <label class="pull-left text-indent-50px font-14">Option 2</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 text-left">
-                        <h3 class="text-indent-50px margin-top-10px">Answer B</h3>
-                      </div>
-                    </div>
-                    <hr>
-                    <a class="a-return-edit" data-toggle="modal" data-target="#myModal">Return and edit</a>
-                    <div class="row row-button-done">
-                      <div class="col-md-12">
-                        <button class="close button-done-close" type="button" data-dismiss="modal">Finish</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
 
 

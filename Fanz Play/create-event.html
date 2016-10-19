@@ -10,74 +10,77 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-fixed-top connect-sidebar">
-        <div class="container padding-5px">
-            <div class="navbar-header visible-xs visible-sm">
-              <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo-2.png" alt="basketball" class="fp-logo" /></a>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a id="brand" class="navbar-brand font-green" href="#"><img src="mockup/fp-logo-2.png" alt="basketball" class="fp-logo" /></a>
 
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-            </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      </div>
 
-            <div class="collapse navbar-collapse" id="navbar">
-                <div class="text-center visible-xs">
-                    <div class="menu-items">
-                        <ul class="nav navbar-nav">
-                            <li class="menu-team">
-                                <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                                <select class="form-control select-team">
-                                    <option></option>
-                                </select>
-                            </li>
-                            <li><a href="#"><h3>Calendar</h3></a></li>
-                            <li><a href="#"><h3>Invitations</h3></a></li>
-                            <li><a href="#"><h3>Events</h3></a></li>
-                            <li><a class="active" href="#"><h4>Create Events</h4></a></li>
-                            <li><a href="#"><h4>Pending Events</h4></a></li>
-                            <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                            <li><a href="#"><h4 class="submenu-last-item">Past Events</h4></a></li>
-                            <li><a href="#"><h3>Trivia</h3></a></li>
-                            <li><a href="#"><h3>Sponsors</h3></a></li>
-                            <li><a href="#"><h3>Statistics</h3></a></li>
-                            <li><a href="#"><h3>Help</h3></a></li>
-                            <li><a href="#"><h3>Logout</h3></a></li>
+      <div class="navbar-collapse collapse" id="navbar">
+          <div class="text-center">
+              <div class="menu-items">
+                  <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+                      <li class="menu-team">
+                          <h1 class="team-lakers"><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                          <select class="form-control select-team">
+                              <option></option>
+                          </select>
+                      </li>
+                      <li><a href="#"><h3>Calendar</h3></a></li>
+                      <li><a href="#"><h3>Invitations</h3></a></li>
+                      <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h3>Events</h3><span class="glyphicon glyphicon-chevron-right flex-center"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Create Events</a></li>
+                          <li><a href="#">Pending Events</a></li>
+                          <li><a href="#">Upcoming Events</a></li>
+                          <li><a href="#">Past Events</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </nav>
+                      </li>
+                      <li><a href="#"><h3>Trivia</h3></a></li>
+                      <li><a href="#"><h3>Sponsors</h3></a></li>
+                      <li><a href="#"><h3>Statistics</h3></a></li>
+                      <li><a href="#"><h3>Help</h3></a></li>
+                      <li><a href="#"><h3>Logout</h3></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  </nav>
 
     <div class="container">
         <div class="row content">
-            <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
-                <div class="menu-items">
-                    <ul>
-                        <li class="menu-team">
-                            <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
-                            <select class="form-control select-team">
-                                <option></option>
-                            </select>
-                        </li>
-                        <li><a href="#"><h3>Calendar</h3></a></li>
-                        <li><a href="#"><h3>Invitations</h3></a></li>
-                        <li><a href="#"><h3>Events</h3></a></li>
-                        <li><a href="#"><h4>Create Events</h4></a></li>
-                        <li><a href="#"><h4>Pending Events</h4></a></li>
-                        <li><a href="#"><h4>Upcoming Events</h4></a></li>
-                        <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
-                        <li><a href="#"><h3>Trivia</h3></a></li>
-                        <li><a href="#"><h3>Sponsors</h3></a></li>
-                        <li><a href="#"><h3>Statistics</h3></a></li>
-                        <li><a href="#"><h3>Help</h3></a></li>
-                        <li><a href="#"><h3>Logout</h3></a></li>
-                    </ul>
-                </div>
+          <div class="col-md-4 sidebar-menu text-center hidden-xs hidden-sm">
+            <div class="menu-items">
+              <ul>
+                <li class="menu-team">
+                  <h1><img class="img-lakers" src="mockup/Lakers.png" alt="Lakers" /><span>Team </span>Lakers</h1>
+                  <select class="form-control select-team">
+                    <option></option>
+                  </select>
+                </li>
+                <li><a href="#"><h3>Calendar</h3></a></li>
+                <li><a href="#"><h3>Invitations</h3></a></li>
+                <li><a href="#"><h3>Events</h3></a></li>
+                  <li><a href="#"><h4>Create Events</h4></a></li>
+                  <li><a href="#"><h4>Pending Events</h4></a></li>
+                  <li><a href="#"><h4>Upcoming Events</h4></a></li>
+                  <li><a href="#"><h4 class="margin-bottom-40px">Past Events</h4></a></li>
+                <li><a href="#"><h3>Trivia</h3></a></li>
+                <li><a href="#"><h3>Sponsors</h3></a></li>
+                <li><a href="#"><h3>Statistics</h3></a></li>
+                <li><a href="#"><h3>Help</h3></a></li>
+                <li><a href="#"><h3>Logout</h3></a></li>
+              </ul>
             </div>
+          </div>
             <div class="col-md-8 col-xs-12 text-center">
                 <div class="container-event">
                     <form>

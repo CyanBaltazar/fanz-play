@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA4DA,0BAA0B;AA0B1B,CAAE;EACF,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGV,IAAK;EACH,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,IAAI;;AAGlB,IACA;EACE,gBAAgB,EAAE,kBAAuB;EACzC,KAAK,EAAE,kBAAuB;;AAGhC,UAAW;EACT,MAAM,EAAE,IAAI;;AAGd,GACA;EACE,gBAAgB,EAvCF,OAAO;EAwCrB,aAAa,EAAE,0BAA0B",
+"sources": ["create-trivia-set.scss"],
+"names": [],
+"file": "create-trivia-set.css"
+}

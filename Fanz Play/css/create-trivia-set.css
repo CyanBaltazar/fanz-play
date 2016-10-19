@@ -1,0 +1,21 @@
+/* Vertical align mixin */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #343434 !important;
+  color: #ffffff !important; }
+
+html, body {
+  height: 100%; }
+
+nav {
+  background-color: #121212;
+  border-radius: 0px 0px 0px 0px !important; }
+
+/*# sourceMappingURL=create-trivia-set.css.map */

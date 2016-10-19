@@ -26,29 +26,6 @@ button.navbar-toggle {
 .form-control:focus {
   box-shadow: none !important; }
 
-div.menu-items {
-  margin-top: 50px; }
-  @media screen and (max-width: 767px) {
-    div.menu-items {
-      margin-top: -40px; } }
-
-div.menu-items ul {
-  list-style: none; }
-
-div.menu-items ul li.menu-team {
-  display: inline-flex;
-  align-items: center; }
-
-@media (min-width: 1025px) and (max-width: 1199px) {
-  div.menu-items ul li.menu-team h1 {
-    font-size: 28px; } }
-
-div.menu-items ul li select.select-team {
-  width: 40px;
-  color: #ffffff;
-  background-color: transparent;
-  border: none; }
-
 @media screen and (max-width: 767px) {
   div.row-create-event h1 {
     font-size: 30px; } }

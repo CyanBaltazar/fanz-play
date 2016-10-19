@@ -1,3 +1,4 @@
+/* Vertical align mixin */
 * {
   margin: 0;
   padding: 0; }
@@ -26,6 +27,55 @@ h1, h2, h3, h4 {
 
 button:focus {
   outline: none; }
+
+div.menu-items {
+  margin-top: 50px; }
+  @media screen and (max-width: 767px) {
+    div.menu-items {
+      margin-top: 0px; } }
+
+div.menu-items ul {
+  list-style: none; }
+
+div.menu-items ul li.menu-team {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 50px; }
+  @media screen and (max-width: 767px) {
+    div.menu-items ul li.menu-team {
+      margin-top: auto; } }
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  div.menu-items ul li.menu-team h1 {
+    font-size: 28px; } }
+
+div.menu-items ul li select.select-team {
+  width: 40px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none; }
+
+nav.navbar {
+  background: #121212;
+  border: none; }
+
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navbar-nav > li {
+    float: none !important; } }
+
+span.glyphicon {
+  position: relative !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important; }
+
+.container-center {
+  margin: 30% 0% 0% 10%; }
+  @media screen and (max-width: 767px) {
+    .container-center {
+      margin: 30% 0% 0% 0%; } }
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  margin-left: 40% !important; }
 
 .fp-menu {
   float: right !important; }
@@ -373,8 +423,11 @@ div.thank-div {
       height: 40px;
       font-size: 16px; } }
 
+button.navbar-toggle {
+  border: 1px solid #BADA55 !important; }
+
 span.icon-bar {
-  background: #BADA55; }
+  background: #BADA55 !important; }
 
 .login-box {
   height: 100%;
