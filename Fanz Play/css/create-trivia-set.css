@@ -18,4 +18,18 @@ nav {
   background-color: #121212;
   border-radius: 0px 0px 0px 0px !important; }
 
+.text-heading-small {
+  font-size: 14px; }
+
+.text-normal-style {
+  float: left;
+  font-size: 22px;
+  font-weight: normal; }
+  @media screen and (max-width: 767px) {
+    .text-normal-style {
+      font-size: 20px; } }
+
+p span {
+  display: block; }
+
 /*# sourceMappingURL=create-trivia-set.css.map */

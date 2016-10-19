@@ -114,6 +114,10 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
+.font-weight-normal {
+  font-weight: normal;
+}
+
 h2 {
   @include respond-to(xs) {
     font-size: 24px !important;
@@ -151,7 +155,7 @@ div.menu-items ul li.menu-team h1 {
 }
 
 div.menu-items ul li select.select-team {
-  width: 40px;
+  width: 10%;
   color: $color-white;
   background-color: transparent;
   border: none;
@@ -1039,6 +1043,10 @@ div#change-size div p {
 
   .node-flex {
     display: flex !important;
+  }
+
+  .node-table-caption {
+    display: table-caption;
   }
 
   .flex-start {

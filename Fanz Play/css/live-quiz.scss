@@ -1,0 +1,481 @@
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+  }
+}
+
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 1025px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+/* Vertical align mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$primary-color: #121212; // dark grey
+$secondary-color: #BADA55; // light green
+$third-color: #343434; // other dark grey
+$body-color: #E7E7E7;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-expired: #c30c15;
+$color-red: #d9534f;
+$color-lgray: #cccccc;
+$color-dgreen: #959f16;
+$button-bordercolor: #8BC34A;
+
+
+$form-width: 575px;
+$form-height: 750px;
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body
+{
+  background-color: $primary-color !important;
+  color: $color-white !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-quiz {
+  display: table;
+  height: 100vh;
+}
+
+.hr-style {
+  border-top: 1px solid $secondary-color !important;
+}
+
+.button-quiz-style {
+  background: $secondary-color !important;
+  color: $color-white !important;
+  border: 2px solid $primary-color !important;
+}
+
+.button-quiz-style:hover {
+  background: $color-white !important;
+  color: $secondary-color !important;
+}
+
+.quiz-title {
+  @include respond-to(xs) {
+    text-align: center;
+  }
+  @include respond-to(sm) {
+    text-align: center;
+  }
+}
+
+.clock-div {
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  width: 50%;
+  border: 1px solid $color-white;
+  font-size: 20px;
+}
+
+
+.fp-lq-img {
+  height: 280px;
+  @include respond-to(xs) {
+
+    height: 50px !important;
+  }
+  @include respond-to(sm) {
+    height: 100px !important;
+  }
+  @include respond-to(md) {
+    height: 180px !important;
+  }
+}
+
+
+.center-vertical {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+.square {
+  border: 5px solid $secondary-color;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+
+
+
+
+
+
+
+// Start shapes
+  .circle {
+    border-radius: 50% !important;
+  }
+// End shapes
+
+// Start border
+  .node-with-border {
+    border: 1px solid #c7c7c7;
+  }
+
+  .node-with-border-black {
+    border: 1px solid $color-black;
+  }
+
+  .border-sharp {
+    border-radius: 0px 0px 0px 0px !important;
+  }
+// End border
+
+// Start Font
+  .font-white {
+    color: $color-white !important;
+  }
+
+  .font-black {
+    color: $color-black !important;
+  }
+
+  .font-green {
+    color: $secondary-color !important;
+  }
+// End Font
+
+// Start Background
+  .bg-color-primary {
+    background-color: $primary-color !important;
+  }
+
+  .bg-color-green {
+    background-color: $secondary-color !important;
+  }
+// End Background
+
+//BEGIN ALIGNMENTS
+  .t-align-right {
+      text-align: right !important;
+  }
+
+  .t-align-left {
+      text-align: left !important;
+  }
+
+  .t-align-center {
+      text-align: center !important;
+  }
+
+  .d-align-left {
+      justify-content: flex-start !important;
+  }
+
+  .d-align-right {
+      justify-content: flex-end !important;
+  }
+
+  .d-align-center {
+      justify-content: center !important;
+  }
+
+  .atdiv {
+      align-items: flex-start !important;
+  }
+
+  .amdiv {
+      align-items: center !important;
+  }
+
+  .abdiv {
+      align-items: flex-end !important;
+  }
+//END ALIGNMENTS
+
+// Start Display
+  .node-inline-flex {
+      display: inline-flex !important;
+  }
+
+  .node-flex {
+    display: flex !important;
+  }
+
+  .node-table-caption {
+    display: table-caption;
+  }
+
+  .flex-start {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .flex-center {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .flex-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+// End Display
+
+.margin-auto {
+  margin: auto;
+}
+
+div.menu-items ul li a  .active {
+  color: $secondary-color !important;
+}
+
+// Start Margin in %
+@for $i from 1 through 100 {
+        .margin-#{$i} {
+            margin: #{$i}% !important;
+      }
+   }
+// End Margin in %
+
+// Start Margin Left in %
+@for $i from 1 through 100 {
+        .margin-left-#{$i} {
+            margin-left: #{$i}% !important;
+        }
+    }
+// End Margin Left in %
+
+// Start Margin Right in %
+@for $i from 1 through 100 {
+        .margin-right-#{$i} {
+            margin-right: #{$i}% !important;
+      }
+   }
+// End Margin Right in %
+
+// Start Margin Top in %
+@for $i from 1 through 100 {
+        .margin-top-#{$i} {
+            margin-top: #{$i}% !important;
+      }
+   }
+// End Margin Top in %
+
+// Start Margin Bottom in %
+@for $i from 1 through 100 {
+        .margin-bottom-#{$i} {
+            margin-bottom: #{$i}% !important;
+      }
+   }
+// End Margin Bottom in %
+
+// Start Font in px
+@for $i from 1 through 50 {
+        .font-#{$i} {
+            font-size: #{$i}px !important;
+        }
+    }
+// End Font in px
+
+// Start Width in %
+@for $i from 1 through 125 {
+        .width-#{$i} {
+            width: #{$i}% !important;
+        }
+    }
+// End Width in %
+
+// Start Height in %
+@for $i from 1 through 125 {
+        .height-#{$i} {
+            height: #{$i}% !important;
+        }
+    }
+// End Height in %
+
+// Start Width in px
+@for $i from 1 through 300 {
+        .width-#{$i}px {
+            width: #{$i}px !important;
+        }
+    }
+// End Width in px
+
+// Start Height in px
+@for $i from 1 through 1000 {
+        .height-#{$i}px {
+            height: #{$i}px !important;
+        }
+    }
+// End Height in px
+
+// Start Margin in px
+@for $i from 1 through 1000 {
+        .margin-#{$i}px {
+            margin: #{$i}px !important;
+        }
+    }
+// End Margin in px
+
+// Start Margin Left in px
+@for $i from 1 through 100 {
+        .margin-left-#{$i} {
+            margin-left: #{$i}px !important;
+        }
+    }
+// End Margin Left in px
+
+// Start Margin Right in px
+@for $i from 1 through 100 {
+        .margin-right-#{$i} {
+            margin-right: #{$i}px !important;
+      }
+   }
+// End Margin Right in px
+
+// Start Margin Top in px
+@for $i from 1 through 100 {
+        .margin-top-#{$i}px {
+            margin-top: #{$i}px !important;
+      }
+   }
+// End Margin Top in px
+
+// Start Margin Bottom in px
+@for $i from 1 through 100 {
+        .margin-bottom-#{$i}px {
+            margin-bottom: #{$i}px !important;
+      }
+   }
+// End Margin Bottom in px
+
+// Start Padding in px
+@for $i from 1 through 100 {
+        .padding-#{$i}px {
+            padding: #{$i}px !important;
+        }
+    }
+// End Padding in px
+
+// Start Padding bottom in px
+@for $i from 1 through 100 {
+        .padding-bottom#{$i}px {
+            padding: #{$i}px !important;
+        }
+    }
+// End Padding bottom in px
+
+// Start Padding in px
+@for $i from 1 through 100 {
+        .padding-#{$i} {
+            padding: #{$i}% !important;
+        }
+    }
+// End Padding in px
+
+// Start Padding bottom in px
+@for $i from 1 through 100 {
+        .padding-bottom-#{$i} {
+            padding-bottom: #{$i}% !important;
+        }
+    }
+// End Padding bottom in px
+
+// Start text indent
+// Start Margin Top in px
+@for $i from 1 through 100 {
+        .text-indent-#{$i} {
+            text-indent: #{$i}% !important;
+      }
+   }
+// End text indent

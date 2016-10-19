@@ -113,3 +113,20 @@ nav
 .row-option-1 {
 
 }
+
+.text-heading-small {
+  font-size: 14px;
+}
+
+.text-normal-style {
+  float: left;
+  font-size: 22px;
+  font-weight: normal;
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}
+
+p span {
+  display: block;
+}
