@@ -8,11 +8,24 @@ html {
   min-height: 100%; }
 
 body {
-  background-color: #121212 !important;
+  background-image: url("../mockup/sports-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff !important; }
 
 html, body {
   height: 100%; }
+
+.jumbotron {
+  background: rgba(2, 2, 2, 0.9) !important;
+  border-radius: 0px !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important; }
+  @media screen and (max-width: 767px) {
+    .jumbotron {
+      background: rgba(2, 2, 2, 0.82) !important; } }
 
 .container-quiz {
   display: table;
@@ -22,40 +35,89 @@ html, body {
   border-top: 1px solid #BADA55 !important; }
 
 .button-quiz-style {
-  background: #BADA55 !important;
+  background: transparent !important;
   color: #ffffff !important;
-  border: 2px solid #121212 !important; }
+  border: 2px solid #BADA55 !important;
+  font-size: 20px !important;
+  font-family: 'Abel', sans-serif; }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .button-quiz-style {
+      font-size: 26px !important; } }
 
 .button-quiz-style:hover {
   background: #ffffff !important;
-  color: #BADA55 !important; }
+  color: #BADA55 !important;
+  font-weight: bolder; }
 
-@media screen and (max-width: 767px) {
-  .quiz-title {
-    text-align: center; } }
-@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .quiz-title {
-    text-align: center; } }
+.button-letter-style {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #BADA55 !important;
+  font-size: 18px !important;
+  font-family: 'Abel', sans-serif; }
+
+.button-letter-style:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #BADA55 !important;
+  font-weight: bolder; }
+
+.quiz-title {
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif; }
+  @media screen and (max-width: 767px) {
+    .quiz-title {
+      text-align: center; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .quiz-title {
+      text-align: center; } }
+
+.q-a {
+  font-family: 'Abel', sans-serif; }
+  @media screen and (max-width: 767px) {
+    .q-a {
+      font-size: 22px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .q-a {
+      font-size: 30px; } }
 
 .clock-div {
+  text-transform: uppercase !important;
   text-align: center;
   margin: auto;
   height: 100%;
-  width: 50%;
-  border: 1px solid #ffffff;
-  font-size: 20px; }
+  width: 75%;
+  border: 3px solid #ea0e19;
+  border-radius: 5px;
+  font-size: 26px;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff; }
+  @media screen and (max-width: 767px) {
+    .clock-div {
+      font-size: 24px; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .clock-div {
+      font-size: 32px; } }
 
 .fp-lq-img {
-  height: 280px; }
+  height: 250px;
+  /* ipad Landscape */
+  /* Nexus 7 Landscape */ }
   @media screen and (max-width: 767px) {
     .fp-lq-img {
-      height: 50px !important; } }
+      height: 100px !important; } }
   @media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .fp-lq-img {
-      height: 100px !important; } }
+      height: 120px !important; } }
   @media (min-width: 1025px) and (max-width: 1199px) {
     .fp-lq-img {
       height: 180px !important; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .fp-lq-img {
+      height: 185px !important; } }
+  @media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    .fp-lq-img {
+      height: 160px !important; } }
 
 .center-vertical {
   display: table-cell;

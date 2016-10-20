@@ -5,66 +5,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/live-quiz.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="js/live-quiz.js"></script>
 </head>
 <body>
 
-  <div class="container container-quiz">
-    <div class="row center-vertical">
-      <div class="col-md-12 square">
 
-        <div class="row">
-          <div class="col-md-4">
-            <img class="fp-lq-img" src="mockup/fp-logo-2.png" alt="sports" />
-          </div>
-          <div class="col-md-8 text-left">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="quiz-title">Live Quiz</h1>
-              </div>
-              <div class="col-md-6">
-                <div id="clockdiv" class="clock-div">
+  <div class="jumbotron">
+    <div class="container-fluid container-quiz">
 
+      <div class="row center-vertical">
+        <div class="col-md-12 square">
+
+          <div class="row">
+            <div class="col-md-4">
+              <img class="fp-lq-img" src="mockup/fp-logo.png" alt="sports" />
+            </div>
+            <div class="col-md-8 text-left">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="quiz-title">Live Quiz</h1>
+                </div>
+                <div class="col-md-6">
+                  <div id="clockdiv" class="clock-div">
+
+                  </div>
                 </div>
               </div>
+
+              <hr class="hr-style">
+              <div class="row margin-bottom-1">
+                <div class="col-md-12">
+                  <h3 id="q-a" class="q-a">Who was  the first line backer to be selected as the Super Bowl most valuable player(MVP)? </h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 margin-bottom-2">
+                  <div class="btn-group node-inline-flex width-100">
+                    <button class="btn button-quiz-style button-letter-style" type="button" value="A. Luke Kuechly">A</button>
+                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="A. Luke Kuechly">Luke Kuechly</button>
+                  </div>
+                </div>
+                <div class="col-md-6 margin-bottom-2">
+                  <div class="btn-group node-inline-flex width-100">
+                    <button class="btn button-quiz-style button-letter-style" type="button" value="B. Jamie Collins">B</button>
+                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="B. Jamie Collins">Jamie Collins</button>
+                  </div>
+                </div>
+                <div class="col-md-6 margin-bottom-2">
+                  <div class="btn-group node-inline-flex width-100">
+                    <button class="btn button-quiz-style button-letter-style" type="button" value="C. Chuck Howley">C</button>
+                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="C. Chuck Howley">Chuck Howley</button>
+                  </div>
+                </div>
+                <div class="col-md-6 margin-bottom-2">
+                  <div class="btn-group node-inline-flex width-100">
+                    <button class="btn button-quiz-style button-letter-style" type="button" value="D. Navorro Bowman">D</button>
+                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="D. Navorro Bowman">Navorro Bowman</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
             </div>
-
-            <hr class="hr-style">
-            <div class="row">
-              <div class="col-md-12">
-                <h3>Who was  the first line backer to be selected as the Super Bowl most valuable player(MVP)? </h3>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <button class="btn btn-default btn-block button-quiz-style" type="button">Luke Kuechly</button>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-default btn-block button-quiz-style" type="button">Jamie Collins</button>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-default btn-block button-quiz-style" type="button">Chuck Howley</button>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-default btn-block button-quiz-style" type="button">Navorro Bowman</button>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
           </div>
+
+
+
+
         </div>
-
-
-
-
       </div>
     </div>
   </div>
@@ -82,8 +99,7 @@
 
 
 
-
-
+<script src="js/live-quiz.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/00fedaf98c.js"></script>
