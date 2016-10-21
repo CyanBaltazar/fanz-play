@@ -1,4 +1,4 @@
-var count=5;
+var count=11;
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
 function timer()
@@ -8,7 +8,10 @@ function timer()
   {
      clearInterval(counter);
      //counter ended, do something here
+
+
      document.getElementById("clockdiv").innerHTML="Time's up!";
+     document.getElementById("clockdiv").style.background="#ea0e19";
 
 
 
@@ -16,15 +19,21 @@ function timer()
 
      var quiz_result = function () {
        // Hide all wrong answers except for the right one
-       document.getElementsByClassName("btn-group")[0].style.visibility="hidden";
-       document.getElementsByClassName("btn-group")[2].style.visibility="hidden";
-       document.getElementsByClassName("btn-group")[3].style.visibility="hidden";
-       document.getElementById("q-a").innerHTML="You got it! Score 1 for your team.";
+       setInterval(function () {
+         document.getElementsByClassName("btn-group")[0].style.visibility="hidden";
+         document.getElementsByClassName("btn-group")[2].style.visibility="hidden";
+         document.getElementsByClassName("btn-group")[3].style.visibility="hidden";
+         document.getElementById("q-a").innerHTML="You got it! Score 1 for your team.";
+       }, 1000);
        setInterval(function () {
          document.getElementsByClassName("btn-group")[1].style.visibility="hidden";
-         document.getElementById("q-a").style.visibility="hidden";
+       }, 3000);
+       setInterval(function () {
+         document.getElementById("clockdiv").innerHTML="Next round!";
+       }, 4000);
 
-       }, 2000);
+
+
 
       //  document.getElementById("q-a").style.visibility="visible";
       //  document.getElementById("q-a").innerHTML="Next round!";
