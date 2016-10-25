@@ -191,12 +191,23 @@ html, body {
 }
 
 .q-a {
+  font-size: 26px !important;
   font-family: 'Abel', sans-serif;
   @include respond-to(xs) {
     font-size: 22px;
   }
   @include respond-to(sm) {
     font-size: 30px;
+  }
+}
+
+.percent-label {
+  font-size: 40px;
+  @include respond-to(xs) {
+    font-size: 28px !important;
+  }
+  @include respond-to(sm) {
+    font-size: 32px !important;
   }
 }
 
@@ -262,6 +273,10 @@ html, body {
   box-sizing: border-box;
   padding: 25px;
 
+}
+
+.img-team {
+  height: 75px;
 }
 
 

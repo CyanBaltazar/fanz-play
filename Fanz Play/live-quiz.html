@@ -4,6 +4,7 @@
     <title>FanZPlay | Live Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/live-quiz.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
@@ -25,7 +26,7 @@
             <div class="col-md-8 text-left">
               <div class="row">
                 <div class="col-md-6">
-                  <h1 class="quiz-title">Live Quiz</h1>
+                  <h1 id="quiz-title" class="quiz-title">Live Quiz</h1>
                 </div>
                 <div class="col-md-6">
                   <div id="clockdiv" class="clock-div">
@@ -35,38 +36,72 @@
               </div>
 
               <hr class="hr-style">
-              <div class="row margin-bottom-1">
-                <div class="col-md-12">
-                  <h3 id="q-a" class="q-a">Who was the first line backer to be selected as the Super Bowl most valuable player(MVP)? </h3>
+
+              <div id="quiz-parent-content" class="quiz-parent-content">
+
+
+
+                <div id="quiz-parent-heading" class="quiz-parent-heading">
+                  <div class="row margin-bottom-1">
+                    <div class="col-md-12">
+
+                      <h3 id="q-a" class="q-a"></h3>
+
+                    </div>
+                  </div>
+                  <div id="q-r" class="row q-r">
+                    <div class="col-md-6 col-xs-6">
+
+                      <label id="percent-label-1" class="percent-label"></label>
+                      <label id="team-1" class="team-1">
+
+                      </label>
+                    </div>
+                    <div class="col-md-6 col-xs-5">
+                      <label id="percent-label-2" class="percent-label"></label>
+                      <label id="team-2" class="team-2">
+
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-md-6 margin-bottom-2">
-                  <div class="btn-group node-inline-flex width-100">
-                    <button class="btn button-quiz-style button-letter-style" type="button" value="A. Luke Kuechly">A</button>
-                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="A. Luke Kuechly">Luke Kuechly</button>
+
+
+                <div id="quiz-parent-buttons" class="quiz-parent-buttons">
+                  <div class="row">
+                    <div class="col-md-6 margin-bottom-2">
+                      <div class="btn-group node-inline-flex width-100">
+                        <button class="btn button-quiz-style button-letter-style" type="button" value="A. Luke Kuechly">A</button>
+                        <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="A. Luke Kuechly">Luke Kuechly</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 margin-bottom-2">
+                      <div class="btn-group node-inline-flex width-100">
+                        <button class="btn button-quiz-style button-letter-style" type="button" value="B. Jamie Collins">B</button>
+                        <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="B. Jamie Collins">Jamie Collins</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 margin-bottom-2">
+                      <div class="btn-group node-inline-flex width-100">
+                        <button class="btn button-quiz-style button-letter-style" type="button" value="C. Chuck Howley">C</button>
+                        <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="C. Chuck Howley">Chuck Howley</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 margin-bottom-2">
+                      <div class="btn-group node-inline-flex width-100">
+                        <button class="btn button-quiz-style button-letter-style" type="button" value="D. Navorro Bowman">D</button>
+                        <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="D. Navorro Bowman">Navorro Bowman</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 margin-bottom-2">
-                  <div class="btn-group node-inline-flex width-100">
-                    <button class="btn button-quiz-style button-letter-style" type="button" value="B. Jamie Collins">B</button>
-                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="B. Jamie Collins">Jamie Collins</button>
-                  </div>
-                </div>
-                <div class="col-md-6 margin-bottom-2">
-                  <div class="btn-group node-inline-flex width-100">
-                    <button class="btn button-quiz-style button-letter-style" type="button" value="C. Chuck Howley">C</button>
-                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="C. Chuck Howley">Chuck Howley</button>
-                  </div>
-                </div>
-                <div class="col-md-6 margin-bottom-2">
-                  <div class="btn-group node-inline-flex width-100">
-                    <button class="btn button-quiz-style button-letter-style" type="button" value="D. Navorro Bowman">D</button>
-                    <button id="button-quiz" class="btn btn-default btn-block button-quiz-style" type="button" value="D. Navorro Bowman">Navorro Bowman</button>
-                  </div>
-                </div>
+
+
+
               </div>
+
 
 
 
