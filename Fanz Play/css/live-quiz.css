@@ -111,6 +111,9 @@ html, body {
 
 .fp-lq-img {
   height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   /* ipad Landscape */
   /* Nexus 7 Landscape */ }
   @media screen and (max-width: 767px) {

@@ -232,6 +232,9 @@ html, body {
 
 .fp-lq-img {
   height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   @include respond-to(xs) {
     height: 100px !important;
   }
