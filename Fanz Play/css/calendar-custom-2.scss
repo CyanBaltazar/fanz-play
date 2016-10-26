@@ -299,6 +299,7 @@ nav.connect-sidebar {
 
 .fc-calendar .fc-row > div:empty {
 	background: transparent;
+  pointer-events:none;
 }
 
 .fc-calendar .fc-row > div > span.fc-date {

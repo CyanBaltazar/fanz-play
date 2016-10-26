@@ -208,6 +208,12 @@ li a:hover
   color: $color-white !important;
 }
 
+.nav>li>a:focus {
+  text-decoration: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+}
+
 div.sidebar-menu {
   height: 100em;
   background-color: $primary-color;
@@ -379,6 +385,37 @@ button.search-button {
   border-left: none !important;
 }
 
+.content-login {
+  @include respond-to(xs) {
+    margin-top: -50px !important;
+  }
+  /* iphone5 Landscape */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-top: -250px !important;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-top: -300px !important;
+  }
+
+  /* iphone6 plus(+) Landscape */
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    margin-top: -440px !important;
+  }
+}
+
 input.input-animate {
   width: 100%;
   border: none;
@@ -400,22 +437,42 @@ input.input-animate {
       font-size: 16px;
       transform: translateY(-20px);
       visibility: visible !important;
+      @include respond-to(xs) {
+        font-size: 18px !important;
+      }
     }
   }
   @include respond-to(xs) {
-    font-size: 20px !important;
+    font-size: 22px;
+  }
+  @include respond-to(sm) {
+    font-size: 24px;
   }
 }
 
 label.text-email-address {
   @include respond-to(xs) {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  @include respond-to(sm) {
+    font-size: 18px;
   }
 }
 
 p.p-no-account {
   @include respond-to(xs) {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  @include respond-to(sm) {
+    font-size: 18px;
+  }
+  /* iphone6 Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    margin-top: -15px;
   }
 }
 
@@ -742,8 +799,12 @@ span.icon-bar {
     margin-bottom: 3% !important;
     padding: 7%;
     @include respond-to(xs) {
+      background: transparent !important;
       width: 95% !important;
       margin-top: 20% !important;
+    }
+    @include respond-to(sm) {
+      background: transparent !important;
     }
     /* iphone6 Landscape */
     @media only screen
@@ -767,7 +828,8 @@ span.icon-bar {
     font-size: 18px;
     font-weight: bold;
     @include respond-to(xs) {
-      font-size: 14px;
+      margin-top: 3%;
+      font-size: 16px !important;
       height: 40px;
     }
   }

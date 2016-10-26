@@ -204,7 +204,8 @@ nav.connect-sidebar {
   cursor: pointer; }
 
 .fc-calendar .fc-row > div:empty {
-  background: transparent; }
+  background: transparent;
+  pointer-events: none; }
 
 .fc-calendar .fc-row > div > span.fc-date {
   top: 15%;

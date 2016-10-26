@@ -145,23 +145,29 @@ $(document).ready(function() {
       });
 
 
-
-
       /* Adding of event to calendar upon clicking a particular date */
       $(function () {
-        $(".fc-calendar .fc-row > div").click(function () {
+
+
+        
+        $(".fc-calendar .fc-row > div").addClass("date");
+
+
+        $(".date").click(function () {
           $("#addEventModal").modal("show");
 
 
 
-          var clickedDiv = $(this);
+          var clickedDiv = $(".date").index(this);
+          console.log(clickedDiv);
+
+
 
           $("#button-add-event").click(function () {
             var event_team_1 = $("#event-team-1").val();
             var event_team_2 = $("#event-team-2").val();
-            $(clickedDiv).append("<br>" + event_team_1 + " vs " + event_team_2);
-            console.log($(clickedDiv).length);
-
+            $($("div.date:eq(" + clickedDiv + ")")).append("<br>" + event_team_1 + " vs " + event_team_2);
+            console.log(clickedDiv);
           });
 
 
