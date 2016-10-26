@@ -272,11 +272,14 @@ html, body {
   border-radius: 10px;
   box-sizing: border-box;
   padding: 25px;
-
+  width: 90vw !important;
 }
 
 .img-team {
-  height: 75px;
+  height: 100px;
+  @include respond-to(xs) {
+    height: 75px !important;
+  }
 }
 
 
