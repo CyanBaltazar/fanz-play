@@ -510,6 +510,11 @@ button.button-cancel:hover {
   color: #d9534f !important;
   border: 1px solid #d9534f !important; }
 
+button.button-ok {
+  background: #BADA55;
+  color: #ffffff;
+  border: 2px solid #BADA55; }
+
 h1.text-sponsors-prizes {
   text-align: left; }
 

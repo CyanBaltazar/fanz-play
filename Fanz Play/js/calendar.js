@@ -68,7 +68,7 @@ $(document).ready(function() {
         });
       });
 
-      
+
 
 
       // Previous and next date functionality
@@ -143,6 +143,37 @@ $(document).ready(function() {
         $('#custom-month').attr('class', 'custom-month');
         $('#custom-year').attr('class', 'custom-year');
       });
+
+
+
+
+      /* Adding of event to calendar upon clicking a particular date */
+      $(function () {
+        $(".fc-calendar .fc-row > div").click(function () {
+          $("#addEventModal").modal("show");
+
+
+
+          var clickedDiv = $(this);
+
+          $("#button-add-event").click(function () {
+            var event_team_1 = $("#event-team-1").val();
+            var event_team_2 = $("#event-team-2").val();
+            $(clickedDiv).append("<br>" + event_team_1 + " vs " + event_team_2);
+            console.log($(clickedDiv).length);
+
+          });
+
+
+
+          });
+
+
+
+      });
+      /* Adding of event to calendar upon clicking a particular date */
+
+
 
 
 

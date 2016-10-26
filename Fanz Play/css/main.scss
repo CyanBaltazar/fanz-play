@@ -856,6 +856,12 @@ span.icon-bar {
     border: 1px solid $color-red !important;
   }
 
+  button.button-ok {
+    background: $secondary-color;
+    color: $color-white;
+    border: 2px solid $secondary-color;
+  }
+
 
 // End Login Style
 

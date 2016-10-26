@@ -1,13 +1,13 @@
 var startCounter = 31;
 var questionCounter = 42;
 
-document.getElementById("q-a").innerHTML="Are you ready to play?!<br>The game is about to start!";
 document.getElementById("quiz-parent-buttons").style.visibility="hidden";
 
 /* The countdown during the game */
 var questionCountdown = setInterval(function() {
   questionCounter--;
   console.log(questionCounter);
+  document.getElementById("q-a").innerHTML="Are you ready to play?!";
   if (questionCounter < 11) {
     if (questionCounter < 4) {
       if (questionCounter === 0) {
@@ -64,7 +64,6 @@ var questionCountdown = setInterval(function() {
           clearInterval(q_interval_5);
         }, 10000);
 
-        console.log("HAPPY NEXT YEAR!!");
         clearInterval(questionCountdown);
       }
       setInterval(function () {
@@ -87,7 +86,6 @@ var startCountdown = setInterval(function () {
   if (startCounter < 4) {
     if (startCounter === 0) {
       document.getElementById("quiz-parent-heading").style.visibility="hidden";
-      console.log("HAPPY NEW YEAR!!");
       clearInterval(startCountdown);
     }
     document.getElementById("clockdiv").style.background="#ea0e19";

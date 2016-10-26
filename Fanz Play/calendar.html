@@ -118,11 +118,8 @@
                   </div>
                 </div> -->
 
-
-
                 <div class="row">
                   <div class="col-md-12">
-
 
                     <div class="calendar-controls">
                       <button class="btn custom-prev fa fa-angle-left" type="button" id="custom-prev" data-toggle="tooltip" title="Previous month"> </button>
@@ -135,9 +132,29 @@
                     </div>
                     <div id="calendar" class="fc-calendar-container">
 
-
-
                     </div>
+                  </div>
+                </div>
+
+
+
+                <div id="addEventModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1>Add an event</h1>
+                        <input id="event-team-1" class="input-other-white" type="text" placeholder="Team 1">
+                        <input id="event-team-2" class="input-other-white margin-top-2 margin-bottom-2" type="text" placeholder="Team 2">
+                        <button id="button-add-event" class="btn btn-block button-ok" type="button">OK</button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default button-cancel" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
 

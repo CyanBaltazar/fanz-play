@@ -717,6 +717,16 @@ input.input-white-option {
     input.input-white-option {
       width: 40%; } }
 
+input.input-other-white {
+  width: 100% !important;
+  font-size: 20px;
+  float: left;
+  margin: auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #000000; }
+
 input.radio-option-1 {
   float: left !important;
   margin-left: 10px !important; }
